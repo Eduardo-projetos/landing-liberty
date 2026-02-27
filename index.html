@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Consórcios | Planejamento Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#vantagens" class="nav-link">Vantagens</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+
+                <div class="header-btn">
+                    <a href="https://wa.me/5511992219551?text=Olá! Vim pelo site da Liberty Consórcios." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>O caminho mais inteligente para o seu patrimônio.</h1>
+                <h2>Conquiste Carros, Imóveis e Pesados <span class="destaque">sem pagar juros abusivos</span>.</h2>
+                <p>A segurança da Liberty agora no seu planejamento financeiro.</p>
+                <a href="#produtos" class="btn-primary">Iniciar Simulação</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Casa dos sonhos">
+            </div>
+        </div>
+    </section>
+
+    <!-- VANTAGENS -->
+    <section id="vantagens" class="vantagens">
+        <div class="container">
+            <h3 class="section-title">Por que Consórcio Liberty?</h3>
+            <p class="subtitle">Entenda por que essa é a melhor escolha financeira.</p>
+            
+            <div class="vantagens-grid">
+                <div class="card-vantagem">
+                    <i class="fas fa-percentage"></i>
+                    <h4>Zero Juros</h4>
+                    <p>Fuja das taxas abusivas dos financiamentos tradicionais. Pague apenas a taxa administrativa fixa.</p>
+                </div>
+                <div class="card-vantagem">
+                    <i class="fas fa-unlock-alt"></i>
+                    <h4>Sem Burocracia</h4>
+                    <p>Entrada facilitada e aprovação ágil. Você foca no sonho, nós cuidamos da papelada.</p>
+                </div>
+                <div class="card-vantagem">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>Flexibilidade</h4>
+                    <p>Prazos e parcelas que cabem no seu bolso. Você decide o valor da carta de crédito.</p>
+                </div>
+                <div class="card-vantagem">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h4>Lance Estratégico</h4>
+                    <p>Use seu veículo usado ou parte da carta para ofertar lances e acelerar sua contemplação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Escolha onde investir</h3>
+            <p class="subtitle">Soluções completas para todos os seus objetivos.</p>
+            
+            <div class="produtos-grid">
+                
+                <!-- CARD 1 -->
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div>
+                            <h4>Automóveis</h4>
+                            <p>Carro novo ou seminovo? Planeje a troca do seu veículo com economia real.</p>
+                        </div>
+                        <a href="https://wa.me/5511992219551?text=Olá! Quero simular um consórcio de *Automóvel*." target="_blank" class="btn-card">
+                            Simular Automóvel
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div>
+                            <h4>Imóveis</h4>
+                            <p>Saia do aluguel ou invista. Casas, apartamentos, terrenos ou reformas.</p>
+                        </div>
+                        <a href="https://wa.me/5511992219551?text=Olá! Quero simular um consórcio de *Imóvel*." target="_blank" class="btn-card">
+                            Simular Imóvel
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div>
+                            <h4>Motocicletas</h4>
+                            <p>Liberdade sobre duas rodas. Motos de alta cilindrada ou para o dia a dia.</p>
+                        </div>
+                        <a href="https://wa.me/5511992219551?text=Olá! Quero simular um consórcio de *Moto*." target="_blank" class="btn-card">
+                            Simular Moto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div>
+                            <h4>Pesados</h4>
+                            <p>Caminhões, tratores e implementos agrícolas. Renove sua frota.</p>
+                        </div>
+                        <a href="https://wa.me/5511992219551?text=Olá! Quero simular um consórcio de *Veículos Pesados*." target="_blank" class="btn-card">
+                            Simular Pesados
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div>
+                            <h4>Serviços</h4>
+                            <p>Viagens, cirurgias plásticas, festas ou reformas. Tudo planejado.</p>
+                        </div>
+                        <a href="https://wa.me/5511992219551?text=Olá! Quero simular um consórcio de *Serviços*." target="_blank" class="btn-card">
+                            Simular Serviços
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA -->
+    <section class="banner-cta">
+        <div class="container">
+            <h2>Pronto para realizar seu sonho?</h2>
+            <p>Fale agora com um especialista da Liberty e faça sua simulação personalizada.</p>
+            <a href="https://wa.me/5511992219551" class="btn-white">Falar com Consultor</a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quem Somos</h4>
+                    <ul>
+                        <li><a href="#">Liberty Revisional</a></li>
+                        <li><a href="#">Política de Qualidade</a></li>
+                    </ul>
+                    <h4 class="mt-title">Juros Abusivos</h4>
+                    <ul>
+                        <li><a href="#">Casos de Sucesso</a></li>
+                        <li><a href="https://libertyrevisional.com.br/" target="_blank" style="color: #fff; text-decoration: underline;">Site Oficial Revisional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Áreas de Atuação</h4>
+                    <ul>
+                        <li><a href="#">Consórcios</a></li>
+                        <li><a href="#">Ação Revisional</a></li>
+                        <li><a href="#">Busca e Apreensão</a></li>
+                        <li><a href="#">Dívida de Cartão</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contatos</h4>
+                    <p style="color: #fff; font-weight: bold; margin-top: 5px;">(11) 95214-6600</p>
+                    <p style="color: #fff; font-weight: bold;">(11) 2378-0387</p>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i> @libertyrevisional</a>
+                        <a href="#"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="address">
+                    <p>Avenida Hermínio Raphael da Silva, 78 Bairro Jardim Nathalie – Mogi das Cruzes/SP – CEP: 08725-745</p>
+                </div>
+                <div class="security-badges">
+                    <span><i class="fas fa-lock"></i> Site Seguro</span>
+                </div>
+            </div>
+            
+            <div class="developer">
+                <p>Website desenvolvido por: <strong>Andréa Mari Marketing Digital</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.nav-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.mobile-menu-icon button i').classList.remove('fa-times');
+                document.querySelector('.mobile-menu-icon button i').classList.add('fa-bars');
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.mobile-menu-icon button i').classList.remove('fa-bars');
+                document.querySelector('.mobile-menu-icon button i').classList.add('fa-times');
+            }
+        }
+        
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.remove('open');
+            document.querySelector('.mobile-menu-icon button i').classList.remove('fa-times');
+            document.querySelector('.mobile-menu-icon button i').classList.add('fa-bars');
+        }));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenLeftElements = document.querySelectorAll('.hidden-left');
+        const hiddenRightElements = document.querySelectorAll('.hidden-right');
+        
+        hiddenLeftElements.forEach((el) => observer.observe(el));
+        hiddenRightElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
