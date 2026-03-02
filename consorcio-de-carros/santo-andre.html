@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Santo André | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137" class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio em Santo André</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Santo André</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Especialistas em planejamento financeiro no ABC. Simule seu consórcio e garanta sua carta de crédito hoje.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137" class="btn-primary">Simular Consórcio em Santo André</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Santo André">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros em Santo André">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento ABC">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Santo André">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM SANTO ANDRÉ</h3>
+                    <p>Santo André é uma cidade pulsante e estratégica no ABC Paulista. Seja para transitar pela <strong>Avenida dos Estados</strong> ou acessar o <strong>Rodoanel</strong>, o <strong>Consórcio de Carros</strong> da Liberty Revisional é o caminho mais inteligente para renovar seu veículo. Evite as taxas abusivas dos financiamentos tradicionais e planeje sua conquista com autoridade no mercado andreense.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Santo André">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É O MELHOR NEGÓCIO NO GRANDE ABC</h3>
+                    <p>Para o morador de Santo André que busca solidez e economia real, a Liberty Revisional entrega:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem frequenta o <strong>Bairro Jardim</strong>, <strong>Campestre</strong> ou o <strong>Shopping ABC</strong>.</li>
+                        <li>Taxa de administração fixa, sem surpresas e com total transparência financeira.</li>
+                        <li>Estratégias personalizadas de contemplação via lances para acelerar sua entrega em Santo André.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Santo André">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Santo André</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Santo André</h4><p>Carro novo no ABC? Planeje com a Liberty Revisional.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Santo André</h4><p>Saia do aluguel e more em bairros privilegiados de Santo André.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Santo André</h4><p>Agilidade para o trânsito do ABC sem juros abusivos.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Santo André</h4><p>Logística na Avenida dos Estados com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Santo André</h4><p>Planeje reformas e serviços com a Liberty Revisional.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Santo André</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade no ABC.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137" class="btn-white">Falar com Consultor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SANTO ANDRÉ</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em Santo André, oferecendo estratégias de alta performance para quem quer fugir dos juros. Se você busca pelo melhor <strong>Consórcio de carros</strong> no ABC Paulista, a Liberty Revisional é sua escolha segura.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Santo André</h3>
+                    <p>Conquistar sua <strong>Carta de Crédito</strong> em Santo André exige planejamento técnico. Seja para circular pela Avenida Portugal ou acessar a Rodovia Anchieta, o <strong>Consórcio de carros</strong> da Liberty Revisional permite que você adquira seu veículo sem pagar por dois bens no final do contrato, como ocorre nos bancos tradicionais.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento para o andreense</h3>
+                    <p>No trânsito característico de Santo André, o <strong>Consórcio de carros</strong> oferece conforto para a família, enquanto o <strong>Consórcio de motos</strong> traz agilidade e economia. A Liberty Revisional analisa seu perfil para indicar o <strong>Consórcio</strong> ideal que se adapta à sua realidade financeira no ABC.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento em Santo André</h3>
+                    <p>Unir o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é o segredo para construir patrimônio sólido. Enquanto planeja seu veículo, você pode investir em um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> em bairros valorizados de Santo André, como o Jardim ou o Bairro Campestre.</p>
+
+                    <h3>Consórcio de carros: Por que a Liberty Revisional é um dos Melhores consórcios da região</h3>
+                    <p>Nossa expertise em <strong>Consórcio de carros</strong> nos coloca entre os <strong>Melhores consórcios</strong> da Grande São Paulo. Cuidamos do seu <strong>Consórcio de dinheiro</strong> com transparência e foco em resultados, assegurando que sua <strong>Carta de Crédito</strong> seja contemplada de forma estratégica.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformando no Jardim ou Campestre</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> em Santo André é uma excelente opção para valorização imobiliária. Através da <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você realiza sua reforma ou construção sem as taxas abusivas do crédito direto ao consumidor.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários em Santo André</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Santo André elimina o custo dos juros altos que corroem seu orçamento. Diferente dos financiamentos de pátio, o <strong>Consórcio de veículos</strong> da Liberty Revisional preserva seu capital. Buscamos entregar os <strong>Melhores consórcios</strong> para quem entende que planejar é investir.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na Avenida dos Estados</h3>
+                    <p>Finalizando nosso guia, o <strong>Consórcio de carros</strong> é a chave para sua liberdade em Santo André. Seja para o lazer de fim de semana ou para o trabalho diário, o <strong>Consórcio</strong> é o investimento que protege seu futuro. Conte com a Liberty Revisional para sua próxima <strong>Carta de Crédito</strong> e acelere sua conquista no ABC.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> na região de Santo André.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty Revisional em Santo André</h3>
+                    <p>Referência em planejamento financeiro no Grande ABC. Ajudamos a população de Santo André a conquistar patrimônio real através de estratégias de consórcio sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Santo André</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Bairro Jardim</li>
+                        <li>Consórcio no Campestre</li>
+                        <li>Consórcio na Vila Alzira</li>
+                        <li>Consórcio no Parque das Nações</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Santo André</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Especializado em Santo André e ABC | Sede Administrativa: Mogi das Cruzes/SP
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

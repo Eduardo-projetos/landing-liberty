@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Tatuapé | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137" class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio no Tatuapé</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo no <span class="destaque">Tatuapé</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Especialistas em cartas de crédito na Zona Leste. Planeje sua conquista com a Liberty Revisional e fuja dos juros abusivos.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137" class="btn-primary">Simular Consórcio no Tatuapé</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio no Tatuapé">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na ZL">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Tatuapé">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Tatuapé">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL NO TATUAPÉ</h3>
+                    <p>O Tatuapé é o coração econômico da Zona Leste. Seja para quem transita pela <strong>Radial Leste</strong> ou para quem acessa a <strong>Salim Farah Maluf</strong>, o <strong>Consórcio de Carros</strong> da Liberty Revisional é a solução ideal. Planeje seu próximo veículo de luxo ou seminovo com parcelas fixas e zero juros bancários, garantindo o melhor investimento na região.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Tatuapé">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NA ZONA LESTE</h3>
+                    <p>Para o público do Tatuapé que valoriza exclusividade e planejamento, a Liberty Revisional oferece:</p>
+                    <ul class="check-list">
+                        <li>Atendimento diferenciado para quem frequenta o <strong>Shopping Anália Franco</strong>, <strong>Parque Piqueri</strong> ou o <strong>CERET</strong>.</li>
+                        <li>Taxa de administração diluída, proporcionando uma economia significativa comparada aos juros das concessionárias locais.</li>
+                        <li>Estratégias de contemplação via lances para quem busca agilidade na entrega do carro no Tatuapé.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento no Tatuapé">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir no Tatuapé</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Tatuapé</h4><p>Carro novo na ZL? Planeje com a Liberty Revisional.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular no Tatuapé</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Tatuapé</h4><p>Investir em apartamentos no Jardim Anália Franco.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular no Tatuapé</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Tatuapé</h4><p>Agilidade para a Radial Leste sem juros abusivos.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular no Tatuapé</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Tatuapé</h4><p>Logística na Salim Farah Maluf com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular no Tatuapé</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Tatuapé</h4><p>Reformas e festas no Tatuapé com planejamento.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular no Tatuapé</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho no Tatuapé</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na Zona Leste.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137" class="btn-white">Falar com Consultor ZL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: TATUAPÉ</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> no Tatuapé, unindo a força da Zona Leste ao planejamento financeiro inteligente. Se você busca pelo melhor <strong>Consórcio de carros</strong> na região do Anália Franco, a Liberty Revisional é a sua parceira oficial.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito no Tatuapé</h3>
+                    <p>Conquistar sua <strong>Carta de Crédito</strong> no Tatuapé é o primeiro passo para o sucesso financeiro. Seja para circular pela Radial Leste ou pela Salim Farah Maluf, o <strong>Consórcio de carros</strong> da Liberty Revisional permite que você adquira seu veículo sem pagar as taxas exorbitantes do financiamento convencional.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na Zona Leste</h3>
+                    <p>Nas ruas movimentadas da Zona Leste, o <strong>Consórcio de carros</strong> oferece o status e o conforto que o Tatuapé exige, enquanto o <strong>Consórcio de motos</strong> garante agilidade. A Liberty Revisional avalia seu perfil para indicar o <strong>Consórcio</strong> ideal para o seu dia a dia paulistano.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento no Jardim Anália Franco</h3>
+                    <p>Planejar o futuro com o <strong>Consórcio de carros</strong> e o <strong>Consórcio Imobiliário</strong> é a estratégia dos grandes investidores da ZL. Enquanto garante seu novo veículo, você pode investir em um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> em áreas nobres como o Anália Franco, valorizando seu patrimônio.</p>
+
+                    <h3>Consórcio de carros: Por que a Liberty Revisional é um dos Melhores consórcios do Tatuapé</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> vem do atendimento técnico e especializado para o público exigente da Zona Leste. Como um dos <strong>Melhores consórcios</strong> da região, cuidamos do seu <strong>Consórcio de dinheiro</strong> com transparência e foco em contemplação estratégica.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Valorizando imóveis na ZL</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta poderosa no Tatuapé. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você reforma ou constrói seu imóvel em um dos bairros que mais valorizam em São Paulo, sem depender de bancos.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários no Tatuapé</h3>
+                    <p>O <strong>Consórcio de carros</strong> no Tatuapé vence o financiamento bancário em todos os comparativos de custo-benefício. Enquanto o crédito tradicional cobra juros que sufocam o orçamento, o <strong>Consórcio de veículos</strong> da Liberty Revisional preserva seu capital. Buscamos entregar os <strong>Melhores consórcios</strong> para quem entende de lucro real.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na Radial Leste</h3>
+                    <p>Finalizando nosso guia, o <strong>Consórcio de carros</strong> é a sua chave para rodar com liberdade por toda a Zona Leste. Seja para lazer no CERET ou para negócios, o <strong>Consórcio</strong> é o investimento que cabe no seu planejamento. Conte com a Liberty Revisional para sua próxima <strong>Carta de Crédito</strong> e acelere seu sonho.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> no bairro do Tatuapé.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty Revisional no Tatuapé</h3>
+                    <p>Referência em planejamento financeiro na Zona Leste de São Paulo. Ajudamos o público do Tatuapé e Anália Franco a construir patrimônio real através do consórcio inteligente.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Tatuapé</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Jardim Anália Franco</li>
+                        <li>Consórcio no Parque Piqueri</li>
+                        <li>Consórcio na Vila Gomes Cardim</li>
+                        <li>Consórcio no Alto do Tatuapé</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos ZL</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico no Tatuapé e Zona Leste | Sede Administrativa: Mogi das Cruzes/SP
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

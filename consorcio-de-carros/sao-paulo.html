@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em São Paulo | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB */
+        .secao-localidades-hub {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        .header-clicavel-cidades {
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .localidades-wrapper {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out;
+        }
+        .localidades-wrapper.open {
+            max-height: 2000px;
+        }
+        .localidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px 0;
+        }
+        .card-local {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-local:hover {
+            border-color: #000;
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        .icon-seta-local {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            transition: 0.4s;
+        }
+        .icon-seta-local.rotate {
+            transform: rotate(180deg);
+        }
+
+        /* --- ESTILIZAÇÃO DO RODAPÉ --- */
+        .footer-oficial {
+            background-color: #000;
+            color: #fff;
+            padding: 60px 0 20px 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-col h3::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: #fff;
+        }
+        .footer-col p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .footer-list {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-list li {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+        .footer-contatos {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contato-item {
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .social-links {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .social-item {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .footer-divider {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .footer-safe {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-divider { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5511947316137" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137" class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Você em São Paulo na direção certa.</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">São Paulo</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade da capital. Simule e compre seu consórcio online agora mesmo.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137" class="btn-primary">Simule agora em SP</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em São Paulo">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros em SP">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento SP">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM SÃO PAULO</h3>
+                    <p>No ritmo acelerado de São Paulo, seja para rodar pela Marginal Pinheiros ou para atravessar a Avenida Paulista, o <strong>Consórcio de Carros</strong> é a escolha inteligente. Planeje a troca do seu veículo na capital com parcelas menores, sem juros e sem a necessidade de entrada abusiva, garantindo fôlego financeiro no seu orçamento paulistano.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros São Paulo">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É O MELHOR INVESTIMENTO NA CAPITAL</h3>
+                    <p>Para quem vive em São Paulo e busca um carro novo ou seminovo, as vantagens da Liberty Revisional são imbatíveis:</p>
+                    <ul class="check-list">
+                        <li>Planejamento sob medida para o público de SP. Escolha o modelo ideal para o seu dia a dia na cidade.</li>
+                        <li>Taxa de administração fixa, sem as surpresas das taxas bancárias das grandes avenidas.</li>
+                        <li>Contemplação estratégica via lances, ideal para quem tem pressa em retirar o veículo na capital.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em SP">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em São Paulo</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis SP</h4><p>Carro novo para São Paulo? Planeje com economia real.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em SP</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis SP</h4><p>Sair do aluguel na capital ou investir em terrenos.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em SP</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas SP</h4><p>Agilidade para o trânsito de SP sem juros abusivos.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em SP</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados SP</h4><p>Caminhões para logística paulista com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em SP</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços SP</h4><p>Reformas ou festas na capital. Tudo planejado.</p></div>
+                        <a href="https://wa.me/5511947316137" class="btn-card">Simular em SP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em São Paulo</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na capital.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137" class="btn-white">Falar com Consultor SP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SÃO PAULO</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em São Paulo com foco em quem vive o dia a dia da capital. Se você busca <strong>Consórcio de carros</strong>, a Liberty é sua parceira estratégica no coração do Brasil.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em São Paulo</h3>
+                    <p>Obter uma <strong>Carta de Crédito</strong> em São Paulo exige estratégia. Seja para circular em Santana ou no Ipiranga, o <strong>Consórcio de carros</strong> permite fugir dos juros bancários. No <strong>Consórcio</strong>, você utiliza lances para acelerar sua conquista de forma inteligente e planejada.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na capital</h3>
+                    <p>Muitos paulistanos buscam o <strong>Consórcio de carros</strong> para conforto, mas o <strong>Consórcio de motos</strong> ganha força pela agilidade nas Marginais. Na Liberty Revisional, analisamos seu perfil para indicar o melhor <strong>Consórcio</strong>, garantindo que sua mobilidade urbana seja eficiente e econômica.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento em São Paulo</h3>
+                    <p>Aliar o <strong>Consórcio de carros</strong> ao <strong>Consórcio Imobiliário</strong> é o segredo dos grandes investidores paulistanos. Enquanto você planeja seu próximo veículo, pode garantir seu <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong>, aproveitando a valorização constante do mercado imobiliário de São Paulo.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de São Paulo</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> vem do atendimento técnico e especializado. Atuamos como um dos <strong>Melhores consórcios</strong> da capital, oferecendo segurança para o seu <strong>Consórcio de dinheiro</strong> e transparência total em cada etapa, desde a adesão até a entrega das chaves.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformando imóveis na Capital</h3>
+                    <p>O <strong>Consórcio de carros</strong> é apenas o começo. Muitos clientes em São Paulo utilizam o <strong>Consórcio para construção</strong> para valorizar seu patrimônio. Através da <strong>Carta de crédito imobiliário</strong>, você reforma ou constrói na capital paulista sem pagar as taxas abusivas do crédito tradicional.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários em SP</h3>
+                    <p>O <strong>Consórcio de carros</strong> em São Paulo vence o financiamento em todos os comparativos. Enquanto os bancos da Av. Paulista cobram juros compostos, o <strong>Consórcio de veículos</strong> mantém o custo baixo. É a ferramenta ideal para quem busca <strong>Melhores consórcios</strong> com foco em resultado financeiro real.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na Marginal Pinheiros</h3>
+                    <p>Finalizando, o <strong>Consórcio de carros</strong> é a sua porta de entrada para uma vida sem dívidas em São Paulo. Seja para um carro popular ou de luxo, o <strong>Consórcio</strong> garante que você rode pela capital com a tranquilidade de quem fez o melhor negócio. Conte com a Liberty para sua próxima <strong>Carta de Crédito</strong>.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> em São Paulo.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Quem Somos -->
+                <div class="footer-col">
+                    <h3>Liberty em São Paulo</h3>
+                    <p>A Liberty Revisional é especialista em planejamento financeiro na capital paulista. Auxiliamos o público de São Paulo a conquistar patrimônio sem juros abusivos através de estratégias sólidas de consórcio.</p>
+                </div>
+
+                <!-- Coluna 2: Áreas de Atuação -->
+                <div class="footer-col">
+                    <h3>Áreas de Atuação SP</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio de Automóveis SP</li>
+                        <li>Consórcio de Imóveis SP</li>
+                        <li>Consórcio de Veículos Pesados</li>
+                        <li>Consórcio de Motocicletas</li>
+                        <li>Consórcio de Serviços</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contatos -->
+                <div class="footer-col">
+                    <h3>Contatos Capital</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <a href="tel:1123780387" class="contato-item">(11) 2378-0387</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-facebook-f"></i> @libertyrevisional</a>
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé Inferior -->
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Especializado em São Paulo Capital | Sede Administrativa: Mogi das Cruzes/SP
+                </div>
+                <div class="footer-safe">
+                    <i class="fas fa-lock"></i> Site Seguro
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() {
+            document.querySelector('.nav-menu').classList.toggle('open');
+        }
+
+        // Script do Acordeon SEO
+        function toggleSEO() {
+            document.getElementById('contentSEO').classList.toggle('open');
+            document.getElementById('setaSEO').classList.toggle('rotate');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 4000);
+    </script>
+</body>
+</html>
