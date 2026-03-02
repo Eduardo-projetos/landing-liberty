@@ -987,3 +987,31 @@ footer {
     .accordion-header h2 { font-size: 1.1rem; }
     .accordion-content h3 { font-size: 1.4rem; }
 }
+/* AJUSTE RESPONSIVO PARA A TESE DE AUTORIDADE (MOBILE) */
+@media (max-width: 768px) {
+    /* Ajusta o título (H3) que está cortando */
+    .accordion-content h3 {
+        font-size: 1.1rem !important; /* Diminui a fonte no mobile */
+        line-height: 1.4 !important;
+        margin: 20px 0 10px 0 !important;
+        word-wrap: break-word; /* Garante que a palavra quebre se for grande demais */
+    }
+
+    /* Ajusta o espaçamento interno do conteúdo para não esmagar o texto */
+    .accordion-content {
+        padding: 15px !important;
+    }
+
+    /* Ajusta o bloco de 'Resumo Técnico' lá embaixo */
+    .resumo-tecnico {
+        font-size: 0.85rem !important;
+        padding: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Garante que o container do acordeon não tenha largura fixa */
+    .accordion-container {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
