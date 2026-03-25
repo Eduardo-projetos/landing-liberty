@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Camaçari | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Camaçari",
+      "description": "Líder em consórcio de carros e veículos para frotas no Polo Industrial. Planejamento estratégico em Camaçari, de Alphaville à Orla.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/camacari",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Camaçari",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Camaçari",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá, gostaria de saber mais sobre o consórcio de carros em Camaçari. Vi a página oficial." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Camaçari e quero simular um consórcio agora." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio em Camaçari</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Camaçari</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Planejamento estratégico no maior Polo Industrial da Bahia. Garanta sua carta de crédito de Alphaville a Vila de Abrantes com total autoridade.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Camaçari e quero simular meu consórcio de carros agora." class="btn-primary">Simular Consórcio em Camaçari</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Camaçari">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros no Polo Industrial">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Boulevard Camaçari">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Camaçari">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM CAMAÇARI</h3>
+                    <p>Camaçari é a força motriz da indústria baiana e o coração do Polo Petroquímico. Seja para quem transita pela <strong>Estrada do Coco (BA-099)</strong> ou trabalha no <strong>Polo Industrial</strong>, o <strong>Consórcio de Carros</strong> da Liberty Revisional é a solução para adquirir veículos novos ou frotas comerciais sem juros bancários. Planeje sua conquista com a segurança de quem atende a elite industrial e os novos moradores da Região Metropolitana.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Camaçari">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO BOULEVARD CAMAÇARI</h3>
+                    <p>Para o morador de Camaçari que valoriza inteligência financeira na RMS, a Liberty Revisional entrega o planejamento focado na valorização local:</p>
+                    <ul class="check-list">
+                        <li>Atendimento focado em quem frequenta o <strong>Boulevard Shopping Camaçari</strong> ou o <strong>Open Center</strong>.</li>
+                        <li>Taxa de administração competitiva para profissionais do <strong>Alphaville Camaçari</strong> e <strong>Terras Alphaville</strong>.</li>
+                        <li>Estratégias de lances para moradores de <strong>Vila de Abrantes</strong>, <strong>Busca Vida</strong> e <strong>Jauá</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Camaçari">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Camaçari</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Camaçari</h4><p>Carro novo no Alphaville? Planeje com a Liberty Revisional.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Camaçari e quero simular um carro." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Camaçari</h4><p>Invista em Vila de Abrantes ou na Orla com segurança.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Camaçari e quero simular um imóvel." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Camaçari</h4><p>Agilidade para a Via Parafuso sem pagar juros abusivos.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Camaçari e quero simular uma moto." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Camaçari</h4><p>Frotas para o Polo Industrial com planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Camaçari e quero simular pesados." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Camaçari</h4><p>Reformas na Orla de Camaçari com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Camaçari e quero simular serviços." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Camaçari</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na força industrial da Bahia.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Camaçari e quero falar com um consultor especialista agora." class="btn-white">Falar com Consultor SSA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CAMAÇARI</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Somos referência absoluta em <strong>Consórcio de carros</strong> em Camaçari, sendo a escolha estratégica para trabalhadores do Polo e moradores da Orla. Se você busca o melhor <strong>Consórcio de carros</strong> próximo ao Boulevard Shopping ou região de Vila de Abrantes, a Liberty Revisional é sua parceira de autoridade.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Camaçari</h3>
+                    <p>Ter sua <strong>Carta de Crédito</strong> em Camaçari é o diferencial para quem entende de ROI e economia real. Seja para rodar pela Estrada do Coco ou acessar o Polo Petroquímico, o <strong>Consórcio de carros</strong> da Liberty Revisional entrega o poder de compra à vista, eliminando os juros bancários das instituições da região central.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na Via Parafuso</h3>
+                    <p>No fluxo constante da Via Parafuso, o <strong>Consórcio de carros</strong> oferece a segurança necessária para quem trabalha no Polo, enquanto o <strong>Consórcio de motos</strong> é a escolha para agilidade no centro de Camaçari. A Liberty Revisional personaliza o <strong>Consórcio</strong> ideal para o seu deslocamento diário na Bahia.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento em Alphaville Camaçari</h3>
+                    <p>Investidores de Camaçari utilizam o <strong>Consórcio de carros</strong> em conjunto com o <strong>Consórcio Imobiliário</strong>. Enquanto garante o SUV novo, você pode planejar a casa própria no Alphaville Camaçari ou Terras Alphaville, utilizando o <strong>Consórcio imóvel</strong> como ferramenta de alavancagem patrimonial.</p>
+
+                    <h3>Consórcio de carros: Por que a Liberty Revisional é um dos Melhores consórcios de Camaçari</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é pautada na transparência com o trabalhador baiano. Considerada um dos <strong>Melhores consórcios</strong> da RMS, tratamos seu <strong>Consórcio de dinheiro</strong> com seriedade técnica, focando em grupos que agilizam a entrega do bem por meio de lances estratégicos.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Valorizando imóveis em Arembepe e Jauá</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é muito procurado na Orla de Camaçari. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você reforma sua casa de praia em Arembepe ou constrói em Jauá sem se descapitalizar com os juros dos grandes bancos.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários no Polo Industrial</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Camaçari vence o financiamento na ponta do lápis. Enquanto instituições tradicionais cobram taxas abusivas na região, o <strong>Consórcio de veículos</strong> da Liberty Revisional opera com taxas fixas e justas. Oferecemos os <strong>Melhores consórcios</strong> para o público industrial.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na RMS Baiana</h3>
+                    <p>Para concluir, o <strong>Consórcio de carros</strong> é o motor da sua independência financeira em Camaçari. Do lazer nas praias de Guarajuba ao trabalho diário no Polo, o <strong>Consórcio</strong> viabiliza suas conquistas. Conte com a Liberty Revisional para sua próxima <strong>Carta de Crédito</strong> em Camaçari.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> no Polo Industrial, Vila de Abrantes, Alphaville e Orla de Camaçari.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty Revisional em Camaçari</h3>
+                    <p>Líder em consórcios no Polo Industrial baiano. Ajudamos moradores de Camaçari, Dias d'Ávila e Simões Filho a construir patrimônio real com estratégia e sem juros.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Camaçari</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Polo Industrial</li>
+                        <li>Consórcio no Alphaville</li>
+                        <li>Consórcio em Vila de Abrantes</li>
+                        <li>Consórcio em Arembepe</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos RMS</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Camaçari e Região Metropolitana | Sede Administrativa: Mogi das Cruzes/SP
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

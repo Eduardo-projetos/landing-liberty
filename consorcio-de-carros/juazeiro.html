@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Juazeiro | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Juazeiro",
+      "description": "Líder em consórcio de carros, motocicletas e utilitários no Vale do São Francisco. Planejamento estratégico em Juazeiro sem juros abusivos.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/juazeiro",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Juazeiro",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Juazeiro",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá, gostaria de saber mais sobre o consórcio de carros em Juazeiro. Vi a página oficial." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Juazeiro e quero simular um consórcio agora." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio em Juazeiro</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Juazeiro</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Planejamento estratégico no coração do Vale do São Francisco. Garanta sua carta de crédito da Adolfo Viana ao Jardim Primavera com total autoridade financeira.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Juazeiro e quero simular meu consórcio de carros agora." class="btn-primary">Simular Consórcio em Juazeiro</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Juazeiro">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Avenida Adolfo Viana">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Juá Garden Shopping">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Juazeiro">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM JUAZEIRO</h3>
+                    <p>Juazeiro é o maior polo de fruticultura irrigada do Norte Baiano e um centro comercial pulsante no Vale do São Francisco. Seja para quem transita pela <strong>Ponte Presidente Dutra</strong> ou circula pela <strong>Avenida Adolfo Viana</strong>, o <strong>Consórcio de Carros</strong> da Liberty Revisional é a ferramenta de planejamento ideal. Fuja do Custo Efetivo Total (CET) dos bancos e adquira seu veículo novo ou sua caminhonete com o poder de compra à vista que o mercado do agronegócio regional exige.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Juazeiro">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO JUÁ GARDEN SHOPPING</h3>
+                    <p>Para o morador de Juazeiro que valoriza inteligência financeira e solidez no interior da Bahia, a Liberty Revisional entrega o planejamento ideal:</p>
+                    <ul class="check-list">
+                        <li>Atendimento focado em quem frequenta o <strong>Juá Garden Shopping</strong> ou o <strong>Mercado do Produtor</strong>.</li>
+                        <li>Taxa de administração competitiva para profissionais do <strong>Bairro Santo Antônio</strong>, <strong>Country Club</strong> e <strong>Jardim Primavera</strong>.</li>
+                        <li>Estratégias de lances para agilizar a entrega do bem em toda a região da <strong>Orla de Juazeiro</strong> e <strong>Piranga</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Juazeiro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Juazeiro</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Juazeiro</h4><p>Carro novo no Country Club? Planeje com a Liberty Revisional.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Juazeiro e quero simular um carro." class="btn-card">Simular em JUA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Juazeiro</h4><p>Invista no Jardim Primavera ou Santo Antônio com segurança.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Juazeiro e quero simular um imóvel." class="btn-card">Simular em JUA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Juazeiro</h4><p>Agilidade para o centro de Juazeiro sem pagar juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Juazeiro e quero simular uma moto." class="btn-card">Simular em JUA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Juazeiro</h4><p>Logística do Agro no Vale com planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Juazeiro e quero simular pesados." class="btn-card">Simular em JUA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Juazeiro</h4><p>Reformas e festas em Juazeiro com parcelas que cabem no caixa.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá, vim pelo site de Juazeiro e quero simular serviços." class="btn-card">Simular em JUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Juazeiro</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade no Vale do São Francisco.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá, vim pela página de Juazeiro e quero falar com um consultor especialista agora." class="btn-white">Falar com Consultor JUA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: JUAZEIRO</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Somos referência absoluta em <strong>Consórcio de carros</strong> em Juazeiro, sendo a principal escolha para investidores do Vale do São Francisco. Se você busca o melhor <strong>Consórcio de carros</strong> próximo à Ponte Presidente Dutra ou região do Santo Antônio, a Liberty Revisional é sua parceira estratégica.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Juazeiro</h3>
+                    <p>Ter sua <strong>Carta de Crédito</strong> em Juazeiro é o diferencial para quem entende de planejamento no Sertão Baiano. Seja para rodar pela Adolfo Viana ou acessar as zonas irrigadas, o <strong>Consórcio de carros</strong> da Liberty Revisional entrega o poder de compra à vista, garantindo as melhores negociações nas concessionárias da região.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na Adolfo Viana</h3>
+                    <p>No fluxo constante do centro de Juazeiro, o <strong>Consórcio de carros</strong> oferece o conforto necessário para sua família sob o sol do Vale, enquanto o <strong>Consórcio de motos</strong> é a escolha para agilidade urbana. A Liberty Revisional personaliza o <strong>Consórcio</strong> ideal para o seu perfil de uso em toda a região de Juazeiro.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento no Country Club</h3>
+                    <p>Investidores de Juazeiro utilizam o <strong>Consórcio de carros</strong> em conjunto com o <strong>Consórcio Imobiliário</strong>. Enquanto garante o veículo novo, você pode planejar a casa própria em condomínios no Country Club ou Jardim Primavera, utilizando o <strong>Consórcio imóvel</strong> como alavanca patrimonial sólida.</p>
+
+                    <h3>Consórcio de carros: Por que a Liberty Revisional é um dos Melhores consórcios de Juazeiro</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é pautada na transparência com o cliente do Vale. Considerada um dos <strong>Melhores consórcios</strong> da região norte, tratamos seu <strong>Consórcio de dinheiro</strong> com rigor técnico, focando em grupos com alta taxa de contemplação e lances competitivos.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Valorizando imóveis no Santo Antônio</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é muito procurado por quem possui lotes em áreas valorizadas de Juazeiro. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você constrói sem se descapitalizar com os juros bancários das instituições tradicionais.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários no Vale do São Francisco</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Juazeiro vence o financiamento na ponta do lápis. Enquanto bancos lucram alto na região, o <strong>Consórcio de veículos</strong> da Liberty Revisional opera com taxas de administração fixas e justas. Oferecemos os <strong>Melhores consórcios</strong> para quem entende de investimento real.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na Terra das Carrancas</h3>
+                    <p>Para concluir, o <strong>Consórcio de carros</strong> é o veículo para sua independência financeira em Juazeiro. Do lazer na Orla ao trabalho diário no Mercado do Produtor, o <strong>Consórcio</strong> viabiliza suas conquistas. Conte com a Liberty Revisional para sua próxima <strong>Carta de Crédito</strong> em Juazeiro.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> no Santo Antônio, Country Club, Piranga e Orla de Juazeiro.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty Revisional em JUA</h3>
+                    <p>Líder em consórcios no Norte Baiano. Ajudamos moradores de Juazeiro, Senhor do Bonfim e Casa Nova a construir patrimônio real com estratégia e sem juros bancários.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento JUA</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Country Club</li>
+                        <li>Consórcio no Santo Antônio</li>
+                        <li>Consórcio no Jardim Primavera</li>
+                        <li>Consórcio na Orla de Juazeiro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Vale</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Juazeiro e Vale do São Francisco | Sede Administrativa: Mogi das Cruzes/SP
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
