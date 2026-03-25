@@ -20,6 +20,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* ESTILIZAÇÃO DO CARD TESE DE AUTORIDADE - RESPONSIVO */
+        .seo-authority-section { padding: 40px 20px; background-color: #fff; }
+        .accordion-container { max-width: 1100px; margin: 0 auto; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .accordion-header { padding: 25px 30px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: #fff; transition: 0.3s; }
+        .accordion-header h2 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 15px; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+        .accordion-icon { font-size: 1.2rem; transition: 0.4s; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; background: #fff; padding: 0 30px; color: #333; }
+        .accordion-content.open { max-height: 8000px; padding: 40px 30px; }
+        .accordion-content h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 700; color: #000; margin-top: 30px; border-left: 4px solid #000; padding-left: 15px; }
+        .accordion-content p { font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.7; color: #555; margin-bottom: 20px; }
+        .accordion-icon.rotate { transform: rotate(180deg); }
+        .resumo-tecnico-home { background: #f0f0f0; padding: 20px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; margin-top: 40px; border: 1px dashed #ccc; color: #333; }
+
+        @media (max-width: 768px) {
+            .accordion-header { padding: 20px; }
+            .accordion-header h2 { font-size: 0.9rem; }
+            .accordion-content { padding: 0 20px; }
+            .accordion-content.open { padding: 30px 20px; }
+            .accordion-content h3 { font-size: 1rem; }
+            .accordion-content p { font-size: 0.95rem; }
+        }
+    </style>
 </head>
 <body>
 
@@ -278,6 +302,88 @@
         </div>
     </section>
 
+    <!-- TESE DE AUTORIDADE: HOME HUB (PILAR DE SEO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: LIBERTY REVISIONAL - ESPECIALISTA EM CONSÓRCIOS</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>A <strong>Liberty Revisional</strong> consolida-se como a autoridade máxima em planejamento financeiro e <strong>Consórcio</strong> no Brasil. Nossa metodologia foca na eliminação de juros bancários e na construção de patrimônio sólido através de grupos estratégicos de <strong>Carta de Crédito</strong>.</p>
+                    
+                    <!-- BLOCO 1: CARROS -->
+                    <h3>Consórcio de carros: A estratégia para fugir dos juros bancários</h3>
+                    <p>O <strong>Consórcio de carros</strong> é a ferramenta mais inteligente para quem busca trocar de veículo ou adquirir o primeiro bem sem pagar o dobro em financiamentos. Com a Liberty Revisional, você utiliza o poder do <strong>Consórcio</strong> para planejar sua compra com parcelas que cabem no seu orçamento.</p>
+
+                    <h3>Consórcio de carros: Como funciona o lance para contemplação rápida</h3>
+                    <p>Dentro do <strong>Consórcio de carros</strong>, o lance é a aceleração do seu sonho. Analisamos o comportamento de cada grupo para sugerir o momento ideal de ofertar seu lance, garantindo que sua <strong>Carta de Crédito</strong> seja liberada com agilidade e segurança.</p>
+
+                    <h3>Consórcio de carros: Vantagens da Liberty Revisional no mercado nacional</h3>
+                    <p>Atuamos como um dos <strong>Melhores consórcios</strong> do país, oferecendo suporte técnico para que seu <strong>Consórcio de carros</strong> seja um investimento e não uma dívida. Nossa consultoria garante transparência total desde a adesão até a entrega das chaves.</p>
+
+                    <h3>Consórcio de carros: Flexibilidade para modelos novos e seminovos</h3>
+                    <p>O <strong>Consórcio de carros</strong> não te limita. Com a carta em mãos, você tem poder de negociação à vista para escolher o veículo de sua preferência, aproveitando descontos que só quem possui o <strong>Consórcio de dinheiro</strong> consegue obter.</p>
+
+                    <!-- BLOCO 2: IMÓVEIS -->
+                    <h3>Consórcio Imobiliário: O guia para sair do aluguel com inteligência</h3>
+                    <p>O <strong>Consórcio Imobiliário</strong> é a base para quem deseja adquirir a casa própria ou investir em terrenos. Ao contrário do financiamento habitacional, o <strong>Consórcio imóvel</strong> não possui juros, apenas uma taxa de administração reduzida e diluída no prazo.</p>
+
+                    <h3>Consórcio Imobiliário: Uso do FGTS para lances e quitação</h3>
+                    <p>No <strong>Consórcio Imobiliário</strong>, você pode utilizar seu FGTS como lance ou para abater parcelas. Essa flexibilidade torna o <strong>Consórcio casa</strong> a opção favorita de investidores que buscam maximizar a rentabilidade do seu capital parado.</p>
+
+                    <h3>Consórcio Imobiliário: Construção e Reforma sem dívidas</h3>
+                    <p>Além da compra, o <strong>Consórcio Imobiliário</strong> abrange o <strong>Consórcio para construção</strong>. Com a <strong>Carta de crédito imobiliário</strong>, você gerencia sua obra com cronograma financeiro organizado, valorizando seu patrimônio de forma progressiva.</p>
+
+                    <h3>Consórcio Imobiliário: Alavancagem patrimonial para investidores</h3>
+                    <p>Muitos clientes utilizam o <strong>Consórcio Imobiliário</strong> para criar renda passiva. Através de grupos selecionados, é possível adquirir imóveis para locação, onde o próprio aluguel auxilia no pagamento das parcelas do <strong>Consórcio</strong>.</p>
+
+                    <!-- BLOCO 3: MOTOS -->
+                    <h3>Consórcio de motos: Agilidade urbana e economia real</h3>
+                    <p>O <strong>Consórcio de motos</strong> é ideal para quem busca mobilidade e baixo custo de manutenção. Sem os juros altos do crédito direto ao consumidor, o <strong>Consórcio</strong> viabiliza sua moto nova com taxas de administração atrativas.</p>
+
+                    <h3>Consórcio de motos: Do lazer ao trabalho com planejamento</h3>
+                    <p>Seja para uso recreativo ou para atuar no mercado de entregas, o <strong>Consórcio de motos</strong> da Liberty Revisional oferece o plano certo para cada perfil de motociclista.</p>
+
+                    <h3>Consórcio de motos: Como garantir sua moto de alta cilindrada</h3>
+                    <p>O <strong>Consórcio de motos</strong> também é excelente para quem sonha com modelos premium de alta cilindrada, permitindo uma economia de milhares de reais em comparação ao financiamento tradicional.</p>
+
+                    <h3>Consórcio de motos: Melhores taxas e grupos saudáveis</h3>
+                    <p>Para o <strong>Consórcio de motos</strong>, selecionamos administradoras sólidas com grupos de alta rotatividade de contemplações para que você receba sua <strong>Carta de Crédito</strong> no menor tempo possível.</p>
+
+                    <!-- BLOCO 4: PESADOS -->
+                    <h3>Consórcio de Pesados: Renovação de frota e expansão logística</h3>
+                    <p>O <strong>Consórcio de Pesados</strong> é a solução de crédito ideal para transportadoras e autônomos. Através do <strong>Consórcio de caminhões</strong>, sua empresa mantém a liquidez sem comprometer o fluxo de caixa com juros abusivos.</p>
+
+                    <h3>Consórcio de Pesados: Implementos agrícolas e máquinas industriais</h3>
+                    <p>Além de caminhões, o <strong>Consórcio de Pesados</strong> abrange máquinas pesadas para o agronegócio e indústria, fortalecendo sua infraestrutura operacional com planejamento de longo prazo.</p>
+
+                    <h3>Consórcio de Pesados: Alavancagem operacional no setor de fretes</h3>
+                    <p>Ao investir no <strong>Consórcio de Pesados</strong>, você aumenta seu poder de frete e sua competitividade logística, pagando parcelas fixas que não sofrem as variações do mercado financeiro.</p>
+
+                    <h3>Consórcio de Pesados: A segurança da Liberty Revisional</h3>
+                    <p>Nossa consultoria em <strong>Consórcio de Pesados</strong> foca na entrega real de valor, analisando a melhor estratégia de lance fixo ou livre para que sua máquina comece a trabalhar o quanto antes.</p>
+
+                    <!-- BLOCO 5: SERVIÇOS -->
+                    <h3>Consórcio de Serviços: Planejando eventos e festas de luxo</h3>
+                    <p>O <strong>Consórcio de Serviços</strong> é uma inovação que permite realizar festas de casamento, formaturas e eventos corporativos com total planejamento, eliminando o estresse financeiro pós-evento.</p>
+
+                    <h3>Consórcio de Serviços: Procedimentos estéticos e saúde</h3>
+                    <p>Através do <strong>Consórcio de Serviços</strong>, cirurgias plásticas e tratamentos estéticos complexos tornam-se acessíveis. Planeje seu bem-estar com o <strong>Consórcio</strong> e pague sem juros.</p>
+
+                    <h3>Consórcio de Serviços: Reformas residenciais e arquitetura</h3>
+                    <p>Para quem já possui o imóvel, o <strong>Consórcio de Serviços</strong> é perfeito para contratar arquitetos e empresas de reforma, garantindo o acabamento dos sonhos com total controle de custos.</p>
+
+                    <h3>Consórcio de Serviços: Por que este é um dos Melhores consórcios atuais</h3>
+                    <p>A versatilidade do <strong>Consórcio de Serviços</strong> faz dele um dos <strong>Melhores consórcios</strong> para quem prioriza a qualidade de vida. Na Liberty Revisional, cuidamos de cada detalhe para sua aprovação.</p>
+
+                    <div class="resumo-tecnico-home">Resumo Estratégico Liberty Revisional: Especialistas em <strong>Consórcio de carros</strong>, <strong>Consórcio Imobiliário</strong>, <strong>Consórcio de motos</strong>, <strong>Consórcio de Pesados</strong> e <strong>Consórcio de Serviços</strong>. Atendimento Nacional com foco em planejamento inteligente e zero juros.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="spacer-footer"></div>
 
     <!-- RODAPÉ -->
@@ -322,7 +428,7 @@
             </div>
             
             <div class="developer">
-                <p>Website desenvolvido por: <strong>EG Empório Digital</strong></p>
+                <p>Website desenvolvido por: <strong><a href="https://egemporiodigital.com.br" target="_blank" style="color: inherit; text-decoration: none;">EG Empório Digital</a></strong></p>
             </div>
         </div>
     </footer>
@@ -367,6 +473,19 @@
             slides[currentSlide].classList.add('active');
         }
         setInterval(nextSlide, 4000);
+
+        /* FUNÇÃO PARA O ACORDEON DE SEO */
+        function toggleSEO() {
+            const content = document.getElementById('contentSEO');
+            const icon = document.getElementById('setaSEO');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.classList.remove('rotate');
+            } else {
+                content.classList.add('open');
+                icon.classList.add('rotate');
+            }
+        }
     </script>
 </body>
 </html>
