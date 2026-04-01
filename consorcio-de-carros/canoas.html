@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Canoas | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Conquiste Canoas acelerando.</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Canoas</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade em cartas de crédito da região metropolitana. Simule agora e fuja das taxas bancárias na cidade do avião.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+gostaria+de+fazer+uma+simulação+de+consórcio+personalizada." class="btn-primary">Simular Consórcio Canoas</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Canoas">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros em Canoas">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Canoas">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Canoas">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM CANOAS</h3>
+                    <p>Canoas é um dos maiores polos logísticos e residenciais do Rio Grande do Sul. Seja para quem transita diariamente pela <strong>BR-116</strong> ou precisa de agilidade para acessar a capital, o <strong>Consórcio de Carros</strong> é a solução mais inteligente para renovar sua frota pessoal. Planeje com a Liberty Revisional e conquiste seu veículo sem pagar os juros abusivos dos financiamentos tradicionais, garantindo economia real para sua família.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Canoas">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É O MELHOR NEGÓCIO NA REGIÃO METROPOLITANA</h3>
+                    <p>Para o morador de Canoas que busca valorização patrimonial e segurança, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem vive próximo ao <strong>ParkShopping Canoas</strong> ou frequenta o bairro <strong>Marechal Rondon</strong>.</li>
+                        <li>Taxa de administração fixa, garantindo que seu investimento no <strong>Niterói</strong> ou <strong>Nossa Senhora das Graças</strong> seja sólido.</li>
+                        <li>Contemplação estratégica via lances, perfeita para quem deseja trocar de carro e circular com tranquilidade pelas Perimetrais.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Canoas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Canoas</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Canoas</h4><p>Carro novo para Canoas? Planeje sem juros abusivos com a Liberty.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Canoas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Canoas</h4><p>Sair do aluguel próximo ao ParkShopping ou bairro Igara.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Canoas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Canoas</h4><p>Agilidade para o trânsito da BR-116 sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Canoas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Canoas</h4><p>Caminhões para a logística de Canoas com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Canoas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Canoas</h4><p>Viagens e festas em Canoas com planejamento inteligente.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Canoas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Canoas</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na região metropolitana.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Canoas+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Canoas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CANOAS</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em Canoas, oferecendo estratégias para quem busca fugir dos juros. Se você quer o melhor <strong>Consórcio de carros</strong> na região da Base Aérea ou proximidades do Centro, a Liberty Revisional é sua parceira de confiança para viabilizar sua conquista patrimonial.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Canoas</h3>
+                    <p>Para conquistar sua <strong>Carta de Crédito</strong> em Canoas, o segredo é um planejamento sólido que respeite seu orçamento mensal. Seja para morar no bairro Guajuviras ou no Mathias Velho, o <strong>Consórcio de carros</strong> é o caminho mais inteligente para evitar o endividamento bancário. Através do <strong>Consórcio</strong>, você adquire o veículo desejado com poder de negociação à vista após a contemplação, economizando milhares de reais em taxas desnecessárias.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento em Canoas</h3>
+                    <p>A dinâmica de deslocamento pela BR-116 faz do <strong>Consórcio de carros</strong> uma escolha de segurança e conforto para as famílias canoenses. No entanto, para quem busca economia de tempo no trânsito pesado entre Canoas e Porto Alegre, o <strong>Consórcio de motos</strong> surge como uma alternativa ágil. Na Liberty Revisional, analisamos seu perfil detalhadamente para recomendar o <strong>Consórcio</strong> que melhor se adapta à sua necessidade de mobilidade urbana e capacidade de investimento.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento em Canoas</h3>
+                    <p>Integrar o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é a estratégia preferida de quem deseja construir patrimônio sólido na cidade. Enquanto você garante seu transporte, pode simultaneamente investir em um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> em áreas de alta valorização, como o bairro Igara. O <strong>Consórcio</strong> permite que você planeje o futuro da sua família sem comprometer sua renda com parcelas abusivas de juros compostos.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Canoas</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é sustentada por anos de experiência e centenas de clientes satisfeitos em toda a Região Metropolitana. Como um dos <strong>Melhores consórcios</strong> disponíveis para o público gaúcho, cuidamos do seu <strong>Consórcio de dinheiro</strong> com transparência e foco em resultados. Oferecemos as taxas de administração mais competitivas para quem reside em Canoas, garantindo que o seu investimento trabalhe exclusivamente a seu favor.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformando imóveis em Canoas</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta essencial para moradores que desejam valorizar suas propriedades em Canoas. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você tem os recursos necessários para construir ou reformar sua residência sem burocracia excessiva. É a forma mais barata de investir na sua infraestrutura doméstica ou comercial, utilizando o sistema de <strong>Consórcio</strong> como alavanca financeira.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários em Canoas</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Canoas oferece uma vantagem financeira incontestável quando comparado aos financiamentos oferecidos pelas concessionárias locais. Enquanto o banco cobra juros que podem dobrar o valor do bem, o <strong>Consórcio de veículos</strong> da Liberty foca na economia real e no planejamento de longo prazo. Trabalhamos para entregar os <strong>Melhores consórcios</strong> para o trabalhador canoense que busca eficiência e proteção do seu capital arduamente conquistado.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na BR-116</h3>
+                    <p>Para concluir, o <strong>Consórcio de carros</strong> representa a sua independência financeira e de locomoção em Canoas e arredores. Seja para o lazer com a família no ParkShopping ou para o trabalho diário, o <strong>Consórcio</strong> é o investimento seguro que cabe no seu bolso. Conte com a consultoria especializada da Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e dirija em direção aos seus sonhos com a segurança de um excelente negócio.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> na cidade de Canoas e Região Metropolitana.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Canoas</h3>
+                    <p>Especialistas em planejamento financeiro na Região Metropolitana. Auxiliamos o público de Canoas, Esteio e Sapucaia a conquistar patrimônio de forma sólida e sem abusos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Canoas</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Marechal Rondon</li>
+                        <li>Consórcio no Bairro Niterói</li>
+                        <li>Consórcio no Bairro Igara</li>
+                        <li>Consórcio no Mathias Velho</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Canoas</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                            <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Canoas e Região | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
