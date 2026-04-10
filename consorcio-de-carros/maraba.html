@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Marabá | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Marabá",
+      "description": "Líder em consórcio de carros e planejamento financeiro em Marabá. Cartas de crédito na Nova Marabá, Cidade Nova e São Félix.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/maraba",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marabá",
+        "addressRegion": "PA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Marabá",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Marabá</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Marabá</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade em planejamento financeiro do Sudeste Paraense. Simule agora sua carta de crédito na Capital do Minério e fuja das taxas bancárias abusivas.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Marabá</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Carros em Marabá">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Rodovia Transamazônica">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Sudeste do Pará">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Marabá">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM MARABÁ</h3>
+                    <p>Marabá é o centro nevrálgico do desenvolvimento no sudeste paraense, conectando o agronegócio à força da mineração de Carajás. Seja para quem transita pela histórica <strong>Rodovia Transamazônica (BR-230)</strong> ou utiliza a <strong>BR-155</strong> para escoamento e logística, o <strong>Consórcio de Carros</strong> é a ferramenta financeira essencial. Planeje com a Liberty Revisional e garanta seu veículo novo ou utilitário sem se submeter aos juros abusivos que o sistema bancário tradicional pratica no mercado de Marabá.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Marabá">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO SHOPPING PÁTIO MARABÁ</h3>
+                    <p>Para o morador de Marabá que busca crescimento patrimonial sólido e segurança no investimento, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem vive na <strong>Nova Marabá</strong> ou frequenta o <strong>Shopping Pátio Marabá</strong>.</li>
+                        <li>Taxa de administração fixa, garantindo que seu investimento na <strong>Cidade Nova</strong> ou na <strong>Velha Marabá</strong> seja protegido.</li>
+                        <li>Contemplação inteligente para profissionais da mineração e pecuária que circulam pela <strong>Ponte Mista</strong> e precisam de renovação de frota.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Marabá">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Marabá</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Marabá</h4><p>Carro novo na Nova Marabá? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Marabá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Marabá</h4><p>Sair do aluguel na Cidade Nova ou investir em Morada Nova.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Marabá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Marabá</h4><p>Agilidade para o trânsito da Transamazônica sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Marabá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Marabá</h4><p>Caminhões para logística e mineração com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Marabá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Marabá</h4><p>Viagens e reformas no sudeste do Pará com planejamento real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Marabá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Marabá</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na principal cidade do sudeste paraense.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Marabá+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Marabá</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: MARABÁ</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Lideramos o mercado de <strong>Consórcio de carros</strong> em Marabá, entregando soluções financeiras de alta performance para investidores que desejam blindar seu patrimônio contra os juros abusivos. Se você busca o melhor <strong>Consórcio de carros</strong> na região da Nova Marabá ou no polo comercial da Cidade Nova, a Liberty Revisional é o seu braço direito estratégico para viabilizar sua próxima conquista automobilística com economia real no sudeste do Pará.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Marabá</h3>
+                    <p>Conquistar sua <strong>Carta de Crédito</strong> em Marabá exige um planejamento que acompanhe o ritmo acelerado de crescimento da região de Carajás. Seja para residir na Morada Nova ou investir no São Félix, o <strong>Consórcio de carros</strong> surge como o método mais eficaz para adquirir seu veículo sem drenar sua liquidez com juros bancários. Por meio do <strong>Consórcio</strong>, você garante poder de compra à vista após a contemplação, permitindo negociações muito mais agressivas e vantajosas nas principais concessionárias da Transamazônica em Marabá.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na Capital do Minério</h3>
+                    <p>A mobilidade urbana em Marabá, marcada pelo fluxo entre as pontas dos rios Tocantins e Itacaiúnas, pede uma decisão baseada em custo-benefício entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong>. Enquanto o automóvel entrega o conforto térmico indispensável para o clima da região e segurança para viagens pela BR-155, a motocicleta oferece a agilidade necessária para o dia a dia entre a Velha Marabá e a Cidade Nova. Na Liberty Revisional, modelamos o <strong>Consórcio</strong> ideal para que sua mobilidade no Pará seja um ativo e não uma dívida eterna.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento na Nova Marabá</h3>
+                    <p>Alavancar o <strong>Consórcio de carros</strong> em conjunto com o <strong>Consórcio Imobiliário</strong> é a tese de investimento preferida dos grandes empreendedores de Marabá. Enquanto você assegura seu transporte para as frentes de trabalho e logística, pode simultaneamente construir sua residência ou ponto comercial em bairros de alta valorização como a Nova Marabá. O sistema de <strong>Consórcio</strong> permite essa expansão patrimonial sem as taxas proibitivas do financiamento imobiliário comum, mantendo seu capital investido naquilo que realmente traz retorno.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Marabá</h3>
+                    <p>Nossa dominância em <strong>Consórcio de carros</strong> é fruto da transparência absoluta com o cliente marabaense. Apontados como um dos <strong>Melhores consórcios</strong> para quem entende de matemática financeira, gerimos seu <strong>Consórcio de dinheiro</strong> com foco em resultados e contemplações reais. Praticamos taxas de administração extremamente competitivas para quem vive na cidade que move a economia do estado, garantindo que sua jornada rumo ao carro novo seja sustentável e livre de surpresas negativas típicas de balcões bancários.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Modernizando a Cidade Nova</h3>
+                    <p>Além do foco em <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> tem transformado a paisagem urbana da Cidade Nova e dos novos loteamentos de Marabá. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você acessa recursos para construir ou reformar seu patrimônio sem se tornar refém da burocracia bancária. É a estratégia definitiva para quem deseja valorizar seu terreno utilizando o <strong>Consórcio</strong> como uma alavanca de crédito barata, segura e planejada para o desenvolvimento no sudeste paraense.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários no Sudeste do Pará</h3>
+                    <p>A matemática do <strong>Consórcio de carros</strong> em Marabá é imbatível quando colocada lado a lado com os financiamentos de concessionárias locais. Enquanto o banco pode cobrar até duas vezes o valor do bem em juros, o <strong>Consórcio de veículos</strong> da Liberty trabalha com taxas fixas e planejamento de médio prazo. Estamos empenhados em oferecer os <strong>Melhores consórcios</strong> para o trabalhador e empresário de Marabá que não aceita ver seu capital sendo consumido por taxas de juros que não retornam em benefício próprio.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na força do agronegócio e mineração</h3>
+                    <p>Para finalizar, o <strong>Consórcio de carros</strong> é o passaporte para sua autonomia de locomoção e financeira em Marabá e em todo o cinturão produtivo do Pará. Seja para o lazer com a família na orla do Rio Tocantins ou para a lida diária nas frentes de expansão regional, o <strong>Consórcio</strong> é o investimento de baixo risco que respeita seu esforço. Conte com a Liberty Revisional para conquistar sua próxima <strong>Carta de Crédito</strong> e dirija pelas estradas de Marabá com a autoridade de quem sabe fazer negócios inteligentes.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> na cidade de Marabá e região do Sudeste Paraense.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Marabá</h3>
+                    <p>Referência em planejamento financeiro na Capital do Minério. Ajudamos moradores de Marabá, Parauapebas e Canaã dos Carajás a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Marabá</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Nova Marabá</li>
+                        <li>Consórcio na Cidade Nova</li>
+                        <li>Consórcio na Velha Marabá</li>
+                        <li>Consórcio em Morada Nova</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Marabá</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Marabá e Região Sudeste do Pará | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

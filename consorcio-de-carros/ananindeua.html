@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Ananindeua | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Ananindeua",
+      "description": "Líder em consórcio de carros e planejamento financeiro em Ananindeua. Cartas de crédito na Cidade Nova, Coqueiro e Guanabara.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/ananindeua",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ananindeua",
+        "addressRegion": "PA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Ananindeua",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Ananindeua</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Ananindeua</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade em planejamento financeiro do Pará. Simule agora sua carta de crédito e fuja das taxas abusivas dos bancos na Cidade Nova.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Ananindeua</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Carros em Ananindeua">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na BR-316 Ananindeua">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Ananindeua">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Ananindeua">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM ANANINDEUA</h3>
+                    <p>Ananindeua é o segundo maior município do Pará e o coração logístico da Região Metropolitana. Seja para quem transita diariamente pela estratégica <strong>Rodovia BR-316</strong> ou trabalha no pujante centro comercial da <strong>Cidade Nova</strong>, o <strong>Consórcio de Carros</strong> é a solução financeira inteligente para fugir dos juros abusivos. Planeje com a Liberty Revisional e conquiste sua liberdade de locomoção entre Ananindeua e Belém sem as taxas proibitivas que as concessionárias tradicionais impõem no mercado paraense.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Ananindeua">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO SHOPPING METRÓPOLE</h3>
+                    <p>Para o morador de Ananindeua que busca valorização patrimonial, segurança e economia real, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem vive no <strong>Coqueiro</strong> ou faz compras no <strong>Shopping Metrópole Ananindeua</strong>.</li>
+                        <li>Taxa de administração fixa, garantindo que seu investimento no <strong>Guanabara</strong> ou na <strong>Arterial 18</strong> seja sólido.</li>
+                        <li>Contemplação acelerada para profissionais da <strong>Zona Industrial</strong> que precisam de agilidade na aquisição de veículos leves ou pesados.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Ananindeua">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Ananindeua</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Ananindeua</h4><p>Carro novo na Cidade Nova? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Ananindeua</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Ananindeua</h4><p>Sair do aluguel no Coqueiro ou investir no Guanabara.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Ananindeua</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Ananindeua</h4><p>Agilidade para o trânsito da BR-316 sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Ananindeua</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Ananindeua</h4><p>Logística na BR-316 com parcelas fixas e planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Ananindeua</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Ananindeua</h4><p>Eventos e reformas no Pará com planejamento inteligente.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Ananindeua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Ananindeua</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na segunda maior cidade paraense.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ananindeua+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Ananindeua</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: ANANINDEUA</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em Ananindeua, oferecendo estratégias personalizadas para quem busca fugir dos juros abusivos na região metropolitana de Belém. Se você procura o melhor <strong>Consórcio de carros</strong> na região da Cidade Nova ou próximo à BR-316, a Liberty Revisional é sua parceira estratégica para viabilizar sua próxima conquista patrimonial com seriedade, economia e transparência absoluta no Pará.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Ananindeua</h3>
+                    <p>Para conquistar sua <strong>Carta de Crédito</strong> em Ananindeua, o segredo é um planejamento financeiro que respeite a sua realidade mensal e seus objetivos de longo prazo na Cidade das Águas. Seja para morar no Icuí-Guajará ou investir no Curuçambá, o <strong>Consórcio de carros</strong> é o caminho mais inteligente para adquirir seu veículo sem comprometer sua renda com juros bancários exorbitantes. Através do <strong>Consórcio</strong>, você se torna dono do seu bem com poder de compra à vista após a contemplação, garantindo as melhores condições de negociação nas principais concessionárias localizadas ao longo da Rodovia BR-316 em Ananindeua.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento na BR-316</h3>
+                    <p>A dinâmica de deslocamento em Ananindeua exige uma escolha inteligente entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong>, dependendo da sua rotina de trabalho e necessidade de segurança no fluxo intenso da via expressa. Enquanto o carro oferece o conforto necessário para enfrentar as chuvas amazônicas e o trânsito da Arterial 18, a moto proporciona a agilidade essencial para os pequenos deslocamentos urbanos entre a Cidade Nova e o Coqueiro. Na Liberty Revisional, analisamos seu perfil detalhadamente para recomendar o <strong>Consórcio</strong> que melhor se adapta ao seu orçamento e aos seus objetivos de mobilidade urbana no Norte.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento na Cidade Nova</h3>
+                    <p>Integrar o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é uma estratégia de alto rendimento para quem deseja construir patrimônio sólido em Ananindeua. Enquanto você garante seu transporte pessoal, pode simultaneamente investir em um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> em bairros consolidados como a Cidade Nova V ou Cidade Nova VIII. O sistema de <strong>Consórcio</strong> viabiliza essa alavancagem financeira sem as taxas exorbitantes que os bancos costumam cobrar, protegendo seu capital de forma eficiente e segura na segunda maior cidade do estado.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Ananindeua</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é fundamentada na confiança de centenas de clientes em toda a Ananindeua e região metropolitana. Reconhecidos como um dos <strong>Melhores consórcios</strong> disponíveis para o público paraense, tratamos seu <strong>Consórcio de dinheiro</strong> com o máximo rigor técnico e compromisso com resultados reais. Oferecemos as taxas de administração mais competitivas para quem reside em bairros como Guanabara e Coqueiro, garantindo que cada centavo investido seja convertido em patrimônio real para sua família, longe das armadilhas dos financiamentos bancários convencionais.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformando imóveis no Coqueiro</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta vital para quem deseja valorizar propriedades nos bairros tradicionais como o Coqueiro ou Distrito Industrial. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você tem acesso aos recursos necessários para construir ou reformar sua residência sem a burocracia dos grandes bancos comerciais. É a solução perfeita para modernizar seu lar utilizando o <strong>Consórcio</strong> como uma alavanca financeira econômica, segura e extremamente bem planejada para o seu futuro em Ananindeua.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos bancários em Ananindeua</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Ananindeua apresenta uma vantagem matemática indiscutível quando comparado aos financiamentos oferecidos pelas instituições financeiras tradicionais do Pará. Enquanto o financiamento convencional pode chegar a triplicar o valor final do veículo devido aos juros compostos, o <strong>Consórcio de veículos</strong> da Liberty foca na taxa de administração justa e no planejamento de longo prazo. Trabalhamos incansavelmente para entregar os <strong>Melhores consórcios</strong> para o trabalhador de Ananindeua que valoriza a eficiência e a preservação do seu capital arduamente conquistado.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na segunda maior cidade do Pará</h3>
+                    <p>Para concluir, o <strong>Consórcio de carros</strong> representa a sua independência financeira e de locomoção em Ananindeua e em todo o entorno da metrópole. Seja para o lazer com a família ou para o uso profissional nas rotas logísticas da BR-316, o <strong>Consórcio</strong> é o investimento seguro que respeita o seu tempo e o seu esforço. Conte com a consultoria especializada da Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e dirija pelas ruas de Ananindeua com a tranquilidade de quem fez o melhor negócio de toda a região.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> na cidade de Ananindeua e região metropolitana de Belém.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Ananindeua</h3>
+                    <p>Referência em planejamento financeiro na segunda maior cidade do Pará. Ajudamos moradores de Ananindeua, Benevides e Santa Izabel a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Ananindeua</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Cidade Nova</li>
+                        <li>Consórcio no Coqueiro</li>
+                        <li>Consórcio no Guanabara</li>
+                        <li>Consórcio na Arterial 18</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Ananindeua</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Ananindeua e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
