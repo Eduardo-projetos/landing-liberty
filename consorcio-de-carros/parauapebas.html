@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Parauapebas | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Parauapebas",
+      "description": "Líder em consórcio de carros e planejamento financeiro na Capital do Minério. Cartas de crédito na Cidade Nova, Rio Verde e Beira Rio em Parauapebas.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/parauapebas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Parauapebas",
+        "addressRegion": "PA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Parauapebas",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Parauapebas</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Parauapebas</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade em planejamento financeiro da Capital do Minério. Simule agora sua carta de crédito e conquiste sua liberdade no sudeste do Pará.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Parauapebas</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Parauapebas">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Rodovia PA-275">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Parauapebas">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Parauapebas">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM PARAUAPEBAS</h3>
+                    <p>Parauapebas é o coração econômico do Pará e um dos maiores polos de mineração do mundo. Seja para quem transita pela movimentada <strong>Rodovia PA-275</strong> ou trabalha nos projetos da <strong>Vale em Carajás</strong>, o <strong>Consórcio de Carros</strong> é a ferramenta ideal para construir patrimônio sólido. Planeje com a Liberty Revisional e garanta seu veículo novo para circular entre a <strong>Cidade Nova</strong> e o <strong>Rio Verde</strong> sem se submeter às taxas de juros abusivas dos financiamentos bancários tradicionais.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Parauapebas">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO PARTAGE SHOPPING</h3>
+                    <p>Para o morador de Parauapebas que busca valorização do seu capital e segurança financeira, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem frequenta o <strong>Partage Shopping Parauapebas</strong> ou reside no <strong>Bairro Beira Rio</strong>.</li>
+                        <li>Taxa de administração fixa, garantindo que seu investimento no <strong>Minérios</strong> ou no <strong>Cidade Jardim</strong> seja lucrativo.</li>
+                        <li>Contemplação inteligente para quem utiliza a <strong>Estrada de Ferro Carajás</strong> e precisa de mobilidade ágil e econômica no dia a dia.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Parauapebas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Parauapebas</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Parauapebas</h4><p>Carro novo na Capital do Minério? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Pebas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Parauapebas</h4><p>Sair do aluguel na Cidade Nova ou investir no Bairro dos Minérios.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Pebas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Parauapebas</h4><p>Agilidade para o trânsito do Rio Verde sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Pebas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Parauapebas</h4><p>Logística para a mineração com as melhores parcelas do Pará.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Pebas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Parauapebas</h4><p>Eventos e reformas no sudeste paraense com planejamento real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Pebas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Parauapebas</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na Capital do Minério.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parauapebas+e+gostaria+de+falar+with+um+consultor." class="btn-white">Falar com Consultor Pebas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: PARAUAPEBAS</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em Parauapebas, oferecendo estratégias de alta performance para quem busca solidez financeira no sudeste paraense. Se você procura o melhor <strong>Consórcio de carros</strong> na região da Avenida Liberdade ou próximo ao Partage Shopping, a Liberty Revisional é sua parceira para viabilizar sua próxima conquista patrimonial com economia e transparência absoluta na Capital do Minério.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Parauapebas</h3>
+                    <p>Para conquistar sua <strong>Carta de Crédito</strong> em Parauapebas, o segredo é um planejamento que acompanhe o ritmo acelerado de crescimento da cidade. Seja para morar na Cidade Nova ou investir no Rio Verde, o <strong>Consórcio de carros</strong> é a alternativa inteligente para adquirir seu veículo sem comprometer sua renda com os juros altos dos bancos. Com o <strong>Consórcio</strong>, você adquire seu bem com poder de compra à vista logo após a contemplação, garantindo as melhores negociações nas concessionárias da Rodovia PA-275 em Parauapebas.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento no sudeste do Pará</h3>
+                    <p>A escolha entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong> em Parauapebas depende da sua necessidade de deslocamento entre os polos de trabalho e residência. Enquanto o carro oferece o conforto necessário para as longas distâncias entre os bairros e as áreas de mineração, a moto traz agilidade para o trânsito urbano intenso do Bairro Beira Rio. Na Liberty Revisional, ajudamos você a escolher o <strong>Consórcio</strong> que se encaixa no seu orçamento, protegendo seu patrimônio de forma estratégica.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento na Cidade Nova</h3>
+                    <p>Alinhar o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é a estratégia preferida dos investidores de Parauapebas. Enquanto você garante sua mobilidade, pode simultaneamente planejar a compra da sua casa própria ou terreno no <strong>Cidade Nova</strong> ou <strong>Cidade Jardim</strong>. O <strong>Consórcio imóvel</strong> e o <strong>Consórcio casa</strong> permitem essa construção de patrimônio sem as taxas abusivas do mercado financeiro tradicional, sendo uma alavanca poderosa para quem vive na região de Carajás.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Parauapebas</h3>
+                    <p>Nossa liderança em <strong>Consórcio de carros</strong> é reflexo da confiança da população de Parauapebas e cidades vizinhas como Canaã dos Carajás. Reconhecidos como um dos <strong>Melhores consórcios</strong> para o trabalhador paraense, tratamos seu <strong>Consórcio de dinheiro</strong> com seriedade e foco em resultados. Oferecemos taxas competitivas e grupos selecionados, garantindo que o seu investimento se transforme em bens reais para sua família, longe das armadilhas dos juros compostos dos financiamentos.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Valorizando sua residência no Minérios</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é essencial para quem deseja reformar ou construir nos bairros em expansão como o Bairro dos Minérios. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você acessa recursos para valorizar seu imóvel sem burocracia excessiva. É a solução ideal para transformar seu lar utilizando o <strong>Consórcio</strong> como uma ferramenta de economia e planejamento de longo prazo no interior do Pará.</p>
+
+                    <h3>Consórcio de carros: Vantagens reais sobre financiamentos em Parauapebas</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Parauapebas supera matematicamente qualquer financiamento bancário convencional disponível na região. Enquanto os bancos podem cobrar o dobro do valor do veículo em juros, o <strong>Consórcio de veículos</strong> da Liberty foca na taxa de administração diluída e justa. Trabalhamos para entregar os <strong>Melhores consórcios</strong> para o público de Parauapebas que valoriza o esforço do seu trabalho e busca eficiência na hora de investir seu capital.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na Capital do Minério</h3>
+                    <p>Em resumo, o <strong>Consórcio de carros</strong> é o seu passaporte para a independência financeira e de locomoção em Parauapebas e em todo o sudeste do Pará. Seja para o uso profissional nas mineradoras ou para o lazer com a família nos pontos turísticos da região, o <strong>Consórcio</strong> é o investimento mais seguro. Conte com a Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e conquiste as ruas de Parauapebas com a certeza de ter feito o melhor negócio possível.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> em Parauapebas e Região de Carajás.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Parauapebas</h3>
+                    <p>Referência em planejamento financeiro na Capital do Minério. Ajudamos moradores de Parauapebas, Canaã e Marabá a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Pebas</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Cidade Nova</li>
+                        <li>Consórcio no Rio Verde</li>
+                        <li>Consórcio no Beira Rio</li>
+                        <li>Consórcio no Cidade Jardim</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Pará</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Parauapebas e Sudeste Paraense | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

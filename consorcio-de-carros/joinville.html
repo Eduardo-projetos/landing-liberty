@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Joinville | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Joinville",
+      "description": "Líder em consórcio de carros e planejamento financeiro na Cidade das Flores. Cartas de crédito no Atiradores, Glória e Anita Garibaldi em Joinville.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/joinville",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Joinville",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Joinville",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Joinville</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Joinville</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">A maior autoridade em planejamento financeiro da Cidade das Flores. Simule agora sua carta de crédito e conquiste sua liberdade no Norte Catarinense.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Joinville</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Joinville">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Avenida Beira Rio">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Joinville Garten Shopping">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Joinville">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM JOINVILLE</h3>
+                    <p>Joinville é a maior economia de Santa Catarina e um polo industrial de relevância nacional. Seja para quem transita diariamente pela <strong>BR-101</strong> ou circula pela histórica <strong>Rua XV de Novembro</strong>, o <strong>Consórcio de Carros</strong> é a solução financeira definitiva. Planeje com a Liberty Revisional e conquiste sua liberdade de locomoção na Cidade dos Príncipes sem pagar os juros abusivos que as instituições bancárias tradicionais impõem no mercado joinvilense.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Joinville">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>O CONSÓRCIO DE CARROS É A MELHOR ESTRATÉGIA NO GARTEN SHOPPING</h3>
+                    <p>Para o morador de Joinville que busca segurança patrimonial e valorização real do dinheiro, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem frequenta o <strong>Joinville Garten Shopping</strong> ou reside no bairro <strong>Atiradores</strong>.</li>
+                        <li>Taxa de administração fixa, garantindo que seu investimento no <strong>Costa e Silva</strong> ou <strong>Anita Garibaldi</strong> seja sólido.</li>
+                        <li>Contemplação inteligente para quem utiliza a <strong>Avenida Santos Dumont</strong> e precisa de agilidade na aquisição do veículo.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Joinville">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Joinville</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Joinville</h4><p>Carro novo na Cidade das Flores? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Joinville</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Joinville</h4><p>Investir no bairro Atiradores ou Glória com planejamento sólido.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Joinville</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Joinville</h4><p>Agilidade para o trânsito da Beira Rio sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Joinville</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Joinville</h4><p>Logística para as indústrias do Norte com as melhores parcelas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Joinville</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Joinville</h4><p>Reformas e festas na maior cidade de SC com planejamento real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Joinville</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Joinville</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade na Cidade dos Príncipes.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Joinville+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Joinville</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: JOINVILLE</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Dominamos o setor de <strong>Consórcio de carros</strong> em Joinville, oferecendo estratégias de alta performance para quem busca solidez financeira no Norte Catarinense. Se você procura o melhor <strong>Consórcio de carros</strong> na região do Centreventos Cau Hansen ou próximo à Univille, a Liberty Revisional é sua parceira para viabilizar sua próxima conquista patrimonial com economia e transparência absoluta na Cidade das Flores.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Joinville</h3>
+                    <p>Para conquistar sua <strong>Carta de Crédito</strong> em Joinville, o segredo é um planejamento financeiro que acompanhe a força econômica da região. Seja para morar no Centro ou investir no bairro Glória, o <strong>Consórcio de carros</strong> é o caminho mais inteligente para adquirir seu veículo sem comprometer seu fluxo de caixa com os juros altos dos bancos. Com o <strong>Consórcio</strong>, você se torna dono do seu bem com poder de compra à vista após a contemplação, garantindo as melhores condições nas concessionárias da Avenida Beira Rio em Joinville.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Saiba qual o melhor investimento no Norte Catarinense</h3>
+                    <p>A escolha entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong> em Joinville deve considerar sua rotina de deslocamento industrial e urbano. Enquanto o carro oferece o conforto necessário para as variações climáticas da Cidade das Flores, a moto traz a agilidade necessária para o trânsito entre o Distrito Industrial e o Anita Garibaldi. Na Liberty Revisional, analisamos seu perfil para recomendar o <strong>Consórcio</strong> que melhor protege seu capital e atende suas metas de mobilidade em Santa Catarina.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O guia do planejamento no Bairro Atiradores</h3>
+                    <p>Integrar o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é uma estratégia de sucesso para famílias e investidores de Joinville. Enquanto você garante seu transporte pessoal, pode planejar simultaneamente seu <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> em áreas nobres como o Atiradores ou o Saguaçu. O sistema de <strong>Consórcio</strong> permite essa alavancagem patrimonial sem as taxas exorbitantes do financiamento imobiliário tradicional, protegendo seu investimento na maior cidade do estado.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Joinville</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é fundamentada na confiança de centenas de clientes em toda a Joinville e região de Araquari e Jaraguá do Sul. Reconhecidos como um dos <strong>Melhores consórcios</strong> disponíveis para o público catarinense, tratamos seu <strong>Consórcio de dinheiro</strong> com rigor técnico e foco em contemplações estratégicas. Oferecemos as taxas mais competitivas para quem busca sair da armadilha dos juros bancários e construir um futuro sólido na Cidade dos Príncipes.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Valorizando imóveis no Costa e Silva</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta vital para quem deseja valorizar residências em bairros tradicionais como o Costa e Silva ou Pirabeiraba. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você tem os recursos necessários para construir ou reformar seu lar sem as dívidas intermináveis dos bancos. É a solução ideal para modernizar sua propriedade utilizando o <strong>Consórcio</strong> como uma alavanca econômica segura e muito bem planejada.</p>
+
+                    <h3>Consórcio de carros: Vantagens sobre financiamentos na Cidade das Bicicletas</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Joinville oferece uma economia matemática superior a qualquer financiamento oferecido pelos bancos convencionais. Enquanto os juros bancários podem dobrar o preço final do automóvel, o <strong>Consórcio de veículos</strong> da Liberty trabalha com taxas de administração fixas e justas. Nosso compromisso é entregar os <strong>Melhores consórcios</strong> para o trabalhador joinvilense que valoriza cada centavo do seu esforço e busca eficiência máxima na aquisição de bens.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na maior cidade de Santa Catarina</h3>
+                    <p>Concluindo, o <strong>Consórcio de carros</strong> representa sua independência financeira e de locomoção em Joinville e em toda a região norte do estado. Seja para o uso profissional nas gigantes indústrias da região ou para o lazer com a família, o <strong>Consórcio</strong> é o investimento que respeita seu tempo e seu patrimônio. Conte com a Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e dirija pelas ruas de Joinville com a tranquilidade de quem fez o melhor negócio de Santa Catarina.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> em Joinville e Região Norte Catarinense.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Joinville</h3>
+                    <p>Referência em planejamento financeiro na maior cidade de SC. Ajudamos moradores de Joinville, Araquari e Jaraguá do Sul a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Joinville</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Atiradores</li>
+                        <li>Consórcio no Glória</li>
+                        <li>Consórcio no Anita Garibaldi</li>
+                        <li>Consórcio no Costa e Silva</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos SC</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Joinville e Norte Catarinense | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

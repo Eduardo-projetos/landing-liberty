@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Aparecida de Goiânia | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Aparecida de Goiânia",
+      "description": "Líder em consórcio de carros e planejamento financeiro no polo industrial de Goiás. Cartas de crédito no Garavelo, Mansões Paraíso e Centro de Aparecida.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/aparecida-de-goiania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aparecida de Goiânia",
+        "addressRegion": "GO",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Aparecida de Goiânia",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Aparecida de Goiânia</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Aparecida</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Planejamento financeiro no maior polo industrial e logístico de Goiás. Conquiste sua carta de crédito e fuja das taxas abusivas com quem domina o mercado aparecidense.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Aparecida</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Aparecida">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na BR-153 Aparecida">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Aparecida Shopping">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Aparecida de Goiânia">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM APARECIDA</h3>
+                    <p>Aparecida de Goiânia é o coração produtivo do estado, um hub que conecta o Brasil através da <strong>BR-153</strong>. Seja para quem transita diariamente pela <strong>Avenida Independência</strong> ou atua no <strong>Polo Empresarial</strong>, o <strong>Consórcio de Carros</strong> é a solução definitiva para construir patrimônio. Planeje com a Liberty Revisional e conquiste sua liberdade de locomoção entre o <strong>Garavelo</strong> e o <strong>Mansões Paraíso</strong> sem pagar os juros abusivos impostos pelas instituições bancárias tradicionais.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Aparecida de Goiânia">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA FINANCEIRA NO APARECIDA SHOPPING E BURITI SHOPPING</h3>
+                    <p>Para o morador de Aparecida que busca inteligência, solidez e economia real, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem frequenta o <strong>Aparecida Shopping</strong> ou o <strong>Buriti Shopping</strong>.</li>
+                        <li>Taxa de administração fixa para investimentos seguros na região do <strong>Cidade Livre</strong>, <strong>Papillon Park</strong> e <strong>Veiga Jardim</strong>.</li>
+                        <li>Contemplação acelerada para profissionais que precisam de agilidade na aquisição do veículo para o trabalho diário no <strong>Distrito Agroindustrial (DAIA)</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Aparecida">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Aparecida</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Aparecida</h4><p>Carro novo no polo industrial? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Aparecida</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Aparecida</h4><p>Investir no Garavelo ou Mansões Paraíso com segurança e solidez.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Aparecida</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Aparecida</h4><p>Agilidade para o trânsito da Av. Rio Verde sem taxas bancárias.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Aparecida</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Aparecida</h4><p>Logística na BR-153 com as melhores parcelas do mercado.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Aparecida</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Aparecida</h4><p>Reformas e eventos em Goiás com planejamento financeiro real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Aparecida</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Aparecida</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade no polo industrial de Goiás.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Aparecida+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Aparecida</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO INDUSTRIAL) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: APARECIDA DE GOIÂNIA</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência consolidada em <strong>Consórcio de carros</strong> em Aparecida de Goiânia, a Liberty Revisional atua como o motor de crescimento patrimonial para o público aparecidense. Se você busca o melhor <strong>Consórcio de carros</strong> próximo à Avenida Rio Verde ou no dinâmico setor Garavelo, entregamos uma consultoria estratégica que viabiliza sua próxima conquista com as menores taxas do mercado e segurança absoluta.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Aparecida de Goiânia</h3>
+                    <p>Obter sua <strong>Carta de Crédito</strong> em Aparecida de Goiânia é o diferencial para quem busca prosperar no hub logístico do estado. Seja para transitar pela Avenida Independência ou acessar as grandes indústrias do Polo Empresarial, o <strong>Consórcio de carros</strong> é a alternativa financeira que elimina o peso dos juros bancários. Com o <strong>Consórcio</strong>, seu capital é preservado e você garante poder de compra à vista nas principais concessionárias localizadas na BR-153 e no centro de Aparecida.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos: Qual o melhor para o Polo Empresarial</h3>
+                    <p>A escolha entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong> em Aparecida de Goiânia deve levar em conta sua rotina de deslocamento e necessidade de transporte de carga ou passageiros. Enquanto o carro oferece a segurança para as rodovias que cortam a cidade, a moto traz agilidade essencial para o trânsito entre o setor Colina Azul e o Cidade Livre. Na Liberty Revisional, analisamos seu perfil para recomendar o <strong>Consórcio</strong> que melhor se adapta à sua realidade profissional.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Planejamento estratégico no Garavelo</h3>
+                    <p>Integrar o <strong>Consórcio de carros</strong> com o <strong>Consórcio Imobiliário</strong> é a estratégia preferida dos empreendedores de Aparecida de Goiânia. Em bairros de alta densidade e valorização como o Garavelo ou Mansões Paraíso, ter um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> é a maneira mais econômica de construir patrimônio real. O sistema de <strong>Consórcio</strong> permite que você cresça patrimonialmente sem pagar o custo efetivo total abusivo das linhas de crédito imobiliário tradicionais.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Aparecida de Goiânia</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é pautada na confiança de centenas de clientes em toda a região metropolitana. Considerados um dos <strong>Melhores consórcios</strong> para o trabalhador aparecidense, tratamos seu <strong>Consórcio de dinheiro</strong> com máximo rigor técnico. Oferecemos taxas de administração competitivas para quem busca sair da armadilha dos juros e construir um futuro sólido com a inteligência de quem domina o mercado financeiro de Goiás.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Inovando no Parque Industrial</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta vital para valorizar propriedades no Parque Industrial e arredores. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você acessa recursos para construir ou reformar seu imóvel sem comprometer seu orçamento com dívidas intermináveis. É o planejamento inteligente utilizando o <strong>Consórcio</strong> como uma alavanca econômica potente e segura para o crescimento de sua empresa ou lar.</p>
+
+                    <h3>Consórcio de carros: Vantagens matemáticas sobre financiamentos na BR-153</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Aparecida de Goiânia apresenta uma economia superior a qualquer financiamento oferecido pelos bancos convencionais que atuam na BR-153. Enquanto o financiamento bancário pode triplicar o valor final do veículo, o <strong>Consórcio de veículos</strong> da Liberty trabalha com taxas fixas e justas. Nosso compromisso é entregar os <strong>Melhores consórcios</strong> para quem valoriza seu esforço e busca eficiência máxima na aquisição de bens duráveis na capital industrial de Goiás.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade na cidade que mais cresce em Goiás</h3>
+                    <p>Finalizando, o <strong>Consórcio de carros</strong> representa sua independência financeira e de locomoção em Aparecida de Goiânia e arredores. Seja para o lazer com a família no Serra Dourada ou para as demandas do dia a dia logístico, o <strong>Consórcio</strong> é o investimento seguro que respeita seu tempo e seu patrimônio. Conte com a Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e experimente a tranquilidade de quem faz o melhor negócio estratégico da região metropolitana.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> em Aparecida de Goiânia e Polo Industrial Goiano.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Aparecida</h3>
+                    <p>Referência em planejamento financeiro no polo industrial. Ajudamos moradores de Aparecida de Goiânia, Hidrolândia e Senador Canedo a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Aparecida</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Garavelo</li>
+                        <li>Consórcio no Mansões Paraíso</li>
+                        <li>Consórcio no Cidade Livre</li>
+                        <li>Consórcio no Polo Empresarial</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Goiás</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Aparecida de Goiânia e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

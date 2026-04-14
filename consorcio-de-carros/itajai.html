@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Itajaí | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Itajaí",
+      "description": "Líder em consórcio de carros e planejamento financeiro no polo portuário de Santa Catarina. Cartas de crédito na Praia Brava, Fazenda e Cordeiros em Itajaí.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/itajai",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Itajaí",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Itajaí",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Itajaí</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Seu carro novo em <span class="destaque">Itajaí</span>, sem juros, com a Liberty Revisional.</h2>
+                <p class="hero-description">Planejamento financeiro inteligente no maior polo náutico e portuário de Santa Catarina. Conquiste sua carta de crédito com quem domina a economia do litoral norte.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+fazer+uma+simulação+personalizada." class="btn-primary">Simular Consórcio Itajaí</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Itajaí">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Beira-Rio Itajaí">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Porto de Itajaí">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Itajaí">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM ITAJAÍ</h3>
+                    <p>Itajaí é um dos principais centros logísticos do Brasil, impulsionado pelo seu complexo portuário e pela crescente indústria náutica. Seja para quem transita pela <strong>BR-101</strong> ou circula pela badalada <strong>Beira-Rio</strong>, o <strong>Consórcio de Carros</strong> é a solução estratégica para a aquisição de bens. Planeje com a Liberty Revisional e garanta seu veículo novo na cidade que mais valoriza em Santa Catarina, sem pagar os juros abusivos que as instituições bancárias tradicionais impõem no mercado itajaiense.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Itajaí">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA FINANCEIRA NA PRAIA BRAVA E ITAJAÍ SHOPPING</h3>
+                    <p>Para o morador de Itajaí que busca prestígio, solidez e economia real, a Liberty oferece:</p>
+                    <ul class="check-list">
+                        <li>Planejamento ideal para quem frequenta o <strong>Itajaí Shopping</strong> ou reside na exclusiva <strong>Praia Brava</strong>.</li>
+                        <li>Taxa de administração fixa para investimentos seguros no bairro <strong>Fazenda</strong>, <strong>Ressacada</strong> ou <strong>Dom Bosco</strong>.</li>
+                        <li>Contemplação inteligente para quem atua no setor portuário e busca agilidade na troca do seu veículo novo ou usado.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Itajaí">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Itajaí</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Itajaí</h4><p>Carro novo no maior polo portuário? Planeje com a gente sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Itajaí</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Itajaí</h4><p>Investir na Praia Brava ou na Fazenda com segurança e solidez.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Itajaí</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Itajaí</h4><p>Agilidade para o trânsito de Cordeiros sem taxas abusivas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Itajaí</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Itajaí</h4><p>Logística para as transportadoras do Porto com as melhores parcelas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+consórcio+de+veículos+pesados." class="btn-card">Simular em Itajaí</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Itajaí</h4><p>Reformas e festas no litoral norte de SC com planejamento real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Itajaí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize seu sonho em Itajaí</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua liberdade no polo náutico.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itajaí+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor Itajaí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO PORTUÁRIO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: ITAJAÍ</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência consolidada em <strong>Consórcio de carros</strong> em Itajaí, a Liberty Revisional atua como parceira estratégica de quem busca alavancagem financeira no litoral norte de Santa Catarina. Se você procura o melhor <strong>Consórcio de carros</strong> próximo à Marina Itajaí ou na região da Praia Brava, entregamos uma consultoria técnica que viabiliza sua conquista patrimonial com as menores taxas do mercado, focada em eficiência logística e economia real.</p>
+                    
+                    <h3>Consórcio de carros: Como obter sua Carta de Crédito em Itajaí</h3>
+                    <p>Obter sua <strong>Carta de Crédito</strong> em Itajaí exige um planejamento que acompanhe o crescimento econômico vibrante do porto. Seja para morar no bairro Fazenda ou investir em Cordeiros, o <strong>Consórcio de carros</strong> é a rota mais inteligente para adquirir seu veículo sem comprometer seu capital de giro com juros bancários. Através do <strong>Consórcio</strong>, você detém o poder de compra à vista após a contemplação, garantindo as melhores negociações nas principais concessionárias localizadas na Contorno Sul e arredores de Itajaí.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos: Qual o melhor para o polo náutico</h3>
+                    <p>A escolha entre o <strong>Consórcio de carros</strong> e o <strong>Consórcio de motos</strong> em Itajaí deve considerar seu trajeto diário entre as áreas portuárias e residenciais. Enquanto o carro oferece o conforto e segurança para as rodovias como a BR-101, a moto proporciona a agilidade essencial para o fluxo urbano crescente entre o São Vicente e o Centro. Na Liberty Revisional, analisamos suas necessidades para recomendar o <strong>Consórcio</strong> que melhor protege seu investimento e garante sua mobilidade em Santa Catarina.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Estratégia na Praia Brava</h3>
+                    <p>Muitos investidores de Itajaí utilizam o <strong>Consórcio de carros</strong> como parte de um ecossistema de investimentos, integrando-o ao <strong>Consórcio Imobiliário</strong>. Em áreas de luxo e alta valorização como a Praia Brava ou a Ressacada, ter um <strong>Consórcio imóvel</strong> ou <strong>Consórcio casa</strong> é a maneira mais sofisticada de construir patrimônio sem pagar os juros do sistema bancário tradicional, mantendo sua liquidez financeira para novos negócios no setor náutico ou logístico.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Itajaí</h3>
+                    <p>Nossa autoridade em <strong>Consórcio de carros</strong> é fundamentada na confiança de centenas de clientes em toda a região da AMFRI. Considerados um dos <strong>Melhores consórcios</strong> para o público itajaiense, tratamos seu <strong>Consórcio de dinheiro</strong> com máximo rigor técnico e compromisso com resultados. Oferecemos taxas de administração competitivas para quem busca sair da armadilha dos financiamentos e construir um patrimônio sólido na cidade que é o coração econômico do litoral catarinense.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Inovando no bairro Fazenda</h3>
+                    <p>Além do <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é uma ferramenta vital para quem deseja valorizar propriedades em bairros tradicionais e cobiçados como a Fazenda ou o Dom Bosco. Com a <strong>Carta de crédito imobiliário</strong> da Liberty Revisional, você acessa recursos para construir ou reformar seu imóvel sem comprometer seu orçamento com dívidas intermináveis. É o planejamento financeiro inteligente utilizando o <strong>Consórcio</strong> como uma alavanca econômica potente e segura.</p>
+
+                    <h3>Consórcio de carros: Superioridade matemática sobre os juros bancários</h3>
+                    <p>O <strong>Consórcio de carros</strong> em Itajaí apresenta vantagens matemáticas indiscutíveis sobre os financiamentos oferecidos pelas instituições financeiras convencionais. Enquanto os juros bancários podem dobrar o custo final do automóvel, o <strong>Consórcio de veículos</strong> da Liberty trabalha com taxas fixas e justas. Nosso compromisso é entregar os <strong>Melhores consórcios</strong> para o trabalhador itajaiense que valoriza cada centavo do seu esforço e busca eficiência máxima na hora de adquirir bens duráveis.</p>
+
+                    <h3>Consórcio de carros: Sua conquista definitiva na Beira-Rio</h3>
+                    <p>Finalizando, o <strong>Consórcio de carros</strong> representa sua independência financeira e de locomoção em Itajaí e em todo o Norte de Santa Catarina. Seja para o lazer com a família na Praia Brava ou para as necessidades do dia a dia profissional no complexo portuário, o <strong>Consórcio</strong> é o investimento seguro que respeita seu tempo. Conte com a consultoria especializada da Liberty Revisional para obter sua próxima <strong>Carta de Crédito</strong> e dirija por Itajaí com a tranquilidade de quem fez o melhor negócio do litoral.</p>
+
+                    <div class="resumo-tecnico">Resumo: Especialistas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> na cidade de Itajaí e Polo Portuário Catarinense.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Itajaí</h3>
+                    <p>Referência em planejamento financeiro no polo náutico. Ajudamos moradores de Itajaí, Navegantes e Balneário Camboriú a construir patrimônio real sem juros abusivos.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Itajaí</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Praia Brava</li>
+                        <li>Consórcio na Fazenda</li>
+                        <li>Consórcio em Cordeiros</li>
+                        <li>Consórcio no Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Litoral</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Itajaí e Região do Litoral Norte | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
