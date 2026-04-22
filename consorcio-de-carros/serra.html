@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Serra | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Serra",
+      "description": "Líder em consórcio de carros e planejamento financeiro em Serra, ES. Soluções para Laranjeiras, Civit e expansão patrimonial na Grande Vitória.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/serra",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Serra",
+        "addressRegion": "ES",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Serra",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+ES+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+ES+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Serra</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">O motor da economia capixaba passa por <span class="destaque">Serra</span>.</h2>
+                <p class="hero-description">Renove seu veículo ou invista na maior potência industrial e comercial do Espírito Santo. Planejamento inteligente sem juros abusivos, da BR-101 às praias serranas.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Serra</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Serra ES">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros no Shopping Mestre Álvaro">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Colina de Laranjeiras">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Serra Espírito Santo">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM SERRA</h3>
+                    <p>A cidade da Serra possui a maior economia do Espírito Santo. Com um trânsito corporativo e industrial intenso cortado pela <strong>BR-101</strong> e o fluxo do polo de <strong>Civit I e Civit II</strong>, a dependência de veículos confiáveis é total. O <strong>Consórcio de Carros</strong> se tornou a ferramenta preferida dos serranos que recusam os altos juros dos bancos capixabas. Com a Liberty, você garante sua carta de crédito para atualizar sua frota ou adquirir seu SUV familiar com planejamento sólido.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros em Serra ES">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRUTURAÇÃO PATRIMONIAL DE LARANJEIRAS A MANGUINHOS</h3>
+                    <p>Do polo comercial agitado aos residenciais de alto padrão, desenhamos estratégias sob medida:</p>
+                    <ul class="check-list">
+                        <li>Planejamento veicular para frequentadores do <strong>Shopping Mestre Álvaro</strong> e do polo comercial de <strong>Laranjeiras</strong>.</li>
+                        <li>Cartas de crédito ideais para aquisição de imóveis nos condomínios de <strong>Colina de Laranjeiras</strong> e <strong>Morada de Laranjeiras</strong>.</li>
+                        <li>Linhas de crédito para renovar frotas industriais e logística de entregas nos polos do <strong>Civit</strong> e orla de <strong>Jacaraípe</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento na Serra Capixaba">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Serra (ES)</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Serra</h4><p>Seu carro zero na Grande Vitória com as melhores condições.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular na Serra</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Serra</h4><p>Adquira seu apartamento em Colina de Laranjeiras sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular na Serra</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Serra</h4><p>Economia e agilidade na ES-010 rumo a Jacaraípe e Manguinhos.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular na Serra</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Serra</h4><p>Caminhões para rodar na BR-101 e escoar a produção do Civit.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular na Serra</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Serra</h4><p>Reforme seu comércio em Laranjeiras com parcelas fixas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular na Serra</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Construa seu império na Serra Capixaba</h2>
+            <p>Fale agora com a Liberty Revisional e impulsione seus negócios e qualidade de vida na Grande Vitória.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Serra+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor da Serra</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CAPIXABA) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SERRA (ES)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Ser a força financeira por trás de milhares de capixabas é o que move a Liberty Revisional. Assessoramos o trabalhador e o empresário da Serra na aquisição do melhor <strong>Consórcio de carros</strong> do mercado. Da movimentada Avenida Central de Laranjeiras aos fins de semana relaxantes nas praias de Manguinhos, o planejamento inteligente é a chave para viver bem sem enriquecer os bancos da Grande Vitória.</p>
+                    
+                    <h3>Consórcio de carros: Planejamento financeiro inteligente em Serra</h3>
+                    <p>Com o crescimento econômico pujante do município, adquirir a sua <strong>Carta de Crédito</strong> tornou-se a blindagem ideal contra a inflação e as taxas abusivas. O <strong>Consórcio de carros</strong> permite que o serrano transforme o valor da parcela em um veículo com alto valor de revenda. Comprando à vista na concessionária de sua preferência no Espírito Santo, seu poder de negociação se multiplica exponencialmente.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade em Laranjeiras e Jacaraípe</h3>
+                    <p>Para quem transita pelos pólos comerciais ou segue para o litoral de Jacaraípe, o tempo é precioso. O <strong>Consórcio de carros</strong> garante o conforto e o espaço familiar exigidos na capital, mas para profissionais e autônomos que cruzam as rodovias, o <strong>Consórcio de motos</strong> é a escolha de mestre. Cada <strong>Consórcio</strong> é ajustado rigorosamente ao orçamento e à rotina da sua casa.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Patrimônio sólido em Colina de Laranjeiras</h3>
+                    <p>A especulação imobiliária não perdoa, mas o <strong>Consórcio de carros</strong> atrelado ao <strong>Consórcio Imobiliário</strong> te protege. Em vez de pagar aluguel do dinheiro ao banco (financiamento imobiliário atrelado à Selic), o serrano moderno utiliza um <strong>Consórcio imóvel</strong>. Assim, ele adquire um terreno ou apartamento nos desejados bairros de Morada e Colina de Laranjeiras com custos matematicamente controlados e fixos.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios da Grande Vitória</h3>
+                    <p>Nossa liderança na região capixaba não é por acaso. Somos classificados como um dos <strong>Melhores consórcios</strong> devido à nossa curadoria financeira. Analisamos o seu <strong>Consórcio de dinheiro</strong> como uma aplicação de longo prazo, sugerindo lances embutidos nos momentos exatos para que a contemplação ocorra com a máxima agilidade possível em nossos grupos de alto rendimento.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Oportunidades no Civit e Manguinhos</h3>
+                    <p>A forte demanda corporativa na Serra pede estruturas robustas. Aliando nosso <strong>Consórcio de carros</strong> à modalidade de <strong>Consórcio para construção</strong>, empresários utilizam a <strong>Carta de crédito imobiliário</strong> para edificar novos galpões industriais no Civit II, ou até mesmo erguerem pousadas e restaurantes de ponta no bucólico balneário de Manguinhos sem descapitalizar as contas jurídicas.</p>
+
+                    <h3>Consórcio de carros: Vantagens para frotas industriais na BR-101</h3>
+                    <p>Operar a logística da Serra pela BR-101 exige frotas modernas e eficientes. A melhor forma de atualizar sua frota corporativa sem sangrar o caixa é fugir dos financiamentos (CDC) tradicionais. Apoiando-se no <strong>Consórcio de veículos / Pesados</strong> e utilitários da Liberty, sua empresa reduz o custo operacional drasticamente e mantém os caminhões sempre na pista gerando faturamento.</p>
+
+                    <h3>Consórcio de carros: Liberdade financeira no Espírito Santo</h3>
+                    <p>Por fim, aderir ao <strong>Consórcio de carros</strong> é assinar a própria carta de independência patrimonial na Serra. Do conforto no trânsito até o orgulho de estacionar seu veículo no Shopping Mestre Álvaro, tudo é conquistado com suor e estratégia. Invista de forma racional: busque a Liberty Revisional e comece hoje mesmo a planejar a sua próxima <strong>Carta de Crédito</strong> no coração econômico do ES.</p>
+
+                    <div class="resumo-tecnico">Resumo: Estratégias financeiras seguras em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para moradores de Laranjeiras, Civit, Manguinhos e Jacaraípe na Serra - ES.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Serra (ES)</h3>
+                    <p>Assessoria financeira especializada na potência econômica do Espírito Santo. Planejamos o aumento do seu patrimônio e frota sem a cobrança de juros abusivos na Grande Vitória.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Serra</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio em Laranjeiras</li>
+                        <li>Consórcio no Civit I e II</li>
+                        <li>Consórcio em Colina de Laranjeiras</li>
+                        <li>Consórcio em Jacaraípe</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos ES</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico na Serra e Grande Vitória | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em João Pessoa | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em João Pessoa",
+      "description": "Consultoria premium em consórcio de carros e imóveis em João Pessoa, PB. Planejamento estratégico para o Altiplano, Cabo Branco e Manaíra.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/joao-pessoa",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "João Pessoa",
+        "addressRegion": "PB",
+        "addressCountry": "BR"
+      },
+      "areaServed": "João Pessoa",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em João Pessoa</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Qualidade de vida e investimento na <span class="destaque">Capital Parahybana</span>.</h2>
+                <p class="hero-description">A Liberty Revisional eleva o padrão do seu planejamento na Paraíba. Adquira veículos premium ou imóveis de luxo em Jampa com a inteligência financeira que o mercado atual exige, livre de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em João Pessoa</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em João Pessoa">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Avenida Epitácio Pessoa">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Altiplano Jampa">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty João Pessoa PB">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM JOÃO PESSOA</h3>
+                    <p>João Pessoa vive um momento de expansão sem precedentes, unindo o charme litorâneo a um desenvolvimento econômico acelerado. O tráfego executivo na <strong>Avenida Epitácio Pessoa</strong> e os passeios ao pôr do sol no <strong>Busto de Tamandaré</strong> pedem automóveis que reflitam o seu sucesso. Com o <strong>Consórcio de Carros</strong>, o público pessoense foge das armadilhas do crédito bancário, garantindo poder de compra à vista para veículos zero quilômetro ou seminovos com as melhores taxas de administração do Nordeste.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros João Pessoa PB">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DO ALTIPLANO AO MANGABEIRA</h3>
+                    <p>Para o investidor paraibano que entende a valorização do metro quadrado e a força do comércio local:</p>
+                    <ul class="check-list">
+                        <li>Atendimento VIP para aquisição de SUVs e carros de luxo em bairros como <strong>Altiplano</strong> e <strong>Cabo Branco</strong>.</li>
+                        <li>Cartas de crédito estratégicas para expansão de pontos comerciais em <strong>Manaíra</strong> e arredores do <strong>Manaíra Shopping</strong>.</li>
+                        <li>Soluções de mobilidade para os moradores e empresários do dinâmico bairro de <strong>Mangabeira</strong> e <strong>Bessa</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em João Pessoa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em João Pessoa</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Jampa</h4><p>Seu veículo premium para rodar de Ponta de Seixas a Cabedelo.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em JPA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Jampa</h4><p>Apartamentos de alto padrão no Altiplano e beira-mar do Cabo Branco.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em JPA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Jampa</h4><p>Agilidade executiva no fluxo da Epitácio e Bessa.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em JPA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Jampa</h4><p>Caminhões e frotas para logística portuária e comercial paraibana.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em JPA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Jampa</h4><p>Reformas de alto luxo em coberturas e clínicas em Manaíra.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em JPA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Eleve seu padrão na Capital onde o sol nasce primeiro</h2>
+            <p>Fale agora com a Liberty Revisional e construa seu patrimônio com a exclusividade que João Pessoa exige.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+João+Pessoa+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor em Jampa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO PARAIBANO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: JOÃO PESSOA (PB)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Na capital paraibana, o planejamento financeiro é a base para quem deseja crescer com solidez. A Liberty Revisional apresenta o <strong>Consórcio de carros</strong> em João Pessoa como uma ferramenta institucional de proteção de renda. Blindamos o capital de médicos, advogados e empresários da região, permitindo que a atualização da frota familiar ou empresarial ocorra sem o dreno financeiro causado pelos juros abusivos dos bancos tradicionais que operam na Paraíba.</p>
+                    
+                    <h3>Consórcio de carros: Sua Carta de Crédito na Capital Parahybana</h3>
+                    <p>Substituir a cultura do parcelamento eterno pela estratégia do investimento é o que define o cliente Liberty. Com o <strong>Consórcio de carros</strong>, você planeja a contemplação de uma <strong>Carta de Crédito</strong> poderosa. Ter esse valor disponível para negociar à vista nas concessionárias de Jampa garante descontos agressivos, permitindo que você adquira um modelo superior ao planejado inicialmente, mantendo a saúde do seu fluxo de caixa.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade na Epitácio Pessoa</h3>
+                    <p>O fluxo de veículos entre o Centro e as praias, cruzando a Avenida Epitácio Pessoa, requer veículos que unam performance e economia. O <strong>Consórcio de carros</strong> atende à necessidade de conforto e status para o público do Altiplano. Paralelamente, o <strong>Consórcio de motos</strong> premium é a solução para agilidade nas entregas e deslocamentos rápidos em Mangabeira e Manaíra. Formatamos o <strong>Consórcio</strong> com a exatidão que sua rotina exige.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Luxo no Altiplano e Cabo Branco</h3>
+                    <p>A valorização imobiliária em João Pessoa é uma das maiores do país. Investidores inteligentes aplicam a alavancagem: garantem seus veículos pelo <strong>Consórcio de carros</strong> enquanto estruturam a expansão de patrimônio imobiliário pelo <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você arremata apartamentos beira-mar ou constrói seu <strong>Consórcio imóvel</strong> em condomínios horizontais sem pagar os juros que corroem a valorização do bem.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Jampa</h3>
+                    <p>O reconhecimento como um dos <strong>Melhores consórcios</strong> da Paraíba vem do nosso compromisso com a contemplação estratégica. Gerenciamos seu <strong>Consórcio de dinheiro</strong> avaliando as métricas dos grupos mais saudáveis. Nosso know-how permite que o cliente de João Pessoa utilize lances calculados para antecipar a posse do bem, transformando o consórcio em uma ferramenta de aceleração patrimonial.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Inovação em Mangabeira</h3>
+                    <p>O bairro de Mangabeira é um motor econômico de João Pessoa. Para o comerciante e o morador dessa região, o <strong>Consórcio para construção</strong> e reforma caminha lado a lado com o <strong>Consórcio de carros</strong>. Modernizar sua loja ou ampliar sua <strong>Consórcio casa</strong> utilizando cartas de crédito é a forma mais barata de investir na sua infraestrutura, mantendo o seu capital livre para giro.</p>
+
+                    <h3>Consórcio de carros: Blindagem financeira para o setor hoteleiro e comercial</h3>
+                    <p>O turismo é o coração de Jampa. Para hotéis e empresas de serviços, fugir do CDC é questão de sobrevivência. Atrelando o <strong>Consórcio de carros</strong> executivos para translados ao <strong>Consórcio de veículos / Pesados</strong> para logística, sua operação ganha margens mais limpas. A Liberty Revisional orquestra essa transição do endividamento para o investimento real com total segurança jurídica.</p>
+
+                    <h3>Consórcio de carros: O caminho para sua independência no ponto mais oriental das Américas</h3>
+                    <p>Em resumo, o <strong>Consórcio de carros</strong> em João Pessoa é a escolha de quem valoriza a liberdade e o futuro. Do Busto de Tamandaré às falésias do Cabo Branco, o seu sucesso precisa ser acompanhado de uma gestão financeira de elite. Procure os consultores da Liberty Revisional e posicione-se para conquistar sua <strong>Carta de Crédito</strong> no topo da capital paraibana.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para o Altiplano, Cabo Branco, Manaíra, Tambaú, Mangabeira e toda João Pessoa - PB.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em João Pessoa (PB)</h3>
+                    <p>Assessoria financeira de alto nível para a capital paraibana. Transformamos seu planejamento em patrimônio sólido através de estratégias exclusivas de consórcio.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Jampa</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Altiplano</li>
+                        <li>Consórcio no Cabo Branco</li>
+                        <li>Consórcio em Manaíra</li>
+                        <li>Consórcio em Mangabeira</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos PB</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em João Pessoa e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

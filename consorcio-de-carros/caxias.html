@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Caxias | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Caxias",
+      "description": "Consultoria premium em consórcio de carros e investimentos em Caxias, Maranhão. Planejamento estratégico na Nova Caxias, Volta Redonda e rota da BR-316.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/caxias",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caxias",
+        "addressRegion": "MA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Caxias",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+MA+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+MA+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Caxias</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Tradição e crescimento na <span class="destaque">Princesa do Sertão</span>, sem juros.</h2>
+                <p class="hero-description">A Liberty Revisional traz o melhor planejamento financeiro para Caxias. Renove sua frota na BR-316 ou conquiste a casa própria na Nova Caxias, fugindo das taxas bancárias abusivas.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Caxias</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Caxias MA">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros no Caxias Shopping">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Nova Caxias">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Caxias Maranhão">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM CAXIAS</h3>
+                    <p>Caxias é um dos principais polos educacionais, de saúde e comércio do Maranhão. O tráfego intenso na <strong>BR-316</strong> e as ruas de comércio forte no <strong>Centro Histórico</strong> pedem mobilidade segura. Seja para lazer no <strong>Mirante da Balaiada</strong> aos finais de semana ou para a rotina diária, o <strong>Consórcio de Carros</strong> é a escolha de quem valoriza o suor do próprio trabalho. Entregamos cartas de crédito que permitem comprar à vista, sem pagar os juros exorbitantes das financeiras da região.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Caxias MA">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>CRESCIMENTO SÓLIDO DA NOVA CAXIAS AO VOLTA REDONDA</h3>
+                    <p>O caxiense sabe investir. Nossa consultoria apoia o desenvolvimento patrimonial com soluções personalizadas:</p>
+                    <ul class="check-list">
+                        <li>Planejamento para aquisição de veículos para clientes que circulam na região do <strong>Caxias Shopping Center</strong>.</li>
+                        <li>Cartas de crédito para compra, reforma ou construção nos bairros em valorização como <strong>Nova Caxias</strong> e <strong>Volta Redonda</strong>.</li>
+                        <li>Consórcios de caminhões e pesados essenciais para escoamento de mercadorias no polo atacadista de <strong>Caxias</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Caxias Maranhão">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Caxias (MA)</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Caxias</h4><p>Carro zero para circular da Princesa do Sertão a Teresina.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Caxias</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Caxias</h4><p>Garanta sua casa na Nova Caxias ou comércio no Centro.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Caxias</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Caxias</h4><p>Agilidade para estudantes e comércio na Morro do Alecrim.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Caxias</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Caxias</h4><p>Caminhões para alavancar a logística na BR-316.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Caxias</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Caxias</h4><p>Reformas de patrimônio, energia solar e clínicas médicas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Caxias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Invista certo na Princesa do Sertão</h2>
+            <p>Fale agora com a Liberty Revisional e construa um futuro livre de juros abusivos em Caxias do Maranhão.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Caxias+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor em Caxias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CAXIENSE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CAXIAS (MA)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>A inteligência financeira na Princesa do Sertão Maranhense passa pela Liberty Revisional. Assessoramos cidadãos caxienses no planejamento do <strong>Consórcio de carros</strong>, uma ferramenta vital para quem rejeita a descapitalização via juros bancários. Seja para viagens seguras pelo leste do Maranhão ou para o transporte de filhos aos pólos universitários da cidade, a estruturação de cartas de crédito é o nosso principal pilar de mercado.</p>
+                    
+                    <h3>Consórcio de carros: Inteligência financeira na Princesa do Sertão</h3>
+                    <p>Com o encarecimento do crédito no Brasil, o <strong>Consórcio de carros</strong> consolida-se como o refúgio seguro da classe trabalhadora e empresarial de Caxias. Garantir sua <strong>Carta de Crédito</strong> conosco é ter a certeza de que seu veículo novo poderá ser faturado em qualquer concessionária de Caxias ou Teresina, com o poder inquestionável de uma negociação à vista, maximizando os descontos e poupando milhares de reais.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Agilidade no Centro de Caxias</h3>
+                    <p>O comércio intenso no entorno do Mercado Central e do Morro do Alecrim dita o ritmo da cidade. Para famílias, o <strong>Consórcio de carros</strong> entrega ar-condicionado e segurança essenciais. Já para lojistas e autônomos que buscam fugir do trânsito com economia, o <strong>Consórcio de motos</strong> é incrivelmente eficaz. Adequamos o <strong>Consórcio</strong> ao seu estilo de vida e capacidade de aporte financeiro mensal.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Expandindo a Nova Caxias</h3>
+                    <p>O boom imobiliário é inegável, especialmente em bairros como a Nova Caxias e Volta Redonda. Investidores maduros casam a aquisição do <strong>Consórcio de carros</strong> com linhas robustas de <strong>Consórcio Imobiliário</strong>. Utilizando o <strong>Consórcio imóvel</strong>, você compra lotes, constrói galpões para locação ou ergue sua casa própria, fugindo definitivamente dos juros abusivos cobrados pela Caixa e bancos privados.</p>
+
+                    <h3>Consórcio de carros: A razão de sermos um dos Melhores consórcios do Maranhão</h3>
+                    <p>A transparência técnica nos eleva à categoria dos <strong>Melhores consórcios</strong> de atuação em Caxias. Aqui, o seu <strong>Consórcio de dinheiro</strong> é levado a sério. Através de grupos com excelente saúde financeira e lances estrategicamente analisados pela nossa assessoria, as taxas de contemplação de clientes do leste maranhense têm atingido patamares muito acima da média nacional de mercado.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Modernização em Caxias</h3>
+                    <p>Além da tradicional linha de <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> cresce a passos largos. Empresários e donos de clínicas utilizam uma <strong>Carta de crédito imobiliário</strong> para reformar fachadas, construir novos pavilhões ou implantar usinas de energia solar nas propriedades, utilizando o sistema de consórcio como uma linha de alavancagem de baixo custo (apenas taxa de administração).</p>
+
+                    <h3>Consórcio de carros: Superioridade contra financiamentos na rota da BR-316</h3>
+                    <p>As rodovias maranhenses exigem segurança mecânica constante. Para empresas que dependem da BR-316, renovar frota via CDC é um erro contábil. Optando pelo <strong>Consórcio de veículos / Pesados</strong> atrelado ao <strong>Consórcio de carros</strong> corporativos, a logística da sua empresa no atacado ou agronegócio respira aliviada, gerando lucro operacional e não passivos de juros absurdos.</p>
+
+                    <h3>Consórcio de carros: O pilar para o seu sucesso no leste maranhense</h3>
+                    <p>Em suma, o <strong>Consórcio de carros</strong> é a resposta para quem não aceita perder dinheiro e busca proteger a família. Desde o lazer no Balneário Veneza até os negócios fechados no Caxias Shopping Center, seu veículo é sua base móvel. Fale com os especialistas da Liberty Revisional e inicie hoje o planejamento da sua <strong>Carta de Crédito</strong> na Princesa do Sertão.</p>
+
+                    <div class="resumo-tecnico">Resumo: Planejamento financeiro avançado em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para a Nova Caxias, Volta Redonda, Cohab e todo o pólo comercial de Caxias - MA.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Caxias (MA)</h3>
+                    <p>Ajudamos o povo caxiense a construir patrimônio de forma inteligente. Planejamento estratégico de alto padrão na Princesa do Sertão Maranhense para veículos e imóveis.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Caxias</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Nova Caxias</li>
+                        <li>Consórcio no Volta Redonda</li>
+                        <li>Consórcio no Centro Histórico</li>
+                        <li>Consórcio na Cohab</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Leste MA</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Caxias e Leste Maranhense | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

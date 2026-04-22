@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Vila Velha | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Vila Velha",
+      "description": "Especialistas em consórcio de carros e planejamento patrimonial no Espírito Santo. Soluções de Praia da Costa a Itaparica e travessia da Terceira Ponte.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/vila-velha",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vila Velha",
+        "addressRegion": "ES",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Vila Velha",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+ES+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+ES+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Vila Velha</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e qualidade de vida na <span class="destaque">Cidade Canela-Verde</span>.</h2>
+                <p class="hero-description">Cruze a Terceira Ponte de carro novo ou invista em imóveis de alto padrão na orla capixaba. A Liberty Revisional garante seu planejamento sem juros abusivos em Vila Velha.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Vila Velha</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Vila Velha">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Terceira Ponte">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento na Praia da Costa">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Capixaba">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM VILA VELHA</h3>
+                    <p>Vila Velha une o charme histórico à modernidade de um dos litorais mais cobiçados do país. Seja para o morador que cruza diariamente a <strong>Terceira Ponte</strong> a trabalho em Vitória ou para quem deseja circular com a família com segurança próximo ao <strong>Convento da Penha</strong>, ter um veículo de qualidade é indispensável. O <strong>Consórcio de Carros</strong> afasta o peso do endividamento bancário, permitindo que você adquira seu automóvel através de parcelas inteligentes e planejadas.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Vila Velha">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>CRESCIMENTO PATRIMONIAL DA GLÓRIA À ITAPARICA</h3>
+                    <p>O mercado imobiliário e comercial da cidade ferve o ano todo. Apoiamos suas conquistas nos melhores pontos de Vila Velha:</p>
+                    <ul class="check-list">
+                        <li>Liberdade financeira para quem frequenta o <strong>Shopping Vila Velha</strong> e o <strong>Boulevard Shopping</strong>.</li>
+                        <li>Cartas de crédito de alto valor para a compra de apartamentos sofisticados na <strong>Praia da Costa</strong>, <strong>Itapuã</strong> e <strong>Itaparica</strong>.</li>
+                        <li>Frotas comerciais e utilitários projetados para fortalecer o polo atacadista e de modas da <strong>Glória</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Vila Velha">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Vila Velha (ES)</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Vila Velha</h4><p>Cruze a Terceira Ponte com estilo, conforto e zero juros bancários.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em VV</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Vila Velha</h4><p>O seu apartamento de frente para o mar de Itaparica ou Praia da Costa.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em VV</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Vila Velha</h4><p>Agilidade máxima nas vias de Itapuã e no trânsito diário capixaba.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em VV</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Vila Velha</h4><p>Transporte e logística otimizada para o polo comercial da Glória.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em VV</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Vila Velha</h4><p>Projetos de interiores e reformas para sua clínica ou loja na cidade.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em VV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Construa seu império na Cidade Canela-Verde</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste o melhor da vida no litoral capixaba com solidez financeira.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Vila+Velha+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor de Vila Velha</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO VILA-VELHENSE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: VILA VELHA (ES)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Morar no litoral capixaba e desfrutar do que há de melhor requer inteligência econômica. A Liberty Revisional orquestra o planejamento do <strong>Consórcio de carros</strong> para o público de Vila Velha com maestria. Nosso foco é proteger sua renda, impedindo que os grandes bancos devorem seu patrimônio com juros absurdos. Queremos que você utilize seu capital para curtir o fim de semana em família, não para pagar taxas a fundo perdido.</p>
+                    
+                    <h3>Consórcio de carros: O melhor caminho para sua Carta de Crédito na Cidade Canela-Verde</h3>
+                    <p>Em um mercado tão dinâmico, pagar duas vezes o valor de um automóvel por conta de juros compostos é um erro grave. Entrando em um <strong>Consórcio de carros</strong>, você adquire sua <strong>Carta de Crédito</strong> de forma sustentável. O poder de faturamento à vista em concessionárias do Espírito Santo concede descontos generosos na compra daquele SUV premium perfeito para os passeios na Praia da Costa.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? A mobilidade na Terceira Ponte</h3>
+                    <p>A famosa travessia para Vitória define a rotina de muitos. O <strong>Consórcio de carros</strong> proporciona a blindagem climática e a segurança essenciais para as famílias que cruzam a Terceira Ponte diariamente. Alternativamente, para quem busca esquivar-se do tráfego em direção a Itapuã, o <strong>Consórcio de motos</strong> é imbatível. Entregamos o <strong>Consórcio</strong> exato para o seu perfil de deslocamento urbano.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Morando de frente para o mar em Itaparica</h3>
+                    <p>O skyline de Vila Velha impressiona, e os apartamentos na orla são cobiçados. Consorciados inteligentes fazem o combo do <strong>Consórcio de carros</strong> com linhas robustas do <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você consegue arrematar aquele <strong>Consórcio imóvel</strong> na badalada Praia de Itaparica pagando parcelas que respeitam seu bolso e valorizam seu patrimônio.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Vila Velha</h3>
+                    <p>O rigor ético e matemático é o que nos posiciona como um dos <strong>Melhores consórcios</strong> atuantes na Grande Vitória. A gestão do seu <strong>Consórcio de dinheiro</strong> é acompanhada de perto pela nossa assessoria. Estudamos a saúde do grupo e orientamos propostas de lances precisas, maximizando as chances de contemplação rápida da sua chave na mão.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformas no Centro e na Glória</h3>
+                    <p>A força comercial de Vila Velha não se limita ao Shopping. Comerciantes atrelam o <strong>Consórcio de carros</strong> ao moderno <strong>Consórcio para construção</strong>. Isso permite reformar lojas no coração da Glória, expandir clínicas médicas no Centro ou decorar apartamentos recém-entregues em Itapuã sem queimar o capital de giro (usando a modalidade de <strong>Consórcio casa</strong> / reforma).</p>
+
+                    <h3>Consórcio de carros: Superando os financiamentos corporativos na Grande Vitória</h3>
+                    <p>Grandes distribuidoras e fábricas que operam no entorno capixaba dependem de transporte pesado. Trocar o endividamento do CDC pelo <strong>Consórcio de veículos / Pesados</strong> atrelado a um <strong>Consórcio de carros</strong> corporativos é a jogada de ouro. Você mantém a frota que atende a Fábrica da Garoto e rodovias federais atualizada, pagando somente uma pequena taxa de administração diluída.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua liberdade debaixo das bênçãos do Convento da Penha</h3>
+                    <p>Concluímos que a aquisição via <strong>Consórcio de carros</strong> é um divisor de águas na vida de quem planeja o futuro. Mais do que adquirir um bem, você abraça a educação financeira no Espírito Santo. Com a Liberty Revisional ao seu lado, você tira o seu projeto do papel e materializa a sua próxima <strong>Carta de Crédito</strong> na espetacular Vila Velha.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria de elite em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para moradores da Praia da Costa, Itapuã, Itaparica, Glória e toda Vila Velha - ES.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Vila Velha</h3>
+                    <p>Consultoria patrimonial de alto padrão no litoral capixaba. Protegemos sua renda e aceleramos a conquista dos seus veículos e imóveis na Cidade Canela-Verde.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Litoral</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Praia da Costa</li>
+                        <li>Consórcio em Itaparica</li>
+                        <li>Consórcio em Itapuã</li>
+                        <li>Consórcio na Glória</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos ES</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Vila Velha e Grande Vitória | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

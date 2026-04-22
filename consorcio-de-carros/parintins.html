@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Parintins | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Parintins",
+      "description": "Consultoria especializada em consórcio de carros e investimentos em Parintins, AM. Planejamento financeiro estratégico para a Ilha da Magia e Baixo Amazonas.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/parintins",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Parintins",
+        "addressRegion": "AM",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Parintins",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Parintins</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Sua conquista na <span class="destaque">Ilha da Magia</span>, com inteligência.</h2>
+                <p class="hero-description">A Liberty Revisional traz para o coração do Baixo Amazonas a melhor assessoria em cartas de crédito. Adquira seu automóvel, motocicleta ou expanda seu patrimônio imobiliário na terra do folclore sem pagar juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Parintins</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Parintins">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros no Centro de Parintins">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Bumbódromo Parintins AM">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Parintins">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM PARINTINS</h3>
+                    <p>Parintins é um polo vibrante que vai muito além do seu mundialmente famoso festival. O cotidiano na <strong>Avenida Amazonas</strong> e o intenso fluxo comercial próximo ao <strong>Porto de Parintins</strong> exigem veículos que ofereçam durabilidade e conforto. Com o <strong>Consórcio de Carros</strong>, o parintinense planeja sua aquisição de forma sustentável, utilizando o sistema de cartas de crédito para garantir um automóvel novo ou seminovo com o menor custo financeiro do mercado amazonense.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Parintins">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO CERTO PARA A TERRA DO BOI-BUMBÁ</h3>
+                    <p>Atendemos comerciantes, pecuaristas e profissionais liberais que movem a Ilha de Tupinambarana:</p>
+                    <ul class="check-list">
+                        <li>Atendimento estratégico para quem busca veículos utilitários e picapes para o dia a dia na região.</li>
+                        <li>Cartas de crédito para imóveis comerciais e residenciais próximos ao <strong>Bumbódromo</strong> e áreas de expansão.</li>
+                        <li>Soluções em mobilidade para os bairros <strong>Djard Vieira</strong>, <strong>Itaúna</strong> e <strong>Paulo Corrêa</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Parintins AM">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Parintins</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Parintins</h4><p>Adquira sua picape ou carro zero com parcelas que cabem no bolso.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Parintins</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Parintins</h4><p>Construa ou compre sua casa na ilha com consórcio imobiliário.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Parintins</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Parintins</h4><p>Agilidade para circular pela Avenida Amazonas com economia real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Parintins</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Parintins</h4><p>Máquinas e frotas para impulsionar o comércio e agronegócio local.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Parintins</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Parintins</h4><p>Crédito para festas, saúde ou reformas em estabelecimentos locais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Parintins</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Realize sua conquista na Ilha de Tupinambarana</h2>
+            <p>Fale agora com a Liberty Revisional e invista com a segurança de quem conhece a força do Baixo Amazonas.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Parintins+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor em Parintins</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO LOCAL) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: PARINTINS (AM)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Em uma região marcada pela logística fluvial e por uma economia pulsante no Baixo Amazonas, a Liberty Revisional posiciona o <strong>Consórcio de carros</strong> em Parintins como a alternativa definitiva ao crédito bancário convencional. Entendemos que morar em uma ilha exige planejamento diferenciado para aquisição de bens. Nossa assessoria garante que o parintinense conquiste seu patrimônio sem pagar os juros abusivos que costumam sobrecarregar os financiamentos tradicionais na região Norte.</p>
+                    
+                    <h3>Consórcio de carros: Elevando sua Carta de Crédito na Ilha da Magia</h3>
+                    <p>Seja você um torcedor do Garantido ou do Caprichoso, a economia é um objetivo comum. Através do <strong>Consórcio de carros</strong>, o cliente programa a contemplação de uma <strong>Carta de Crédito</strong> com valor de compra à vista. Isso permite negociar com autoridade nas concessionárias de Manaus ou locais, obtendo descontos significativos e garantindo que o seu investimento se transforme em um patrimônio real de forma inteligente e segura.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade no Centro e Itaúna</h3>
+                    <p>Circular pela Avenida Nações Unidas ou se deslocar para os distritos rurais exige o veículo certo. O <strong>Consórcio de carros</strong> é inegociável para o transporte familiar com segurança. Já o <strong>Consórcio de motos</strong> atende à enorme demanda por agilidade urbana que Parintins possui. Nós formatamos o <strong>Consórcio</strong> ideal para o seu perfil, garantindo que as parcelas não comprometam seu orçamento mensal durante o ano todo.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Investimento perto do Bumbódromo</h3>
+                    <p>A valorização imobiliária em Parintins é nítida, especialmente em áreas estratégicas para o turismo. Unir o <strong>Consórcio de carros</strong> a uma estratégia de <strong>Consórcio Imobiliário</strong> é o passo certo para a construção de ativos. Com a <strong>Carta de crédito imobiliário</strong>, você pode investir na compra de terrenos, casas ou até mesmo no seu <strong>Consórcio imóvel</strong> comercial, aproveitando os períodos de alta visibilidade da cidade para rentabilizar seu bem.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Parintins</h3>
+                    <p>Nossa expertise no Baixo Amazonas nos consolida como um dos <strong>Melhores consórcios</strong> para o público local. Gerenciamos seu <strong>Consórcio de dinheiro</strong> com transparência, acompanhando cada assembleia e orientando sobre os melhores momentos para ofertas de lances. O objetivo da Liberty Revisional é encurtar a distância entre o seu planejamento e a entrega das chaves na Ilha de Tupinambarana.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Reformas em Parintins</h3>
+                    <p>A modernização de estabelecimentos comerciais e residências em Parintins ganha força com o <strong>Consórcio para construção</strong>. Além de renovar sua garagem com o <strong>Consórcio de carros</strong>, você pode utilizar a modalidade de <strong>Consórcio casa</strong> e reforma para preparar seu imóvel para a temporada de festivais ou para garantir mais conforto para sua família, tudo com taxas administrativas justas e sem juros compostos.</p>
+
+                    <h3>Consórcio de carros: Potência em Consórcio de veículos / Pesados para logística fluvial</h3>
+                    <p>A força comercial de Parintins depende do transporte. Atrelar o <strong>Consórcio de carros</strong> ao <strong>Consórcio de veículos / Pesados</strong> permite que transportadores e pecuaristas renovem frotas e adquiram caminhões essenciais para a movimentação de cargas no porto. Garantimos soluções financeiras que respeitam a sazonalidade da região, oferecendo solidez para quem move a economia parintinense.</p>
+
+                    <h3>Consórcio de carros: O caminho para o seu sucesso no Baixo Amazonas</h3>
+                    <p>Em resumo, o <strong>Consórcio de carros</strong> em Parintins é o atalho inteligente para quem busca independência financeira. Da orla da cidade ao interior, o seu crescimento patrimonial precisa de uma base sólida. Fale com os consultores da Liberty Revisional e descubra como garantir sua <strong>Carta de Crédito</strong> com as melhores condições para o morador da Ilha da Magia.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria especializada em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para o Centro, Itaúna, Djard Vieira e toda Parintins - AM.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Parintins (AM)</h3>
+                    <p>Sua parceira estratégica em consórcios no Baixo Amazonas. Unimos segurança jurídica e planejamento financeiro para você conquistar seus bens sem pagar juros.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Ilha</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Centro</li>
+                        <li>Consórcio no Itaúna</li>
+                        <li>Consórcio no Djard Vieira</li>
+                        <li>Consórcio em Parintins</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Baixo Amazonas</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Parintins e Baixo Amazonas | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

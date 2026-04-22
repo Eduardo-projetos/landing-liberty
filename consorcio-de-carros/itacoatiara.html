@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Itacoatiara | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Itacoatiara",
+      "description": "Consultoria em consórcio de carros e veículos pesados em Itacoatiara, AM. Planejamento estratégico para o polo logístico e agroindustrial do Médio Amazonas.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/itacoatiara",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Itacoatiara",
+        "addressRegion": "AM",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Itacoatiara",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Itacoatiara</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e patrimônio na <span class="destaque">Cidade da Pedra Pintada</span>.</h2>
+                <p class="hero-description">A Liberty Revisional traz soluções financeiras de alto nível para o Médio Amazonas. Conquiste seu veículo novo ou renove sua frota logística com inteligência, segurança e as menores taxas do mercado.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Itacoatiara</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Itacoatiara">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Avenida Parque">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Logística Porto de Itacoatiara">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Itacoatiara AM">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM ITACOATIARA</h3>
+                    <p>Itacoatiara é um dos pilares econômicos do Amazonas, unindo a força do setor portuário à vitalidade do agronegócio. Transitar pela bela <strong>Avenida Parque</strong> ou coordenar o transporte de cargas pela <strong>Rodovia AM-010</strong> exige planejamento e veículos de qualidade. Através do <strong>Consórcio de Carros</strong>, o morador de Itacoatiara protege seu capital, evitando os juros bancários e garantindo que cada real investido se transforme em patrimônio real para sua família ou empresa.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Itacoatiara">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO ESTRATÉGICO NO MÉDIO AMAZONAS</h3>
+                    <p>Nossa consultoria é focada no desenvolvimento patrimonial da região:</p>
+                    <ul class="check-list">
+                        <li>Fomento à aquisição de utilitários e veículos de passeio para o <strong>Centro</strong> e <strong>Santo Antônio</strong>.</li>
+                        <li>Cartas de crédito planejadas para imóveis e áreas comerciais em expansão no bairro do <strong>Mutirão</strong>.</li>
+                        <li>Soluções logísticas para operadores do <strong>Porto de Itacoatiara</strong> e transportadores da AM-010.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Itacoatiara AM">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Itacoatiara</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Itacoatiara</h4><p>Seu veículo novo para rodar com conforto e segurança na cidade.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Itacoatiara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Itacoatiara</h4><p>Adquira sua casa ou terreno com a segurança do consórcio imobiliário.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Itacoatiara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Itacoatiara</h4><p>Economia e agilidade para o trânsito urbano e áreas rurais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Itacoatiara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Itacoatiara</h4><p>Caminhões e máquinas para impulsionar a logística do Médio Amazonas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Itacoatiara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Itacoatiara</h4><p>Crédito para reformas, saúde e modernização de empresas locais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Itacoatiara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Lidere seu crescimento em Itacoatiara</h2>
+            <p>Conecte-se com a Liberty Revisional e conquiste sua carta de crédito com quem entende o valor da Cidade da Pedra Pintada.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Itacoatiara+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor em Itacoatiara</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO LOCAL) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: ITACOATIARA (AM)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência em consultoria financeira no Médio Amazonas, a Liberty Revisional estabelece o <strong>Consórcio de carros</strong> em Itacoatiara como a solução definitiva para o acúmulo de patrimônio sólido. Entendemos que a realidade econômica da Cidade da Pedra Pintada exige ferramentas que respeitem o fluxo de caixa do produtor rural e do comerciante local. Nossa estratégia foca na eliminação total de juros, permitindo que o investidor itacoatiarense alavanque seus bens com segurança jurídica e previsibilidade.</p>
+                    
+                    <h3>Consórcio de carros: Sua Carta de Crédito na Cidade da Pedra Pintada</h3>
+                    <p>O mercado automotivo em Itacoatiara não precisa ser sinônimo de dívida. Ao optar pelo <strong>Consórcio de carros</strong>, o cliente programa a recepção de uma <strong>Carta de Crédito</strong> de alta liquidez. Com o valor em mãos, você possui o mesmo poder de negociação de quem paga à vista nas concessionárias de Manaus ou da região, garantindo descontos exclusivos e preservando o capital que seria desperdiçado em taxas bancárias abusivas.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade urbana e rural</h3>
+                    <p>Seja para o deslocamento pela Avenida Parque ou para acessar as áreas produtivas rurais, a mobilidade é chave. O <strong>Consórcio de carros</strong> oferece o conforto e a robustez necessários para as estradas do Amazonas. Por outro lado, o <strong>Consórcio de motos</strong> é a escolha de muitos profissionais que buscam agilidade e baixíssimo custo de manutenção para o dia a dia. Nós desenhamos o <strong>Consórcio</strong> sob medida para que sua parcela seja um investimento e nunca um peso.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Investimento no Centro de Itacoatiara</h3>
+                    <p>A valorização de terrenos e imóveis no Centro e no bairro Santo Antônio é uma realidade constante. Unir o <strong>Consórcio de carros</strong> a um planejamento de <strong>Consórcio Imobiliário</strong> é a estratégia dos grandes investidores da região. Através da <strong>Carta de crédito imobiliário</strong>, você adquire, constrói ou reforma seu <strong>Consórcio imóvel</strong> residencial ou comercial, consolidando sua presença econômica no Médio Amazonas sem depender de financiamentos caros.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Itacoatiara</h3>
+                    <p>Nossa autoridade no Amazonas se reflete no atendimento personalizado e na análise técnica de grupos. Somos classificados como um dos <strong>Melhores consórcios</strong> de Itacoatiara porque a Liberty Revisional foca no seu <strong>Consórcio de dinheiro</strong> como uma gestão de ativos. Orientamos o cliente sobre os lances estratégicos para que a contemplação ocorra dentro da janela de oportunidade necessária para o seu crescimento.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Expansão no Mutirão e arredores</h3>
+                    <p>Os bairros em expansão, como o Mutirão, pedem infraestrutura. Além de garantir o <strong>Consórcio de carros</strong> para sua família, você pode utilizar o <strong>Consórcio para construção</strong> para erguer sua <strong>Consórcio casa</strong> ou ampliar seu ponto comercial. Essa modalidade permite que a obra avance conforme seu planejamento financeiro, utilizando as menores taxas do mercado e mantendo a liquidez do seu negócio principal.</p>
+
+                    <h3>Consórcio de carros: Frotas e Consórcio de veículos / Pesados para o polo logístico</h3>
+                    <p>O Porto de Itacoatiara é um gigante que move a logística do estado. Para quem atua no transporte, atrelar o <strong>Consórcio de carros</strong> de frota a um plano de <strong>Consórcio de veículos / Pesados</strong> é essencial para manter a competitividade. Renovamos caminhões e máquinas agrícolas com foco em rentabilidade operacional, garantindo que o transportador da AM-010 tenha sempre os melhores equipamentos sem o endividamento do CDC.</p>
+
+                    <h3>Consórcio de carros: O futuro do seu patrimônio no Amazonas</h3>
+                    <p>Em resumo, o <strong>Consórcio de carros</strong> em Itacoatiara é a ferramenta de quem pensa no amanhã. Da beleza da orla ao vigor do interior, o seu patrimônio deve crescer de forma sustentável. Conte com a Liberty Revisional para formatar sua próxima <strong>Carta de Crédito</strong> e conquiste seu lugar de destaque na Cidade da Pedra Pintada.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para o Centro, Santo Antônio, Mutirão e toda a região de Itacoatiara - AM.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Itacoatiara (AM)</h3>
+                    <p>Consultoria financeira especializada para o Médio Amazonas. Transformamos sonhos em patrimônio sólido através de estratégias inteligentes de consórcio.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Itacoatiara</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Centro</li>
+                        <li>Consórcio no Santo Antônio</li>
+                        <li>Consórcio no Mutirão</li>
+                        <li>Consórcio na AM-010</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Médio Amazonas</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Itacoatiara e Região | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

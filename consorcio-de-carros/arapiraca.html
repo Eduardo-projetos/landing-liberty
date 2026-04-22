@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em Arapiraca | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Arapiraca",
+      "description": "Consultoria especializada em consórcio de carros e veículos pesados em Arapiraca, AL. Planejamento estratégico para Cavaco, Alto do Cruzeiro e Agreste Alagoano.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/arapiraca",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arapiraca",
+        "addressRegion": "AL",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Arapiraca",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Carros em Arapiraca</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Potência comercial e conquista na <span class="destaque">Capital do Agreste</span>.</h2>
+                <p class="hero-description">A Liberty Revisional orquestra sua alavancagem patrimonial no coração de Alagoas. Adquira utilitários, picapes ou veículos premium em Arapiraca com as melhores estratégias financeiras e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Arapiraca</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em Arapiraca">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros na Avenida Ceci Cunha">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Cavaco Arapiraca">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Arapiraca AL">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS DA LIBERTY REVISIONAL EM ARAPIRACA</h3>
+                    <p>Arapiraca é o motor econômico do interior de Alagoas, reconhecida pelo seu comércio pujante e vigor agroindustrial. O fluxo dinâmico na <strong>Avenida Ceci Cunha</strong> e a movimentação no <strong>Arapiraca Garden Shopping</strong> demandam veículos que ofereçam robustez e status. Através do nosso <strong>Consórcio de Carros</strong>, o empreendedor arapiraquense garante poder de compra à vista para veículos novos ou seminovos, eliminando as parcelas pesadas dos financiamentos e fortalecendo o seu capital de giro.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros Arapiraca AL">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DO ALTO DO CRUZEIRO AO CAVACO</h3>
+                    <p>Para o investidor do Agreste que busca segurança e solidez na construção de ativos:</p>
+                    <ul class="check-list">
+                        <li>Assessoria estratégica para aquisição de utilitários e picapes para o setor comercial e agrícola.</li>
+                        <li>Cartas de crédito planejadas para imóveis de alto padrão e salas comerciais no <strong>Cavaco</strong> e <strong>Alto do Cruzeiro</strong>.</li>
+                        <li>Soluções de mobilidade e logística para empresas operantes no centro comercial e bairro <strong>Concórdia</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Arapiraca">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Arapiraca</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Arapiraca</h4><p>Sua picape ou utilitário para dominar as rotas do Agreste.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em ARA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Arapiraca</h4><p>Adquira terrenos e casas em condomínios via planejamento imobiliário.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em ARA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Arapiraca</h4><p>Agilidade executiva para o fluxo comercial do centro.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em ARA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Arapiraca</h4><p>Caminhões para frotas comerciais e logística do interior de Alagoas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em ARA</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Arapiraca</h4><p>Crédito para reformas em estabelecimentos comerciais e clínicas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em ARA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Lidere seu crescimento na Capital do Agreste</h2>
+            <p>Fale agora com a Liberty Revisional e invista com a segurança e a exclusividade que Arapiraca exige.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arapiraca+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor em Arapiraca</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO AGRESTE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: ARAPIRACA (AL)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como a principal referência em planejamento financeiro estratégico no Agreste de Alagoas, a Liberty Revisional posiciona o <strong>Consórcio de carros</strong> em Arapiraca como a solução definitiva para o empreendedor que valoriza o capital de giro. Na terra que é o motor do interior do estado, onde o comércio e o agronegócio ditam o tom, a aquisição de ativos deve ser feita com precisão. Nossa consultoria blinda o patrimônio do investidor arapiraquense, transformando parcelas programadas em bens reais e livres das taxas de juros bancárias predatórias.</p>
+                    
+                    <h3>Consórcio de carros: Elevando sua Carta de Crédito no Agreste Alagoano</h3>
+                    <p>Substituir o endividamento do financiamento tradicional pelo <strong>Consórcio de carros</strong> é a marca de quem possui maturidade nos negócios. Ao programar sua <strong>Carta de Crédito</strong> conosco, o cliente de Arapiraca garante o poder de compra imediato para negociar com autoridade nas principais concessionárias da cidade. Isso possibilita obter descontos reais para frotas utilitárias ou veículos de luxo, mantendo a liquidez necessária para a operação comercial da sua empresa.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade na Avenida Ceci Cunha</h3>
+                    <p>O fluxo intenso na Avenida Ceci Cunha e a integração entre bairros residenciais e centros de serviço requerem decisões de mobilidade inteligentes. O <strong>Consórcio de carros</strong> é o investimento inegociável para quem busca segurança e conforto para a família e negócios no interior alagoano. Por outro lado, o <strong>Consórcio de motos</strong> premium atende perfeitamente profissionais que buscam rapidez e baixo custo nas rotas comerciais entre o centro e o Arapiraca Garden Shopping. Formatamos o <strong>Consórcio</strong> conforme a sua necessidade real.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: Alto padrão no Cavaco e Alto do Cruzeiro</h3>
+                    <p>A valorização imobiliária em bairros tradicionais de Arapiraca é constante. Investidores de visão utilizam o <strong>Consórcio de carros</strong> para sua frota pessoal enquanto estruturam a expansão de seus ativos através do <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você adquire terrenos ou constrói seu <strong>Consórcio imóvel</strong> em bairros como Cavaco e Alto do Cruzeiro sem pagar os juros abusivos que corroem a rentabilidade da valorização imobiliária no Agreste.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de Arapiraca</h3>
+                    <p>O reconhecimento como um dos <strong>Melhores consórcios</strong> da região vem da nossa transparência técnica e foco em resultados. Gerenciamos seu <strong>Consórcio de dinheiro</strong> avaliando as métricas de grupos saudáveis para encurtar o tempo de contemplação estratégica. Para o cliente de Arapiraca, isso significa ter o veículo ou utilitário na mão dentro do prazo planejado, com total assessoria jurídica da equipe Liberty Revisional.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Inovação na Baixa Grande e Concórdia</h3>
+                    <p>A expansão comercial de Arapiraca exige planejamento para obras e reformas de infraestrutura. Além do <strong>Consórcio de carros</strong>, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja erguer sua <strong>Consórcio casa</strong> ou modernizar fachadas de estabelecimentos no bairro Concórdia ou Baixa Grande, essa modalidade oferece as menores taxas do mercado, permitindo investimentos estruturais com inteligência e economia real.</p>
+
+                    <h3>Consórcio de carros: Frotas e Pesados para o comércio e agronegócio regional</h3>
+                    <p>A logística de Arapiraca é o que move o interior de Alagoas. Para empresas de atacado e distribuidores, o sistema de cartas de crédito é vital para a competitividade. Atrelando o <strong>Consórcio de carros</strong> de frota ao <strong>Consórcio de veículos / Pesados</strong> para transporte de cargas, sua operação elimina os juros compostos da planilha de custos. Garantimos que sua frota esteja sempre renovada, mantendo o vigor econômico da sua empresa em todo o estado.</p>
+
+                    <h3>Consórcio de carros: Sua independência financeira na Capital do Agreste</h3>
+                    <p>Em resumo, o <strong>Consórcio de carros</strong> em Arapiraca é a escolha de quem valoriza o amanhã. Do Parque Ceci Cunha aos novos empreendimentos residenciais, o seu crescimento patrimonial deve refletir sua inteligência financeira. Procure os especialistas da Liberty Revisional e garanta sua <strong>Carta de Crédito</strong> no topo do mercado arapiraquense.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Cavaco, Alto do Cruzeiro, Centro, Baixa Grande, Concórdia e toda Arapiraca - AL.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Arapiraca (AL)</h3>
+                    <p>Assessoria financeira de alto nível na Capital do Agreste. Especialistas em transformar estratégias de consórcio em patrimônio real para o público alagoano.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento ARA</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Cavaco</li>
+                        <li>Consórcio no Alto do Cruzeiro</li>
+                        <li>Consórcio no Centro</li>
+                        <li>Consórcio no Concórdia</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Alagoas</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Arapiraca e Agreste Alagoano | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Carros em São José de Ribamar | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em São José de Ribamar",
+      "description": "Especialistas em consórcio de carros e planejamento patrimonial na Grande Ilha. Soluções inteligentes para moradores do Araçagy, Miritiua e Estrada de Ribamar.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-carros/sao-jose-de-ribamar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José de Ribamar",
+        "addressRegion": "MA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "São José de Ribamar",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+gostaria+de+fazer+uma+simulação+de+consórcio." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio em São José de Ribamar</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-car"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e patrimônio na <span class="destaque">Cidade Santuário</span>, sem juros.</h2>
+                <p class="hero-description">A Liberty Revisional atende a região de maior expansão imobiliária da Grande Ilha. Conquiste seu veículo novo ou planeje sua casa em condomínio fechado de forma inteligente.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+fazer+uma+simulação." class="btn-primary">Simular em Ribamar</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio em São José de Ribamar">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Carros no Araçagy">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Condomínios">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Revisional Maranhão">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE CARROS EM SÃO JOSÉ DE RIBAMAR</h3>
+                    <p>São José de Ribamar é uma das cidades que mais crescem no Maranhão. O trânsito diário de moradores em direção à capital através da <strong>Estrada de Ribamar (MA-201)</strong> e <strong>Estrada da Maioba (MA-202)</strong> torna essencial possuir um transporte seguro. Com o <strong>Consórcio de Carros</strong> da Liberty Revisional, as famílias ribamarenses garantem a compra de veículos novos com parcelas previsíveis, sem comprometer a renda com os altos juros dos financiamentos tradicionais.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Carros São José de Ribamar">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>EXPANSÃO IMOBILIÁRIA E PATRIMÔNIO SÓLIDO</h3>
+                    <p>Para quem busca qualidade de vida e investimento na região metropolitana de São Luís, oferecemos soluções diretas:</p>
+                    <ul class="check-list">
+                        <li>Planejamento de frotas e veículos para quem mora ou empreende na região do <strong>Araçagy</strong> e <strong>Miritiua</strong>.</li>
+                        <li>Cartas de crédito para o "boom" imobiliário de condomínios fechados próximos ao <strong>Parque Vitória</strong> e fronteira com o Turu.</li>
+                        <li>Estratégias sem juros para construir ou reformar casas de veraneio em <strong>Panaquatira</strong> e <strong>Praia do Meio</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento no Araçagy e Ribamar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em São José de Ribamar</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis SJR</h4><p>Conforto para enfrentar a MA-201 diariamente sem pagar juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em SJR</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis SJR</h4><p>Sua casa de condomínio no Araçagy ou Miritiua está aqui.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em SJR</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas SJR</h4><p>Agilidade para o trânsito da Grande Ilha e comércio local.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em SJR</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados SJR</h4><p>Expanda o transporte de materiais de construção em Ribamar.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em SJR</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços SJR</h4><p>Reformas, energia solar e projetos na região de Panaquatira.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em SJR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Construa seu futuro na Grande Ilha</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste veículos e imóveis em São José de Ribamar sem pagar juros.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+José+de+Ribamar+e+gostaria+de+falar+com+um+consultor." class="btn-white">Falar com Consultor SJR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO DE RIBAMAR) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SÃO JOSÉ DE RIBAMAR</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>A Liberty Revisional consolidou sua presença na Cidade Santuário orientando moradores e investidores sobre as melhores rotas financeiras. Entendemos que a rotina pendular de quem mora em São José de Ribamar exige um bom <strong>Consórcio de carros</strong>. Nosso papel é blindar seu orçamento, permitindo que você adquira bens de alto valor, seja um automóvel para circular pelas rodovias MAs ou um imóvel nos bairros em expansão.</p>
+                    
+                    <h3>Consórcio de carros: A rota inteligente para sua Carta de Crédito na Cidade Santuário</h3>
+                    <p>Trabalhar na capital e morar na tranquilidade de São José de Ribamar é uma escolha comum. Para evitar o desgaste nos ônibus intermunicipais, o <strong>Consórcio de carros</strong> apresenta-se como a ferramenta ideal. Adquirindo sua <strong>Carta de Crédito</strong> conosco, você garante o poder de compra à vista em concessionárias maranhenses, eliminando a dependência do crédito bancário predatório.</p>
+
+                    <h3>Consórcio de carros ou Consórcio de motos? Mobilidade na Estrada da Maioba</h3>
+                    <p>O deslocamento na Estrada da Maioba nos horários de pico pode ser desafiador. O <strong>Consórcio de carros</strong> proporciona o ar-condicionado e a segurança essenciais para o calor maranhense, enquanto o <strong>Consórcio de motos</strong> atende a quem busca agilidade extrema e baixo custo de manutenção. Analisamos seu fluxo diário para ofertar o <strong>Consórcio</strong> que melhor se enquadre no seu perfil de condutor.</p>
+
+                    <h3>Consórcio de carros e Consórcio Imobiliário: O boom dos condomínios no Araçagy</h3>
+                    <p>O vetor de crescimento da Grande Ilha aponta para o município balneário. Inúmeras famílias atrelam o <strong>Consórcio de carros</strong> a um planejamento maior com o <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Casa</strong> financiada com juros, você pagaria duas. Com o <strong>Consórcio imóvel</strong> da Liberty, você conquista a chave no Araçagy ou Miritiua investindo o valor real do bem.</p>
+
+                    <h3>Consórcio de carros: Por que somos um dos Melhores consórcios de São José de Ribamar</h3>
+                    <p>Nosso diferencial é a consultoria transparente e estratégica. Figuramos entre os <strong>Melhores consórcios</strong> da Grande Ilha porque tratamos a meta do cliente como nossa. O gerenciamento do seu <strong>Consórcio de dinheiro</strong> é feito com precisão técnica em grupos saudáveis, onde as estratégias de lance embutido são desenhadas para acelerar o processo de contemplação.</p>
+
+                    <h3>Consórcio de carros e Consórcio para construção: Projetos em Panaquatira e Parque Vitória</h3>
+                    <p>As praias de Ribamar atraem quem deseja o segundo imóvel. Paralelamente ao <strong>Consórcio de carros</strong>, o <strong>Consórcio para construção</strong> é largamente utilizado para edificar propriedades na Praia de Panaquatira ou erguer comércios no Parque Vitória. Através de uma <strong>Carta de crédito imobiliário</strong>, você constrói etapas do seu projeto sem se sufocar financeiramente.</p>
+
+                    <h3>Consórcio de carros: Segurança e economia para frotas comerciais na Grande Ilha</h3>
+                    <p>Com o rápido crescimento populacional da cidade, as lojas de material de construção e supermercados precisam expandir sua logística. Substituir o financiamento corporativo pelo <strong>Consórcio de carros</strong>, utilitários e <strong>Consórcio de veículos / Pesados</strong> garante a frota sempre rodando na MA-201, otimizando os custos operacionais da sua empresa.</p>
+
+                    <h3>Consórcio de carros: Conquiste sua independência na região metropolitana do Maranhão</h3>
+                    <p>Finalizando, o <strong>Consórcio de carros</strong> é a base para organizar o orçamento familiar em uma das regiões mais dinâmicas do estado. Em vez de pagar aluguel do dinheiro aos bancos, invista na construção do seu próprio patrimônio. Conte com a Liberty Revisional para entregar a sua <strong>Carta de Crédito</strong> e transformar sua qualidade de vida em São José de Ribamar.</p>
+
+                    <div class="resumo-tecnico">Resumo: Estratégias financeiras sólidas em <strong>Consórcio de carros</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> no Araçagy, Miritiua, Parque Vitória e toda a cidade de São José de Ribamar - MA.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em SJ de Ribamar</h3>
+                    <p>Planejamento estratégico de alto nível na região que mais cresce na Grande Ilha. Ajudamos a construir patrimônio real no Araçagy, Panaquatira e adjacências sem juros.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento SJR</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Araçagy</li>
+                        <li>Consórcio no Miritiua</li>
+                        <li>Consórcio no Parque Vitória</li>
+                        <li>Consórcio em Panaquatira</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Grande Ilha</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-carros/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Carros
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em São José de Ribamar e Maranhão | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
