@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Jabaquara | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Jabaquara",
+      "description": "Consultoria premium em consórcio de motos e planejamento financeiro em Jabaquara, Zona Sul de SP. Atendimento para Vila Santa Catarina, Jardim Antártica e região do Metrô.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-motos/jabaquara",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jabaquara",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Jabaquara",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Jabaquara</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Sua conexão com a liberdade no <span class="destaque">Portão da Zona Sul</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa sua mobilidade no distrito que conecta a capital ao litoral. Adquira sua motocicleta premium ou otimize sua frota em Jabaquara com planejamento estratégico e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Jabaquara</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Jabaquara">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia dos Imigrantes">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Vila Santa Catarina">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Jabaquara SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>ACELERE SUA ROTINA COM O CONSÓRCIO DE MOTOS EM JABAQUARA</h3>
+                    <p>O Jabaquara é um ponto nevrálgico de transporte e comércio na Zona Sul de SP, servindo de porta de entrada para quem utiliza a <strong>Rodovia dos Imigrantes</strong>. O fluxo intenso na <strong>Avenida Engenheiro Armando de Arruda Pereira</strong> exige veículos que garantam rapidez e economia. Com o nosso <strong>Consórcio de Motos</strong>, você planeja a compra de modelos esportivos, custom ou utilitários com poder de negociação à vista, livrando-se das taxas abusivas dos financiamentos que travam seu crescimento financeiro.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Jabaquara SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DA VILA SANTA CATARINA AO METRÔ</h3>
+                    <p>Para o investidor do Jabaquara que busca aliar agilidade urbana com inteligência patrimonial:</p>
+                    <ul class="check-list">
+                        <li>Consultoria técnica para motocicletas de alta cilindrada na <strong>Vila Santa Catarina</strong> e <strong>Jardim Antártica</strong>.</li>
+                        <li>Cartas de crédito estratégicas para frotas de serviço próximas ao <strong>Terminal Jabaquara</strong> e <strong>São Paulo Expo</strong>.</li>
+                        <li>Estratégias de aquisição programada para profissionais que circulam pelo eixo da <strong>Avenida Santa Catarina</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Jabaquara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Jabaquara</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Jabaquara</h4><p>Agilidade para vencer o trânsito da Armando de Arruda com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Jabaquara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Jabaquara</h4><p>Casas e apartamentos próximos ao metrô via planejamento imobiliário.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Jabaquara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Jabaquara</h4><p>Veículos premium para transitar pela Imigrantes e região sul.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Jabaquara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Jabaquara</h4><p>Frotas para logística e serviços na conexão capital-litoral.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Jabaquara</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Jabaquara</h4><p>Crédito para modernização comercial e reformas residenciais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Jabaquara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista no coração da Zona Sul</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a força econômica do Jabaquara.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Jabaquara+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Jabaquara</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO LOCAL) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: JABAQUARA (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como autoridade em planejamento financeiro na Zona Sul de São Paulo, a Liberty Revisional posiciona o <strong>Consórcio de motos</strong> em Jabaquara como a ferramenta definitiva para quem busca agilidade e blindagem patrimonial. Em um distrito marcado pela alta circulação de pessoas e mercadorias, a rapidez de uma motocicleta aliada à inteligência do consórcio é o segredo para manter sua liberdade sem comprometer o caixa com juros abusivos bancários.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica no eixo da Linha Azul</h3>
+                    <p>O <strong>Consórcio de motos</strong> em Jabaquara é a solução ideal para quem transita diariamente entre o terminal rodoviário e os polos empresariais da Zona Sul. Planejar sua <strong>Carta de Crédito</strong> conosco permite que você adquira o bem à vista, garantindo descontos agressivos e a posse de um veículo com alta liquidez. Seja para rodar pela Avenida Santa Catarina ou pela Imigrantes, o sistema Liberty garante previsibilidade e economia real.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Decisões no Jabaquara</h3>
+                    <p>Escolher entre o <strong>Consórcio de motos</strong> ou o <strong>Consórcio de carros</strong> depende da sua rotina na Armando de Arruda Pereira. Para quem foge dos congestionamentos nos horários de pico, a moto é a escolha vencedora. Para demandas familiares e viagens, o carro oferece o conforto necessário. Na Liberty Revisional, estruturamos o <strong>Consórcio</strong> com foco em lances estratégicos, garantindo que você chegue ao seu objetivo no tempo planejado.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Investimento na Vila Santa Catarina</h3>
+                    <p>Clientes de visão em regiões como Vila Santa Catarina e Jardim Antártica utilizam o <strong>Consórcio de motos</strong> para sua frota pessoal enquanto consolidam sua base de ativos via <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você adquire apartamentos próximos ao Metrô Jabaquara ou constrói seu <strong>Consórcio imóvel</strong> sem pagar os juros compostos que corroem a rentabilidade do patrimônio físico.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios da Zona Sul</h3>
+                    <p>Nossa reputação como um dos <strong>Melhores consórcios</strong> da região de Jabaquara é fruto da transparência e análise técnica de grupos saudáveis. Gerenciamos seu <strong>Consórcio de dinheiro</strong> avaliando as melhores métricas de contemplação do mercado nacional. Para o público do Jabaquara, isso significa assessoria VIP e a segurança de um investimento auditado que foca no fortalecimento do seu poder de compra.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Reformas no Jabaquara</h3>
+                    <p>A renovação residencial constante no Jabaquara exige planejamento inteligente. Além do <strong>Consórcio de motos</strong>, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria ou modernizar espaços comerciais próximos ao Centro de Exposições, essa modalidade utiliza as menores taxas administrativas do mercado, transformando planos em realidade física.</p>
+
+                    <h3>Consórcio de motos: Blindagem para frotas e logística de serviços</h3>
+                    <p>O Jabaquara é um hub logístico natural pela proximidade com o litoral. Para empresas de serviços e entregas rápidas, o <strong>Consórcio de motos</strong> de frota é essencial. Atrelando este planejamento ao <strong>Consórcio de veículos / Pesados</strong> para transporte pesado, sua operação ganha competitividade financeira. Eliminamos os juros da planilha, garantindo que seu negócio cresça de forma saudável em todo o estado de São Paulo.</p>
+
+                    <h3>Consórcio de motos: Sua rota para o sucesso financeiro no Jabaquara</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em Jabaquara com a Liberty Revisional é o caminho de quem entende de valor. Das áreas residenciais aos polos comerciais do distrito, sua conquista merece o suporte de especialistas em consórcio. Procure nossos consultores e garanta sua <strong>Carta de Crédito</strong> no topo do mercado paulistano com a autoridade que sua conquista exige.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Jabaquara, Vila Santa Catarina, Jardim Antártica e Zona Sul de SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Jabaquara (SP)</h3>
+                    <p>Assessoria financeira de alto nível no portão de entrada da Zona Sul. Transformamos estratégias de consórcio em patrimônio sólido para o público paulistano.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Jabaquara</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Vila Santa Catarina</li>
+                        <li>Consórcio no Jardim Antártica</li>
+                        <li>Consórcio próximo ao Metrô</li>
+                        <li>Consórcio na Imigrantes</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Jabaquara</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="./" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Jabaquara e Zona Sul de SP | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

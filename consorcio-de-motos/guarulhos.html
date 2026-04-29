@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Guarulhos | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Guarulhos",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Guarulhos, SP. Planejamento estratégico para Vila Augusta, Macedo, Maia e Pimentas.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-motos/guarulhos",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Guarulhos",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Guarulhos",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Guarulhos</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade ágil e potente na <span class="destaque">Cidade Aeroporto</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa suas conquistas na Grande São Paulo. Conquiste sua moto de alta performance ou estruture sua frota em Guarulhos com as melhores cartas de crédito e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Guarulhos</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Guarulhos">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia Presidente Dutra">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Bosque Maia Guarulhos">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Guarulhos SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONHEÇA O CONSÓRCIO DE MOTOS DA LIBERTY REVISIONAL EM GUARULHOS</h3>
+                    <p>Guarulhos é um dos maiores eixos logísticos do país, onde a agilidade define quem chega na frente. O tráfego intenso na <strong>Rodovia Presidente Dutra</strong> e as conexões com a <strong>Avenida Paulo Faccini</strong> exigem soluções de mobilidade que não fiquem presas em engarrafamentos. Com o nosso <strong>Consórcio de Motos</strong>, o guarulhense adquire poder de compra para modelos esportivos ou utilitários, fugindo das taxas abusivas dos financiamentos e garantindo a posse de um bem com alta liquidez no mercado.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Guarulhos SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DA VILA AUGUSTA AO POLO INDUSTRIAL</h3>
+                    <p>Para o investidor de Guarulhos que valoriza o tempo e a rentabilidade do capital:</p>
+                    <ul class="check-list">
+                        <li>Assessoria premium para motocicletas de alta cilindrada em bairros nobres como o <strong>Maia</strong> e <strong>Vila Augusta</strong>.</li>
+                        <li>Planos de expansão para frotas de entrega e logística próximas ao <strong>Aeroporto Internacional de Cumbica</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores e empresários do <strong>Macedo</strong>, <strong>Pimentas</strong> e <strong>Bonsucesso</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Guarulhos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Guarulhos</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Guarulhos</h4><p>Agilidade imbatível para o dia a dia entre o Centro e o Shopping Internacional.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Guarulhos</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Guarulhos</h4><p>Casas e apartamentos próximos ao Bosque Maia via planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Guarulhos</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Guarulhos</h4><p>Veículos premium para transitar com status pela Fernão Dias e Dutra.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Guarulhos</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Guarulhos</h4><p>Frotas para logística aeroportuária e comercial de grande porte.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Guarulhos</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Guarulhos</h4><p>Crédito para modernização de infraestrutura empresarial e reformas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Guarulhos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Cidade Aeroporto</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua moto com quem domina o planejamento financeiro de Guarulhos.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Guarulhos+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Guarulhos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO GUARULHENSE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: GUARULHOS (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência em consultoria patrimonial na Grande São Paulo, a Liberty Revisional posiciona o <strong>Consórcio de motos</strong> em Guarulhos como a ferramenta definitiva para vencer os desafios urbanos. Em uma cidade que pulsa como o coração logístico da América Latina, possuir um veículo que garante agilidade entre a Rodovia Presidente Dutra e a Fernão Dias é um diferencial competitivo. Nossa estratégia blinda o seu capital, transformando parcelas que seriam perdidas em juros bancários em um investimento sólido e planejado.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica nas rodovias de Guarulhos</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a escolha inteligente de quem não aceita ficar parado no tempo. Planejar sua <strong>Carta de Crédito</strong> conosco permite ao cidadão de Guarulhos adquirir motocicletas de alta cilindrada com descontos agressivos na compra à vista. Seja para o lazer nos finais de semana ou para a correria executiva que o Aeroporto de Cumbica exige, o consórcio oferece a previsibilidade financeira que o seu bolso necessita para prosperar.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Mobilidade na Paulo Faccini</h3>
+                    <p>O fluxo dinâmico na Avenida Paulo Faccini e arredores do Bosque Maia exige decisões rápidas. O <strong>Consórcio de motos</strong> atende à necessidade de rapidez e baixo custo operacional para quem circula diariamente por Guarulhos. Já o <strong>Consórcio de carros</strong> oferece o conforto para viagens e compromissos familiares. Na Liberty Revisional, estruturamos seu <strong>Consórcio</strong> com foco em lances estratégicos, acelerando sua contemplação para que o bem chegue às suas mãos no tempo planejado.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Valorização no Maia e Vila Augusta</h3>
+                    <p>A expansão vertical em Guarulhos, especialmente em bairros como Vila Augusta e Macedo, é um convite ao investimento. Clientes de visão utilizam o <strong>Consórcio de motos</strong> para garantir sua mobilidade pessoal enquanto utilizam o <strong>Consórcio Imobiliário</strong> para construir patrimônio real. Com uma <strong>Carta de crédito imobiliário</strong>, você adquire apartamentos próximos ao Shopping Internacional ou constrói seu <strong>Consórcio imóvel</strong> sem se tornar refém das taxas abusivas dos grandes bancos.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Guarulhos</h3>
+                    <p>Nossa posição como um dos <strong>Melhores consórcios</strong> da região de Guarulhos é consolidada pela transparência e análise técnica de grupos. Gerenciamos seu <strong>Consórcio de dinheiro</strong> focando em grupos com alta saúde financeira e taxas de contemplação acima da média. Para o público guarulhense, isso significa ter a segurança de uma consultoria de elite que trabalha para que o seu planejamento de capital se transforme em bens de alto valor.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Inovação residencial em Guarulhos</h3>
+                    <p>O crescimento residencial em regiões como o Pimentas e Bonsucesso demanda planejamento para obras. Além do <strong>Consórcio de motos</strong>, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria ou modernizar galpões comerciais, essa modalidade permite investir na estrutura física do seu patrimônio com as menores taxas administrativas do mercado nacional.</p>
+
+                    <h3>Consórcio de motos: Eficiência logística para o Aeroporto e empresas</h3>
+                    <p>O setor de serviços e logística é o motor de Guarulhos. Para empresas que operam com entregas expressas, o <strong>Consórcio de motos</strong> é vital para a renovação de frotas. Ao integrar este planejamento com o <strong>Consórcio de veículos / Pesados</strong>, sua operação ganha fôlego financeiro. Eliminamos os juros compostos que corroem os lucros, garantindo que o seu negócio cresça de forma saudável e sustentável em todo o estado de São Paulo.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Guarulhos</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em Guarulhos com a Liberty Revisional é a rota mais segura para o seu sucesso patrimonial. Do Centro aos distritos industriais, sua conquista merece o suporte de especialistas. Procure nossa equipe e garanta sua <strong>Carta de Crédito</strong> com quem domina a engenharia financeira do consórcio estratégico.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Vila Augusta, Macedo, Bosque Maia, Pimentas, Bonsucesso e toda Guarulhos - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Guarulhos (SP)</h3>
+                    <p>Assessoria financeira de alto nível na Cidade Aeroporto. Transformamos estratégias de consórcio em patrimônio sólido para o público guarulhense.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Guarulhos</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Vila Augusta</li>
+                        <li>Consórcio no Bosque Maia</li>
+                        <li>Consórcio no Macedo</li>
+                        <li>Consórcio nos Pimentas</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Guarulhos</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Guarulhos e Grande São Paulo | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

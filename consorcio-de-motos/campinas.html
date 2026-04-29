@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Campinas | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Campinas",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Campinas, SP. Planejamento estratégico para Cambuí, Taquaral, Barão Geraldo e Mansões Santo Antônio.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-motos/campinas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Campinas",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Campinas",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Campinas</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Alta performance e liberdade na <span class="destaque">Capital Tecnológica</span>.</h2>
+                <p class="hero-description">A Liberty Revisional redefine sua mobilidade no interior paulista. Adquira motocicletas de alta cilindrada ou frotas comerciais em Campinas com planejamento de elite e total isenção de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Campinas</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Campinas">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Avenida Norte-Sul">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Cambuí Campinas">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Campinas SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>DOMINE AS RUAS COM O CONSÓRCIO DE MOTOS EM CAMPINAS</h3>
+                    <p>Campinas é o motor econômico do interior de São Paulo, onde o tempo é o ativo mais precioso. O fluxo intenso na <strong>Avenida Norte-Sul</strong> e os acessos rápidos pela <strong>Rodovia Dom Pedro I</strong> exigem agilidade e eficiência. Com o nosso <strong>Consórcio de Motos</strong>, o público campineiro acessa cartas de crédito para modelos esportivos, custom ou frotas de entrega, eliminando o custo proibitivo dos financiamentos e focando na valorização real do seu patrimônio sobre duas rodas.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Campinas SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DO CAMBUÍ AO DISTRITO INDUSTRIAL</h3>
+                    <p>Para quem busca otimizar a rotina na metrópole com inteligência financeira:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas premium e Big Trails no <strong>Cambuí</strong> e <strong>Taquaral</strong>.</li>
+                        <li>Cartas de crédito para expansão de frotas logísticas próximas ao <strong>Aeroporto de Viracopos</strong>.</li>
+                        <li>Estratégias de aquisição programada para estudantes e profissionais em <strong>Barão Geraldo</strong> e <strong>Unicamp</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Campinas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Campinas</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Campinas</h4><p>Agilidade para vencer o trânsito da Glicério com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Campinas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Campinas</h4><p>Casas em condomínios no Alphaville e Mansões Santo Antônio.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Campinas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Campinas</h4><p>Veículos executivos para circular pelos Shoppings Iguatemi e Dom Pedro.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Campinas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Campinas</h4><p>Logística pesada para empresas do polo tecnológico e industrial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Campinas</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Campinas</h4><p>Crédito para reformas e eventos de alto padrão no interior.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Campinas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Capital Tecnológica</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a força econômica de Campinas.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Campinas+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Campinas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CAMPINEIRO) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CAMPINAS (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como autoridade máxima em soluções de crédito estruturado no interior paulista, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Campinas como a via expressa para a liberdade financeira. Em uma metrópole onde o trânsito da Avenida Prestes Maia e da Rodovia Anhanguera pode comprometer a produtividade, possuir um veículo ágil não é apenas conveniência, é estratégia de negócio. Nossa consultoria blinda o investidor campineiro contra as flutuações da Taxa Selic, entregando um modelo de aquisição limpo e altamente rentável.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica nas avenidas de Campinas</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a solução definitiva para o profissional moderno que circula entre o Centro e o Shopping Parque Dom Pedro. Ao contrário do financiamento convencional, nossa <strong>Carta de Crédito</strong> permite que você planeje a troca da sua moto com lances calculados, garantindo que você chegue aos seus compromissos com rapidez e sem o peso de parcelas que dobram o valor do bem. É a inteligência financeira aplicada à mobilidade urbana campineira.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Otimização de tempo em Campinas</h3>
+                    <p>Decidir entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> depende da sua necessidade de fluxo. Para quem enfrenta a Avenida Francisco Glicério diariamente, a motocicleta oferece uma economia de tempo imbatível. Já para o lazer com a família rumo ao distrito de Sousas, o carro traz o conforto necessário. Na Liberty, formatamos ambos os planos, garantindo que sua <strong>Carta de crédito</strong> seja o passaporte para um patrimônio livre de juros abusivos e focado em alta liquidez.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Estilo de vida no Cambuí e Taquaral</h3>
+                    <p>O perfil sofisticado de bairros como Cambuí e Taquaral exige um planejamento de ativos que acompanhe o alto padrão local. Muitos de nossos clientes utilizam o <strong>Consórcio de motos</strong> para adquirir modelos de luxo (Big Trails e Esportivas) como item de lazer, enquanto consolidam sua residência principal através do <strong>Consórcio Imobiliário</strong>. Com uma <strong>Carta de crédito imobiliário</strong>, você investe em apartamentos de alto luxo ou casas em condomínios fechados sem comprometer seu capital de giro com juros bancários.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Campinas</h3>
+                    <p>Sermos apontados como um dos <strong>Melhores consórcios</strong> da região de Campinas é fruto de um trabalho focado em análise de grupos e saúde financeira. Não apenas vendemos cotas; gerenciamos o seu <strong>Consórcio de dinheiro</strong> para maximizar as chances de contemplação rápida. Para o campineiro, isso representa a segurança de investir em um sistema auditado, com assessoria técnica que entende a dinâmica do mercado imobiliário e automotivo local.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Desenvolvimento em Barão Geraldo</h3>
+                    <p>Barão Geraldo vive um crescimento constante impulsionado pelo polo acadêmico e tecnológico. Além do <strong>Consórcio de motos</strong>, fundamental para a mobilidade estudantil e executiva, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja edificar sua <strong>Consórcio casa</strong> ou investir em estúdios para locação, essa modalidade utiliza as menores taxas administrativas do mercado, transformando o sonho da construção própria em um investimento planejado e seguro.</p>
+
+                    <h3>Consórcio de motos: Frotas logísticas e o Hub de Viracopos</h3>
+                    <p>A proximidade com o Aeroporto de Viracopos torna Campinas o maior centro logístico da América Latina. Para empresas que operam com entregas rápidas, o <strong>Consórcio de motos</strong> de frota, aliado ao <strong>Consórcio de veículos / Pesados</strong>, é o segredo para manter a competitividade. Eliminamos o custo financeiro da sua operação, permitindo que sua frota seja renovada periodicamente através de <strong>Cartas de Crédito</strong>, sem descapitalizar o caixa da sua empresa.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira na Metrópole Campineira</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em Campinas com a Liberty Revisional é um passo em direção à autonomia. Da Avenida Lix da Cunha aos novos empreendimentos do Mansões Santo Antônio, o seu crescimento deve ser sustentável. Conte com nossos especialistas para estruturar sua próxima <strong>Carta de Crédito</strong> e domine o território campineiro com a solidez que só o consórcio estratégico pode oferecer.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Cambuí, Taquaral, Barão Geraldo, Sousas, Mansões Santo Antônio e toda Campinas - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Campinas (SP)</h3>
+                    <p>Assessoria financeira de alta performance na Capital Tecnológica. Especialistas em converter planejamento em ativos sólidos para o público campineiro.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento CPS</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Cambuí</li>
+                        <li>Consórcio no Taquaral</li>
+                        <li>Consórcio em Barão Geraldo</li>
+                        <li>Consórcio no Mansões S. Antônio</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Campinas</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Campinas e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

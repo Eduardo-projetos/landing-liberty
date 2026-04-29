@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em São Bernardo do Campo | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em São Bernardo do Campo",
+      "description": "Consultoria premium em consórcio de motos e investimentos em São Bernardo do Campo, ABC Paulista. Planejamento para Jardim do Mar, Nova Petrópolis e Rudge Ramos.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-motos/sao-bernardo-do-campo",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Bernardo do Campo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "São Bernardo do Campo",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em São Bernardo do Campo</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Liberdade sobre duas rodas na <span class="destaque">Capital do Automóvel</span>.</h2>
+                <p class="hero-description">A Liberty Revisional eleva o seu poder de compra no coração industrial do ABC. Conquiste motocicletas de alta cilindrada ou frotas logísticas em São Bernardo com planejamento de elite e zero juros.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em São Bernardo</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos SBC">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia Anchieta">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Jardim do Mar SBC">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty São Bernardo do Campo SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>DOMINE O ABC COM O CONSÓRCIO DE MOTOS EM SÃO BERNARDO DO CAMPO</h3>
+                    <p>São Bernardo do Campo é o berço da indústria automotiva nacional, onde a mobilidade é o centro da economia. O fluxo constante na <strong>Via Anchieta</strong> e o dinamismo da <strong>Rua Marechal Deodoro</strong> exigem soluções de transporte ágeis e econômicas. Com o nosso <strong>Consórcio de Motos</strong>, o público são-bernardense adquire poder de compra imediato para motos premium ou frotas de serviço, blindando o patrimônio contra os juros abusivos e garantindo a posse de um bem com alta liquidez.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos São Bernardo do Campo SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DO JARDIM DO MAR AO RUDGE RAMOS</h3>
+                    <p>Para o investidor de São Bernardo que busca aliar tradição com inteligência financeira:</p>
+                    <ul class="check-list">
+                        <li>Assessoria VIP para motocicletas esportivas e Big Trails no <strong>Jardim do Mar</strong> e <strong>Nova Petrópolis</strong>.</li>
+                        <li>Cartas de crédito para expansão de frotas logísticas próximas ao <strong>Rodoanel</strong> e grandes polos industriais.</li>
+                        <li>Soluções de mobilidade para estudantes e profissionais no <strong>Rudge Ramos</strong> e região do <strong>Assunção</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em São Bernardo do Campo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em São Bernardo</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas São Bernardo</h4><p>Agilidade imbatível para o dia a dia entre o Centro e a Kennedy.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em São Bernardo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis São Bernardo</h4><p>Casas em condomínios e apartamentos no Jardim do Mar via consórcio.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em São Bernardo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis São Bernardo</h4><p>Veículos premium para rodar pela Avenida Kennedy e Anchieta.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em São Bernardo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados São Bernardo</h4><p>Frotas para o polo industrial e transporte de carga no ABC.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em São Bernardo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços São Bernardo</h4><p>Crédito para modernização de clínicas e reformas residenciais de luxo.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em São Bernardo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Capital do Automóvel</h2>
+            <p>Fale agora com a Liberty Revisional e conquiste sua moto com quem domina o mercado financeiro de São Bernardo do Campo.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Bernardo+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em São Bernardo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO LOCAL) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SÃO BERNARDO DO CAMPO (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como referência máxima em consultoria de crédito no ABC Paulista, a Liberty Revisional posiciona o <strong>Consórcio de motos</strong> em São Bernardo do Campo como a escolha de elite para mobilidade e investimento. Na cidade que respira o setor automotivo, a transição para a agilidade das duas rodas aliada à inteligência financeira do consórcio é o movimento certo para quem deseja prosperar. Nossa estratégia blinda o seu capital, transformando parcelas acessíveis em um patrimônio sólido e livre de juros bancários abusivos.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica da Avenida Kennedy à Anchieta</h3>
+                    <p>O <strong>Consórcio de motos</strong> em São Bernardo é a solução definitiva para o trânsito denso da região. Ao planejar sua <strong>Carta de Crédito</strong> conosco, você garante poder de compra à vista para negociar nas melhores concessionárias da Jurubatuba ou da Faria Lima. Seja para uma moto de alto desempenho para o lazer ou frotas eficientes para entregas corporativas, o sistema Liberty oferece a previsibilidade financeira que o empresário e o trabalhador são-bernardense exigem.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Inteligência no ABC</h3>
+                    <p>A decisão entre o <strong>Consórcio de motos</strong> ou o <strong>Consórcio de carros</strong> depende da sua rotina entre o Rudge Ramos e o Riacho Grande. Para quem busca economia de tempo e combustível no trajeto diário para a capital, a moto é imbatível. Para o conforto familiar nos finais de semana, o carro é o ideal. Na Liberty Revisional, formatamos o seu <strong>Consórcio</strong> com foco em contemplação por lances estratégicos, garantindo que o seu objetivo seja alcançado sem descapitalizar seu caixa.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Luxo no Jardim do Mar e Nova Petrópolis</h3>
+                    <p>Moradores de áreas nobres como Jardim do Mar e Nova Petrópolis utilizam o <strong>Consórcio de motos</strong> para sua frota pessoal enquanto expandem seus ativos reais via <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você adquire apartamentos de alto padrão ou constrói seu <strong>Consórcio imóvel</strong> em condomínios horizontais em São Bernardo sem pagar os juros abusivos que corroem a valorização do bem ao longo das décadas.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de São Bernardo</h3>
+                    <p>Nosso título como um dos <strong>Melhores consórcios</strong> da região de São Bernardo é fruto da nossa transparência e foco em saúde de grupo. Gerenciamos seu <strong>Consórcio de dinheiro</strong> avaliando as métricas de contemplação para encurtar o tempo de entrega do seu bem. Para o público de SBC, isso representa segurança jurídica e assessoria técnica VIP para que o planejamento financeiro se torne uma realidade palpável e rentável.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Reformas no Bairro Assunção</h3>
+                    <p>A constante modernização residencial em bairros como o Assunção e o Planalto exige planejamento. Além do <strong>Consórcio de motos</strong>, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria ou modernizar galpões industriais, essa modalidade oferece as menores taxas administrativas do mercado nacional, permitindo que você invista na estrutura física do seu patrimônio com inteligência e economia.</p>
+
+                    <h3>Consórcio de motos: Blindagem para frotas industriais e logística</h3>
+                    <p>São Bernardo é o coração logístico e industrial do estado. Para empresas que dependem de agilidade e baixo custo operacional, o <strong>Consórcio de motos</strong> de frota é essencial. Atrelando este plano ao <strong>Consórcio de veículos / Pesados</strong> para logística pesada no Rodoanel, sua operação ganha eficiência financeira. Eliminamos os juros compostos da sua planilha de custos, garantindo que sua empresa cresça de forma saudável e competitiva em todo o Brasil.</p>
+
+                    <h3>Consórcio de motos: Sua liberdade financeira em São Bernardo do Campo</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em São Bernardo com a Liberty Revisional é a escolha de quem valoriza o futuro. Da Represa Billings aos polos industriais, a sua marca e o seu patrimônio devem refletir sua inteligência financeira. Procure nossos consultores e garanta sua <strong>Carta de Crédito</strong> com quem domina a dinâmica econômica do ABC Paulista.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Jardim do Mar, Nova Petrópolis, Rudge Ramos, Assunção, Planalto e toda São Bernardo do Campo - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em São Bernardo (SP)</h3>
+                    <p>Assessoria financeira de alto nível na Capital do Automóvel. Transformamos seu planejamento de consórcio em patrimônio sólido para o público do ABC.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento SBC</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Jardim do Mar</li>
+                        <li>Consórcio na Nova Petrópolis</li>
+                        <li>Consórcio no Rudge Ramos</li>
+                        <li>Consórcio no Bairro Assunção</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos São Bernardo</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="./" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em São Bernardo do Campo e Grande ABC | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

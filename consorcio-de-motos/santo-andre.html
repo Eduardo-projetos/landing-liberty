@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Santo André | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Santo André",
+      "description": "Consultoria premium em consórcio de motos e planejamento patrimonial em Santo André, ABC Paulista. Especialistas em Bairro Jardim, Vila Assunção e Campestre.",
+      "url": "https://libertyrevisional.com.br/consorcio-de-motos/santo-andre",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santo André",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Santo André",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Santo André</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Alta performance e economia no <span class="destaque">Polo Industrial do ABC</span>.</h2>
+                <p class="hero-description">A Liberty Revisional lidera a transformação patrimonial em Santo André. Adquira sua motocicleta premium ou otimize sua frota corporativa com cartas de crédito inteligentes e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Santo André</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Santo André">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Avenida dos Estados">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Bairro Jardim Santo André">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Santo André ABC">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>ACELERE SEUS RESULTADOS COM O CONSÓRCIO DE MOTOS EM SANTO ANDRÉ</h3>
+                    <p>Santo André é o coração pulsante do ABC Paulista, conectando grandes indústrias ao mercado consumidor da capital. O deslocamento estratégico pela <strong>Avenida dos Estados</strong> e os acessos à <strong>Rodovia Anchieta</strong> pedem veículos que vençam o trânsito com eficiência. Com o nosso <strong>Consórcio de Motos</strong>, o andreense conquista cartas de crédito para modelos esportivos, custom ou frotas de entrega, protegendo o seu capital contra a inflação e eliminando as taxas abusivas dos bancos.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Santo André SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DO BAIRRO JARDIM AO CAMPESTRE</h3>
+                    <p>Para o investidor de Santo André que planeja o futuro com segurança e liquidez:</p>
+                    <ul class="check-list">
+                        <li>Assessoria VIP para motocicletas de alta cilindrada no <strong>Bairro Jardim</strong> e <strong>Vila Assunção</strong>.</li>
+                        <li>Cartas de crédito para renovação de frotas industriais próximas ao <strong>Polo Petroquímico</strong>.</li>
+                        <li>Soluções de mobilidade para profissionais que circulam entre o <strong>Grand Plaza Shopping</strong> e o <strong>Parque das Nações</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Santo André">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Santo André</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Santo André</h4><p>Agilidade para superar o trânsito do ABC com economia real.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Santo André</h4><p>Apartamentos de alto padrão no Bairro Jardim e Campestre via consórcio.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Santo André</h4><p>Veículos premium para rodar pela Perimetral e Avenida Portugal.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Santo André</h4><p>Frotas para logística e distribuição em toda a região do Grande ABC.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Santo André</h4><p>Crédito para modernização comercial e reformas de alto nível.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Santo André</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Eleve seu patamar na força motriz do ABC</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua carta de crédito com quem domina o consórcio em Santo André.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Santo+André+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Santo André</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO ANDREENSE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SANTO ANDRÉ (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como referência em inteligência financeira no ABC Paulista, a Liberty Revisional posiciona o <strong>Consórcio de motos</strong> em Santo André como o motor da sua independência patrimonial. Em uma região marcada pela tradição industrial e um comércio efervescente, a agilidade de uma motocicleta não é apenas escolha, é ganho de produtividade. Nossa consultoria blinda o investidor andreense contra as taxas abusivas, transformando planos de aquisição em ativos reais e seguros no mercado de duas rodas.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica da Avenida dos Estados ao Centro</h3>
+                    <p>O <strong>Consórcio de motos</strong> em Santo André é a solução para quem busca fluidez entre a Zona Leste de SP e o Grande ABC. Ao estruturar sua <strong>Carta de Crédito</strong> conosco, você garante o poder de compra à vista, essencial para negociar descontos agressivos nas concessionárias da região. Seja para uma esportiva para rodar na Anchieta ou uma scooter para o dia a dia na Vila Bastos, o planejamento estratégico da Liberty encurta o prazo para a sua contemplação.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Eficiência no ABC Paulista</h3>
+                    <p>Escolher entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> depende da sua dinâmica de vida em Santo André. Para quem cruza a Avenida Portugal diariamente, a moto oferece economia e tempo. Para as demandas corporativas rumo ao Polo Petroquímico, o carro pode ser a escolha. Na Liberty, formatamos o <strong>Consórcio</strong> ideal, eliminando juros compostos e garantindo que cada parcela contribua diretamente para a formação do seu patrimônio líquido.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Solidez no Bairro Jardim e Campestre</h3>
+                    <p>Investidores de elite em Santo André utilizam o <strong>Consórcio de motos</strong> como item de mobilidade enquanto alavancam sua residência ou escritórios via <strong>Consórcio Imobiliário</strong>. Utilizando uma <strong>Carta de crédito imobiliário</strong>, você adquire apartamentos de luxo no Campestre ou casas no Bairro Jardim sem se tornar refém das taxas de juros bancárias que corroem a rentabilidade do investimento imobiliário ao longo das décadas.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Santo André</h3>
+                    <p>O título de um dos <strong>Melhores consórcios</strong> da região é fruto da nossa metodologia de lances estratégicos e saúde de grupo. Gerenciamos seu <strong>Consórcio de dinheiro</strong> com transparência, garantindo que o público de Santo André tenha acesso às melhores métricas de contemplação do mercado. Nossa assessoria técnica blinda seu contrato, focando em resultados reais e no fortalecimento do seu poder de compra regional.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Inovação na Vila Assunção</h3>
+                    <p>A expansão residencial em Santo André, especialmente na Vila Assunção e Vila Gilda, demanda planejamento. Além do <strong>Consórcio de motos</strong>, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja edificar sua <strong>Consórcio casa</strong> em terrenos valorizados ou modernizar imóveis comerciais, essa modalidade utiliza as menores taxas administrativas do país, permitindo que você construa com inteligência e economia.</p>
+
+                    <h3>Consórcio de motos: Alavancagem para frotas industriais e logísticas</h3>
+                    <p>O setor industrial de Santo André é um gigante que não para. Para empresas que operam com logística de suporte e entregas rápidas, o <strong>Consórcio de motos</strong> de frota, atrelado ao <strong>Consórcio de veículos / Pesados</strong>, é vital. Eliminamos o custo do endividamento bancário, permitindo que sua empresa renove a frota periodicamente com cartas de crédito, mantendo a competitividade e o fluxo de caixa saudáveis para expansão no ABC.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Santo André</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em Santo André com a Liberty Revisional é o caminho mais curto entre o seu plano e a posse do bem. Do Parque Celso Daniel às áreas industriais de Capuava, sua conquista merece o suporte de quem entende de engenharia financeira. Procure nossos consultores e posicione-se para conquistar sua <strong>Carta de Crédito</strong> com autoridade no mercado andreense.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Bairro Jardim, Vila Assunção, Campestre, Parque das Nações e toda Santo André - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Santo André (SP)</h3>
+                    <p>Assessoria financeira de alto nível no coração do ABC Paulista. Transformamos estratégias de consórcio em patrimônio sólido para o público andreense.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento ABC</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Bairro Jardim</li>
+                        <li>Consórcio na Vila Assunção</li>
+                        <li>Consórcio no Campestre</li>
+                        <li>Consórcio no Pq. das Nações</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Santo André</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="./" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Santo André e Grande ABC | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
