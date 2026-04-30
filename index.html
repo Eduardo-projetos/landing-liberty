@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-7XBTHWLV8M');
+        gtag('config', 'G-7XBTHWLV8M');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberty Revisional | Consórcio de Carros, Motos e Imóveis Sem Juros</title>
-    
+
     <!-- Meta Description Otimizada -->
-    <meta name="description" content="Planeje seu Consórcio de Carros, Motos ou Imóveis com a Liberty Revisional em Mogi das Cruzes e região. Fuja dos juros e conquiste sua carta de crédito com especialistas.">
+    <meta name="description"
+        content="Planeje seu Consórcio de Carros, Motos ou Imóveis com a Liberty Revisional em Mogi das Cruzes e região. Fuja dos juros e conquiste sua carta de crédito com especialistas.">
 
     <!-- Schema JSON-LD de Autoridade Máxima -->
     <script type="application/ld+json">
@@ -65,34 +67,150 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <!-- Fontes Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         /* ESTILIZAÇÃO DO CARD TESE DE AUTORIDADE - RESPONSIVO */
-        .seo-authority-section { padding: 40px 20px; background-color: #fff; }
-        .accordion-container { max-width: 1100px; margin: 0 auto; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-        .accordion-header { padding: 25px 30px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; color: #fff; transition: 0.3s; }
-        .accordion-header h2 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 15px; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
-        .accordion-icon { font-size: 1.2rem; transition: 0.4s; }
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; background: #fff; padding: 0 30px; color: #333; }
-        .accordion-content.open { max-height: 8000px; padding: 40px 30px; }
-        .accordion-content h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 700; color: #000; margin-top: 30px; border-left: 4px solid #000; padding-left: 15px; }
-        .accordion-content p { font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.7; color: #555; margin-bottom: 20px; }
-        .accordion-icon.rotate { transform: rotate(180deg); }
-        .resumo-tecnico-home { background: #f0f0f0; padding: 20px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; margin-top: 40px; border: 1px dashed #ccc; color: #333; }
+        .seo-authority-section {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .accordion-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .accordion-header {
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .accordion-header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .accordion-icon {
+            font-size: 1.2rem;
+            transition: 0.4s;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out;
+            background: #fff;
+            padding: 0 30px;
+            color: #333;
+        }
+
+        .accordion-content.open {
+            max-height: 8000px;
+            padding: 40px 30px;
+        }
+
+        .accordion-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #000;
+            margin-top: 30px;
+            border-left: 4px solid #000;
+            padding-left: 15px;
+        }
+
+        .accordion-content p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .accordion-icon.rotate {
+            transform: rotate(180deg);
+        }
+
+        .resumo-tecnico-home {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border: 1px dashed #ccc;
+            color: #333;
+        }
 
         @media (max-width: 768px) {
-            .accordion-header { padding: 20px; }
-            .accordion-header h2 { font-size: 0.9rem; }
-            .accordion-content { padding: 0 20px; }
-            .accordion-content.open { padding: 30px 20px; }
-            .accordion-content h3 { font-size: 1rem; }
-            .accordion-content p { font-size: 0.95rem; }
+            .accordion-header {
+                padding: 20px;
+            }
+
+            .accordion-header h2 {
+                font-size: 0.9rem;
+            }
+
+            .accordion-content {
+                padding: 0 20px;
+            }
+
+            .accordion-content.open {
+                padding: 30px 20px;
+            }
+
+            .accordion-content h3 {
+                font-size: 1rem;
+            }
+
+            .accordion-content p {
+                font-size: 0.95rem;
+            }
         }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1445976306714832');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1445976306714832&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
+
 <body>
 
     <!-- BOTÃO WHATSAPP FLUTUANTE -->
@@ -119,7 +237,8 @@
                 </ul>
 
                 <div class="header-btn">
-                    <a href="https://wa.me/5511947316137?text=Olá! Vim pelo site da Liberty Revisional." class="btn-whatsapp-header" target="_blank">
+                    <a href="https://wa.me/5511947316137?text=Olá! Vim pelo site da Liberty Revisional."
+                        class="btn-whatsapp-header" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -130,10 +249,10 @@
     <!-- HERO SECTION (ESTILO EMBRACON: LADO A LADO) -->
     <section id="inicio" class="hero">
         <div class="container hero-content">
-            
+
             <div class="hero-text">
                 <h1 class="hero-main-title">Você na direção certa.</h1>
-                
+
                 <!-- Elemento Visual da Linha com Ícone (Igual ao Print) -->
                 <div class="hero-visual-divider">
                     <span class="divider-line"></span>
@@ -143,19 +262,20 @@
                     <span class="divider-line"></span>
                 </div>
 
-                <h2 class="hero-sub-title">Seu carro novo, <span class="destaque">sem juros</span>, com a Liberty Revisional.</h2>
+                <h2 class="hero-sub-title">Seu carro novo, <span class="destaque">sem juros</span>, com a Liberty
+                    Revisional.</h2>
                 <p class="hero-description">Simule e compre seu consórcio online agora mesmo.</p>
-                
+
                 <div class="hero-cta-area">
                     <a href="#produtos" class="btn-primary">Simule agora</a>
                 </div>
             </div>
-            
+
             <div class="hero-carousel-side">
                 <div class="carousel-wrapper">
                     <!-- Imagens Laterais (Efeito de profundidade do print) -->
                     <div class="carousel-side-preview left"></div>
-                    
+
                     <div class="hero-slider">
                         <img src="assets/slide1.jpg" class="slide active" alt="Slide 1">
                         <img src="assets/slide2.jpg" class="slide" alt="Slide 2">
@@ -177,7 +297,9 @@
             <div class="bloco-texto-img hidden-left">
                 <div class="texto-sessao">
                     <h3>CONHEÇA O CONSORCIO DE CARROS DA LIBERTY REVISIONAL</h3>
-                    <p>Seja para compra do primeiro carro com cautela e planejamento ou para troca do seu veículo, o Consórcio de Carros é a melhor opção. As parcelas do consórcio são menores e sem juros, não há necessidade de entrada e há prazos maiores para quitação.</p>
+                    <p>Seja para compra do primeiro carro com cautela e planejamento ou para troca do seu veículo, o
+                        Consórcio de Carros é a melhor opção. As parcelas do consórcio são menores e sem juros, não há
+                        necessidade de entrada e há prazos maiores para quitação.</p>
                 </div>
                 <div class="imagem-sessao small-img">
                     <img src="assets/conteudo1.jpg" alt="Consórcio de Carros">
@@ -190,9 +312,11 @@
                     <h3>O CONSORCIO DE CARROS É UM EXCELENTE INVESTIMENTO</h3>
                     <p>Para compra do carro novo, seminovo ou usado, conheça todas as vantagens:</p>
                     <ul class="check-list">
-                        <li>Planejamento do seu jeito. Escolha a marca, o modelo e os detalhes do carro de acordo com seu orçamento</li>
+                        <li>Planejamento do seu jeito. Escolha a marca, o modelo e os detalhes do carro de acordo com
+                            seu orçamento</li>
                         <li>Taxa de administração fixa e diluída nas parcelas</li>
-                        <li>É possível antecipar a contemplação utilizando os lances. Nem sempre será necessário esperar a contemplação por meio dos sorteios</li>
+                        <li>É possível antecipar a contemplação utilizando os lances. Nem sempre será necessário esperar
+                            a contemplação por meio dos sorteios</li>
                     </ul>
                 </div>
                 <div class="imagem-sessao small-img">
@@ -216,12 +340,13 @@
         <div class="container">
             <h3 class="section-title">Por que Consórcio da Liberty Revisional?</h3>
             <p class="subtitle">Entenda por que essa é a melhor escolha financeira.</p>
-            
+
             <div class="vantagens-grid">
                 <div class="card-vantagem">
                     <i class="fas fa-percentage"></i>
                     <h4>Zero Juros</h4>
-                    <p>Fuja das taxas abusivas dos financiamentos tradicionais. Pague apenas a taxa administrativa fixa.</p>
+                    <p>Fuja das taxas abusivas dos financiamentos tradicionais. Pague apenas a taxa administrativa fixa.
+                    </p>
                 </div>
                 <div class="card-vantagem">
                     <i class="fas fa-unlock-alt"></i>
@@ -247,12 +372,14 @@
         <div class="container">
             <h3 class="section-title">Escolha onde investir</h3>
             <p class="subtitle">Soluções completas para todos os seus objetivos.</p>
-            
+
             <div class="produtos-grid">
-                
+
                 <!-- CARD 1 -->
                 <div class="produto-card hidden-left">
-                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="card-img"
+                        style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');">
+                    </div>
                     <div class="icon-float"><i class="fas fa-car"></i></div>
                     <div class="card-content">
                         <div class="card-info">
@@ -260,7 +387,8 @@
                             <p>Carro novo ou seminovo? Planeje a troca do seu veículo com economia real.</p>
                         </div>
                         <div class="card-cta-mobile-fix">
-                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Automóvel*." target="_blank" class="btn-card">
+                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Automóvel*."
+                                target="_blank" class="btn-card">
                                 Simular Consórcio
                             </a>
                         </div>
@@ -269,7 +397,9 @@
 
                 <!-- CARD 2 -->
                 <div class="produto-card hidden-right">
-                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="card-img"
+                        style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');">
+                    </div>
                     <div class="icon-float"><i class="fas fa-home"></i></div>
                     <div class="card-content">
                         <div class="card-info">
@@ -277,7 +407,8 @@
                             <p>Saia do aluguel ou invista. Casas, apartamentos, terrenos ou reformas.</p>
                         </div>
                         <div class="card-cta-mobile-fix">
-                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Imóvel*." target="_blank" class="btn-card">
+                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Imóvel*."
+                                target="_blank" class="btn-card">
                                 Simular Consórcio
                             </a>
                         </div>
@@ -286,7 +417,9 @@
 
                 <!-- CARD 3 -->
                 <div class="produto-card hidden-left">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                    </div>
                     <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
                     <div class="card-content">
                         <div class="card-info">
@@ -294,7 +427,8 @@
                             <p>Liberdade sobre duas rodas. Motos de alta cilindrada ou para o dia a dia.</p>
                         </div>
                         <div class="card-cta-mobile-fix">
-                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Moto*." target="_blank" class="btn-card">
+                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Moto*."
+                                target="_blank" class="btn-card">
                                 Simular Consórcio
                             </a>
                         </div>
@@ -303,7 +437,9 @@
 
                 <!-- CARD 4 -->
                 <div class="produto-card hidden-right">
-                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="card-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+                    </div>
                     <div class="icon-float"><i class="fas fa-truck"></i></div>
                     <div class="card-content">
                         <div class="card-info">
@@ -311,7 +447,8 @@
                             <p>Caminhões, tratores e implementos agrícolas. Renove sua frota.</p>
                         </div>
                         <div class="card-cta-mobile-fix">
-                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Veículos Pesados*." target="_blank" class="btn-card">
+                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Veículos Pesados*."
+                                target="_blank" class="btn-card">
                                 Simular Consórcio
                             </a>
                         </div>
@@ -320,7 +457,9 @@
 
                 <!-- CARD 5 -->
                 <div class="produto-card hidden-left">
-                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="card-img"
+                        style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');">
+                    </div>
                     <div class="icon-float"><i class="fas fa-tools"></i></div>
                     <div class="card-content">
                         <div class="card-info">
@@ -328,7 +467,8 @@
                             <p>Viagens, cirurgias plásticas, festas ou reformas. Tudo planejado.</p>
                         </div>
                         <div class="card-cta-mobile-fix">
-                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Serviços*." target="_blank" class="btn-card">
+                            <a href="https://wa.me/5511947316137?text=Olá! Quero simular um consórcio de *Serviços*."
+                                target="_blank" class="btn-card">
                                 Simular Consórcio
                             </a>
                         </div>
@@ -355,78 +495,128 @@
         <div class="container">
             <div class="accordion-container">
                 <div class="accordion-header" onclick="toggleSEO()">
-                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: LIBERTY REVISIONAL - ESPECIALISTA EM CONSÓRCIOS</h2>
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: LIBERTY REVISIONAL - ESPECIALISTA EM
+                        CONSÓRCIOS</h2>
                     <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
                 </div>
                 <div class="accordion-content" id="contentSEO">
-                    <p>A <strong>Liberty Revisional</strong> consolida-se como a autoridade máxima em planejamento financeiro e <strong>Consórcio</strong> no Brasil. Nossa metodologia foca na eliminação de juros bancários e na construção de patrimônio sólido através de grupos estratégicos de <strong>Carta de Crédito</strong>.</p>
-                    
+                    <p>A <strong>Liberty Revisional</strong> consolida-se como a autoridade máxima em planejamento
+                        financeiro e <strong>Consórcio</strong> no Brasil. Nossa metodologia foca na eliminação de juros
+                        bancários e na construção de patrimônio sólido através de grupos estratégicos de <strong>Carta
+                            de Crédito</strong>.</p>
+
                     <!-- BLOCO 1: CARROS -->
                     <h3>Consórcio de carros: A estratégia para fugir dos juros bancários</h3>
-                    <p>O <strong>Consórcio de carros</strong> é a ferramenta mais inteligente para quem busca trocar de veículo ou adquirir o primeiro bem sem pagar o dobro em financiamentos. Com a Liberty Revisional, você utiliza o poder do <strong>Consórcio</strong> para planejar sua compra com parcelas que cabem no seu orçamento.</p>
+                    <p>O <strong>Consórcio de carros</strong> é a ferramenta mais inteligente para quem busca trocar de
+                        veículo ou adquirir o primeiro bem sem pagar o dobro em financiamentos. Com a Liberty
+                        Revisional, você utiliza o poder do <strong>Consórcio</strong> para planejar sua compra com
+                        parcelas que cabem no seu orçamento.</p>
 
                     <h3>Consórcio de carros: Como funciona o lance para contemplação rápida</h3>
-                    <p>Dentro do <strong>Consórcio de carros</strong>, o lance é a aceleração do seu sonho. Analisamos o comportamento de cada grupo para sugerir o momento ideal de ofertar seu lance, garantindo que sua <strong>Carta de Crédito</strong> seja liberada com agilidade e segurança.</p>
+                    <p>Dentro do <strong>Consórcio de carros</strong>, o lance é a aceleração do seu sonho. Analisamos o
+                        comportamento de cada grupo para sugerir o momento ideal de ofertar seu lance, garantindo que
+                        sua <strong>Carta de Crédito</strong> seja liberada com agilidade e segurança.</p>
 
                     <h3>Consórcio de carros: Vantagens da Liberty Revisional no mercado nacional</h3>
-                    <p>Atuamos como um dos <strong>Melhores consórcios</strong> do país, oferecendo suporte técnico para que seu <strong>Consórcio de carros</strong> seja um investimento e não uma dívida. Nossa consultoria garante transparência total desde a adesão até a entrega das chaves.</p>
+                    <p>Atuamos como um dos <strong>Melhores consórcios</strong> do país, oferecendo suporte técnico para
+                        que seu <strong>Consórcio de carros</strong> seja um investimento e não uma dívida. Nossa
+                        consultoria garante transparência total desde a adesão até a entrega das chaves.</p>
 
                     <h3>Consórcio de carros: Flexibilidade para modelos novos e seminovos</h3>
-                    <p>O <strong>Consórcio de carros</strong> não te limita. Com a carta em mãos, você tem poder de negociação à vista para escolher o veículo de sua preferência, aproveitando descontos que só quem possui o <strong>Consórcio de dinheiro</strong> consegue obter.</p>
+                    <p>O <strong>Consórcio de carros</strong> não te limita. Com a carta em mãos, você tem poder de
+                        negociação à vista para escolher o veículo de sua preferência, aproveitando descontos que só
+                        quem possui o <strong>Consórcio de dinheiro</strong> consegue obter.</p>
 
                     <!-- BLOCO 2: IMÓVEIS -->
                     <h3>Consórcio Imobiliário: O guia para sair do aluguel com inteligência</h3>
-                    <p>O <strong>Consórcio Imobiliário</strong> é a base para quem deseja adquirir a casa própria ou investir em terrenos. Ao contrário do financiamento habitacional, o <strong>Consórcio imóvel</strong> não possui juros, apenas uma taxa de administração reduzida e diluída no prazo.</p>
+                    <p>O <strong>Consórcio Imobiliário</strong> é a base para quem deseja adquirir a casa própria ou
+                        investir em terrenos. Ao contrário do financiamento habitacional, o <strong>Consórcio
+                            imóvel</strong> não possui juros, apenas uma taxa de administração reduzida e diluída no
+                        prazo.</p>
 
                     <h3>Consórcio Imobiliário: Uso do FGTS para lances e quitação</h3>
-                    <p>No <strong>Consórcio Imobiliário</strong>, você pode utilizar seu FGTS como lance ou para abater parcelas. Essa flexibilidade torna o <strong>Consórcio casa</strong> a opção favorita de investidores que buscam maximizar a rentabilidade do seu capital parado.</p>
+                    <p>No <strong>Consórcio Imobiliário</strong>, você pode utilizar seu FGTS como lance ou para abater
+                        parcelas. Essa flexibilidade torna o <strong>Consórcio casa</strong> a opção favorita de
+                        investidores que buscam maximizar a rentabilidade do seu capital parado.</p>
 
                     <h3>Consórcio Imobiliário: Construção e Reforma sem dívidas</h3>
-                    <p>Além da compra, o <strong>Consórcio Imobiliário</strong> abrange o <strong>Consórcio para construção</strong>. Com a <strong>Carta de crédito imobiliário</strong>, você gerencia sua obra com cronograma financeiro organizado, valorizando seu patrimônio de forma progressiva.</p>
+                    <p>Além da compra, o <strong>Consórcio Imobiliário</strong> abrange o <strong>Consórcio para
+                            construção</strong>. Com a <strong>Carta de crédito imobiliário</strong>, você gerencia sua
+                        obra com cronograma financeiro organizado, valorizando seu patrimônio de forma progressiva.</p>
 
                     <h3>Consórcio Imobiliário: Alavancagem patrimonial para investidores</h3>
-                    <p>Muitos clientes utilizam o <strong>Consórcio Imobiliário</strong> para criar renda passiva. Através de grupos selecionados, é possível adquirir imóveis para locação, onde o próprio aluguel auxilia no pagamento das parcelas do <strong>Consórcio</strong>.</p>
+                    <p>Muitos clientes utilizam o <strong>Consórcio Imobiliário</strong> para criar renda passiva.
+                        Através de grupos selecionados, é possível adquirir imóveis para locação, onde o próprio aluguel
+                        auxilia no pagamento das parcelas do <strong>Consórcio</strong>.</p>
 
                     <!-- BLOCO 3: MOTOS -->
                     <h3>Consórcio de motos: Agilidade urbana e economia real</h3>
-                    <p>O <strong>Consórcio de motos</strong> é ideal para quem busca mobilidade e baixo custo de manutenção. Sem os juros altos do crédito direto ao consumidor, o <strong>Consórcio</strong> viabiliza sua moto nova com taxas de administração atrativas.</p>
+                    <p>O <strong>Consórcio de motos</strong> é ideal para quem busca mobilidade e baixo custo de
+                        manutenção. Sem os juros altos do crédito direto ao consumidor, o <strong>Consórcio</strong>
+                        viabiliza sua moto nova com taxas de administração atrativas.</p>
 
                     <h3>Consórcio de motos: Do lazer ao trabalho com planejamento</h3>
-                    <p>Seja para uso recreativo ou para atuar no mercado de entregas, o <strong>Consórcio de motos</strong> da Liberty Revisional oferece o plano certo para cada perfil de motociclista.</p>
+                    <p>Seja para uso recreativo ou para atuar no mercado de entregas, o <strong>Consórcio de
+                            motos</strong> da Liberty Revisional oferece o plano certo para cada perfil de motociclista.
+                    </p>
 
                     <h3>Consórcio de motos: Como garantir sua moto de alta cilindrada</h3>
-                    <p>O <strong>Consórcio de motos</strong> também é excelente para quem sonha com modelos premium de alta cilindrada, permitindo uma economia de milhares de reais em comparação ao financiamento tradicional.</p>
+                    <p>O <strong>Consórcio de motos</strong> também é excelente para quem sonha com modelos premium de
+                        alta cilindrada, permitindo uma economia de milhares de reais em comparação ao financiamento
+                        tradicional.</p>
 
                     <h3>Consórcio de motos: Melhores taxas e grupos saudáveis</h3>
-                    <p>Para o <strong>Consórcio de motos</strong>, selecionamos administradoras sólidas com grupos de alta rotatividade de contemplações para que você receba sua <strong>Carta de Crédito</strong> no menor tempo possível.</p>
+                    <p>Para o <strong>Consórcio de motos</strong>, selecionamos administradoras sólidas com grupos de
+                        alta rotatividade de contemplações para que você receba sua <strong>Carta de Crédito</strong> no
+                        menor tempo possível.</p>
 
                     <!-- BLOCO 4: PESADOS -->
                     <h3>Consórcio de Pesados: Renovação de frota e expansão logística</h3>
-                    <p>O <strong>Consórcio de Pesados</strong> é a solução de crédito ideal para transportadoras e autônomos. Através do <strong>Consórcio de caminhões</strong>, sua empresa mantém a liquidez sem comprometer o fluxo de caixa com juros abusivos.</p>
+                    <p>O <strong>Consórcio de Pesados</strong> é a solução de crédito ideal para transportadoras e
+                        autônomos. Através do <strong>Consórcio de caminhões</strong>, sua empresa mantém a liquidez sem
+                        comprometer o fluxo de caixa com juros abusivos.</p>
 
                     <h3>Consórcio de Pesados: Implementos agrícolas e máquinas industriais</h3>
-                    <p>Além de caminhões, o <strong>Consórcio de Pesados</strong> abrange máquinas pesadas para o agronegócio e indústria, fortalecendo sua infraestrutura operacional com planejamento de longo prazo.</p>
+                    <p>Além de caminhões, o <strong>Consórcio de Pesados</strong> abrange máquinas pesadas para o
+                        agronegócio e indústria, fortalecendo sua infraestrutura operacional com planejamento de longo
+                        prazo.</p>
 
                     <h3>Consórcio de Pesados: Alavancagem operacional no setor de fretes</h3>
-                    <p>Ao investir no <strong>Consórcio de Pesados</strong>, você aumenta seu poder de frete e sua competitividade logística, pagando parcelas fixas que não sofrem as variações do mercado financeiro.</p>
+                    <p>Ao investir no <strong>Consórcio de Pesados</strong>, você aumenta seu poder de frete e sua
+                        competitividade logística, pagando parcelas fixas que não sofrem as variações do mercado
+                        financeiro.</p>
 
                     <h3>Consórcio de Pesados: A segurança da Liberty Revisional</h3>
-                    <p>Nossa consultoria em <strong>Consórcio de Pesados</strong> foca na entrega real de valor, analisando a melhor estratégia de lance fixo ou livre para que sua máquina comece a trabalhar o quanto antes.</p>
+                    <p>Nossa consultoria em <strong>Consórcio de Pesados</strong> foca na entrega real de valor,
+                        analisando a melhor estratégia de lance fixo ou livre para que sua máquina comece a trabalhar o
+                        quanto antes.</p>
 
                     <!-- BLOCO 5: SERVIÇOS -->
                     <h3>Consórcio de Serviços: Planejando eventos e festas de luxo</h3>
-                    <p>O <strong>Consórcio de Serviços</strong> é uma inovação que permite realizar festas de casamento, formaturas e eventos corporativos com total planejamento, eliminando o estresse financeiro pós-evento.</p>
+                    <p>O <strong>Consórcio de Serviços</strong> é uma inovação que permite realizar festas de casamento,
+                        formaturas e eventos corporativos com total planejamento, eliminando o estresse financeiro
+                        pós-evento.</p>
 
                     <h3>Consórcio de Serviços: Procedimentos estéticos e saúde</h3>
-                    <p>Através do <strong>Consórcio de Serviços</strong>, cirurgias plásticas e tratamentos estéticos complexos tornam-se acessíveis. Planeje seu bem-estar com o <strong>Consórcio</strong> e pague sem juros.</p>
+                    <p>Através do <strong>Consórcio de Serviços</strong>, cirurgias plásticas e tratamentos estéticos
+                        complexos tornam-se acessíveis. Planeje seu bem-estar com o <strong>Consórcio</strong> e pague
+                        sem juros.</p>
 
                     <h3>Consórcio de Serviços: Reformas residenciais e arquitetura</h3>
-                    <p>Para quem já possui o imóvel, o <strong>Consórcio de Serviços</strong> é perfeito para contratar arquitetos e empresas de reforma, garantindo o acabamento dos sonhos com total controle de custos.</p>
+                    <p>Para quem já possui o imóvel, o <strong>Consórcio de Serviços</strong> é perfeito para contratar
+                        arquitetos e empresas de reforma, garantindo o acabamento dos sonhos com total controle de
+                        custos.</p>
 
                     <h3>Consórcio de Serviços: Por que este é um dos Melhores consórcios atuais</h3>
-                    <p>A versatilidade do <strong>Consórcio de Serviços</strong> faz dele um dos <strong>Melhores consórcios</strong> para quem prioriza a qualidade de vida. Na Liberty Revisional, cuidamos de cada detalhe para sua aprovação.</p>
+                    <p>A versatilidade do <strong>Consórcio de Serviços</strong> faz dele um dos <strong>Melhores
+                            consórcios</strong> para quem prioriza a qualidade de vida. Na Liberty Revisional, cuidamos
+                        de cada detalhe para sua aprovação.</p>
 
-                    <div class="resumo-tecnico-home">Resumo Estratégico Liberty Revisional: Especialistas em <strong>Consórcio de carros</strong>, <strong>Consórcio Imobiliário</strong>, <strong>Consórcio de motos</strong>, <strong>Consórcio de Pesados</strong> e <strong>Consórcio de Serviços</strong>. Atendimento Nacional com foco em planejamento inteligente e zero juros.</div>
+                    <div class="resumo-tecnico-home">Resumo Estratégico Liberty Revisional: Especialistas em
+                        <strong>Consórcio de carros</strong>, <strong>Consórcio Imobiliário</strong>, <strong>Consórcio
+                            de motos</strong>, <strong>Consórcio de Pesados</strong> e <strong>Consórcio de
+                            Serviços</strong>. Atendimento Nacional com foco em planejamento inteligente e zero juros.
+                    </div>
                 </div>
             </div>
         </div>
@@ -435,68 +625,97 @@
     <div class="spacer-footer"></div>
 
     <!-- RODAPÉ ATUALIZADO (HOME E HUBS) -->
-<footer style="background-color: #000; color: #fff; padding: 60px 0 20px 0;">
-    <div class="container">
-        <div class="footer-grid">
-            <!-- Coluna 1: Quem Somos -->
-            <div class="footer-col">
-                <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">Quem Somos</h4>
-                <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6; margin-top: 10px;">
-                    A Liberty Revisional é especialista em planejamento financeiro e conquista de patrimônio. Auxiliamos nossos clientes a fugir de juros abusivos através de estratégias sólidas de consórcio.
-                </p>
-            </div>
+    <footer style="background-color: #000; color: #fff; padding: 60px 0 20px 0;">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Quem Somos -->
+                <div class="footer-col">
+                    <h4
+                        style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">
+                        Quem Somos</h4>
+                    <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6; margin-top: 10px;">
+                        A Liberty Revisional é especialista em planejamento financeiro e conquista de patrimônio.
+                        Auxiliamos nossos clientes a fugir de juros abusivos através de estratégias sólidas de
+                        consórcio.
+                    </p>
+                </div>
 
-            <!-- Coluna 2: Áreas de Atuação (Links de Hubs) -->
-            <div class="footer-col">
-                <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">Áreas de Atuação</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px;"><a href="/consorcio-de-carros/" style="color: #ccc; text-decoration: none; font-size: 0.95rem; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Consórcio de Automóveis</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de Imóveis</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de Veículos Pesados</a></li>
-                    <li style="margin-bottom: 12px;"><a href="/consorcio-de-motos/" style="color: #ccc; text-decoration: none; font-size: 0.95rem; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Consórcio de Motocicletas</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de Serviços</a></li>
-                </ul>
-            </div>
+                <!-- Coluna 2: Áreas de Atuação (Links de Hubs) -->
+                <div class="footer-col">
+                    <h4
+                        style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">
+                        Áreas de Atuação</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px;"><a href="/consorcio-de-carros/"
+                                style="color: #ccc; text-decoration: none; font-size: 0.95rem; transition: 0.3s;"
+                                onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Consórcio de
+                                Automóveis</a></li>
+                        <li style="margin-bottom: 12px;"><a href="#"
+                                style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de Imóveis</a>
+                        </li>
+                        <li style="margin-bottom: 12px;"><a href="#"
+                                style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de Veículos
+                                Pesados</a></li>
+                        <li style="margin-bottom: 12px;"><a href="/consorcio-de-motos/"
+                                style="color: #ccc; text-decoration: none; font-size: 0.95rem; transition: 0.3s;"
+                                onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Consórcio de
+                                Motocicletas</a></li>
+                        <li style="margin-bottom: 12px;"><a href="#"
+                                style="color: #ccc; text-decoration: none; font-size: 0.95rem;">Consórcio de
+                                Serviços</a></li>
+                    </ul>
+                </div>
 
-            <!-- Coluna 3: Contatos e Redes Sociais -->
-            <div class="footer-col">
-                <h4 style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">Contatos</h4>
-                <p style="color: #fff; font-weight: bold; margin-top: 5px; font-size: 1rem;"><i class="fas fa-phone"></i> (11) 94731-6137</p>
-                <p style="color: #fff; font-weight: bold; font-size: 1rem;"><i class="fas fa-phone"></i> (11) 2378-0387</p>
-                
-                <div class="social-icons" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
-                    <a href="https://www.facebook.com/libertyrevisional" target="_blank" style="color: #fff; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
-                        <i class="fab fa-facebook-f" style="width: 20px;"></i> @libertyrevisional
-                    </a>
-                    <a href="https://www.instagram.com/libertyrevisional" target="_blank" style="color: #fff; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
-                        <i class="fab fa-instagram" style="width: 20px;"></i> @libertyrevisional
-                    </a>
+                <!-- Coluna 3: Contatos e Redes Sociais -->
+                <div class="footer-col">
+                    <h4
+                        style="font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">
+                        Contatos</h4>
+                    <p style="color: #fff; font-weight: bold; margin-top: 5px; font-size: 1rem;"><i
+                            class="fas fa-phone"></i> (11) 94731-6137</p>
+                    <p style="color: #fff; font-weight: bold; font-size: 1rem;"><i class="fas fa-phone"></i> (11)
+                        2378-0387</p>
+
+                    <div class="social-icons"
+                        style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://www.facebook.com/libertyrevisional" target="_blank"
+                            style="color: #fff; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-facebook-f" style="width: 20px;"></i> @libertyrevisional
+                        </a>
+                        <a href="https://www.instagram.com/libertyrevisional" target="_blank"
+                            style="color: #fff; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-instagram" style="width: 20px;"></i> @libertyrevisional
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer-bottom" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-            <div class="address" style="color: #888; font-size: 0.85rem;">
-                <p>Avenida Hermínio Raphael da Silva, 78 Bairro Jardim Nathalie – Mogi das Cruzes/SP – CEP: 08725-745</p>
+            <div class="footer-bottom"
+                style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <div class="address" style="color: #888; font-size: 0.85rem;">
+                    <p>Avenida Hermínio Raphael da Silva, 78 Bairro Jardim Nathalie – Mogi das Cruzes/SP – CEP:
+                        08725-745</p>
+                </div>
+                <div class="security-badges" style="color: #fff; font-weight: 600; font-size: 0.9rem;">
+                    <span><i class="fas fa-lock"></i> Site Seguro</span>
+                </div>
             </div>
-            <div class="security-badges" style="color: #fff; font-weight: 600; font-size: 0.9rem;">
-                <span><i class="fas fa-lock"></i> Site Seguro</span>
+
+            <!-- ASSINATURA COM VISIBILIDADE MELHORADA -->
+            <div class="developer"
+                style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #222;">
+                <p style="color: #fff; font-size: 0.9rem; letter-spacing: 0.5px;">
+                    Desenvolvido por:
+                    <strong>
+                        <a href="https://egemporiodigital.com.br" target="_blank"
+                            style="color: #fff; text-decoration: underline; font-weight: 800;">
+                            EG Empório Digital
+                        </a>
+                    </strong>
+                </p>
             </div>
         </div>
-        
-        <!-- ASSINATURA COM VISIBILIDADE MELHORADA -->
-        <div class="developer" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #222;">
-            <p style="color: #fff; font-size: 0.9rem; letter-spacing: 0.5px;">
-                Desenvolvido por: 
-                <strong>
-                    <a href="https://egemporiodigital.com.br" target="_blank" style="color: #fff; text-decoration: underline; font-weight: 800;">
-                        EG Empório Digital
-                    </a>
-                </strong>
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- SCRIPT -->
     <script>
@@ -512,7 +731,7 @@
                 document.querySelector('.mobile-menu-icon button i').classList.add('fa-times');
             }
         }
-        
+
         document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
             document.querySelector('.nav-menu').classList.remove('open');
             document.querySelector('.mobile-menu-icon button i').classList.remove('fa-times');
@@ -553,4 +772,5 @@
         }
     </script>
 </body>
+
 </html>
