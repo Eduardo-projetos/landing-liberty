@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Ferraz de Vasconcelos | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Ferraz de Vasconcelos",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Ferraz de Vasconcelos, SP. Planejamento estratégico para Vila Santa Margarida, Centro e eixo da Jânio Quadros.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/ferraz-de-vasconcelos",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/ferraz-de-vasconcelos#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ferraz de Vasconcelos",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Ferraz de Vasconcelos",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Ferraz de Vasconcelos</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade ágil no eixo entre a <span class="destaque">Capital e o Alto Tietê</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa seu poder de conquista em Ferraz. Adquira sua motocicleta de alta performance ou inicie sua frota comercial com planejamento de elite e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Ferraz</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Ferraz de Vasconcelos">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Avenida Governador Jânio Quadros">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Vila Santa Margarida">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Ferraz de Vasconcelos SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>CONQUISTE AS RUAS COM O CONSÓRCIO DE MOTOS EM FERRAZ DE VASCONCELOS</h3>
+                    <p>Ferraz de Vasconcelos é uma cidade vital que conecta o extremo leste paulistano ao Alto Tietê. O tráfego intenso na <strong>Avenida Governador Jânio Quadros</strong> e nas proximidades da <strong>Estação Ferraz da CPTM</strong> exige uma mobilidade que não fique refém dos engarrafamentos. Com o nosso <strong>Consórcio de Motos</strong>, o ferrazense acessa cartas de crédito exclusivas para modelos esportivos, custom ou utilitários, fugindo das taxas abusivas dos financiamentos e garantindo a posse de um bem com alta liquidez.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Ferraz de Vasconcelos SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DO CENTRO AO PARQUE SÃO FRANCISCO</h3>
+                    <p>Para o morador de Ferraz que valoriza o planejamento inteligente e a agilidade urbana:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas de alta cilindrada na <strong>Vila Santa Margarida</strong> e <strong>Jardim Castelo</strong>.</li>
+                        <li>Planos de expansão para frotas de entrega próximos ao centro comercial e <strong>Vila Romanópolis</strong>.</li>
+                        <li>Cartas de crédito estratégicas para quem circula diariamente entre <strong>Ferraz</strong>, Poá e Guaianases.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Ferraz de Vasconcelos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Ferraz</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Ferraz</h4><p>Agilidade para vencer o trânsito entre Ferraz e Poá com total economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Ferraz</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Ferraz</h4><p>Casas e sobrados na Vila Santa Margarida através de planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Ferraz</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Ferraz</h4><p>Veículos novos para circular pela região com status e sem pagar juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Ferraz</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Ferraz</h4><p>Logística e renovação de frota para empresas do polo comercial de Ferraz.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Ferraz</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Ferraz</h4><p>Crédito para modernização comercial e reformas residenciais inteligentes.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Ferraz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista em Ferraz de Vasconcelos</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem domina o mercado financeiro do Alto Tietê.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Ferraz+de+Vasconcelos+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Ferraz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO DE FERRAZ) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: FERRAZ DE VASCONCELOS (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como referência em consultoria patrimonial no Alto Tietê, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Ferraz de Vasconcelos como a ferramenta definitiva para superar os desafios de mobilidade da região. Em uma cidade que serve de ponte entre a capital e o interior, possuir um veículo que garante agilidade entre a Avenida Brasil e a Estrada do Bandeirante é um diferencial competitivo. Nossa estratégia blinda o seu capital, transformando parcelas que seriam perdidas em juros bancários em um investimento sólido e altamente rentável.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica nas vias de Ferraz e conexão CPTM</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a escolha inteligente de quem não aceita ficar parado no fluxo intenso que corta a cidade. Planejar sua <strong>Carta de Crédito</strong> conosco permite ao morador de Ferraz adquirir motocicletas de alta cilindrada ou modelos econômicos com poder de barganha à vista. Seja para o lazer nos finais de semana rumo ao interior ou para a rotina profissional que exige rapidez nos deslocamentos locais, o consórcio oferece a previsibilidade financeira que o seu bolso necessita.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Mobilidade na Jânio Quadros</h3>
+                    <p>O fluxo dinâmico na Avenida Governador Jânio Quadros e arredores do centro comercial de Ferraz exige decisões ágeis. O <strong>Consórcio de motos</strong> atende à necessidade de rapidez e baixo custo de manutenção para quem circula diariamente. Já o <strong>Consórcio de carros</strong> oferece o conforto necessário para as viagens em família. Na Liberty Revisional, estruturamos seu planejamento com foco em lances estratégicos, acelerando sua contemplação para que o bem chegue às suas mãos no tempo planejado.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Valorização na Vila Santa Margarida</h3>
+                    <p>A expansão residencial em Ferraz de Vasconcelos, especialmente em bairros como Vila Santa Margarida e Jardim Castelo, é um convite ao investimento. Clientes de visão utilizam o <strong>Consórcio de motos</strong> para garantir sua mobilidade pessoal enquanto utilizam o <strong>Consórcio Imobiliário</strong> para construir patrimônio real. Com uma <strong>Carta de crédito imobiliário</strong>, você adquire sua casa própria ou investe em imóveis para renda sem se tornar refém das taxas abusivas das instituições tradicionais.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Ferraz de Vasconcelos</h3>
+                    <p>Nossa posição como um dos <strong>Melhores consórcios</strong> da região de Ferraz é consolidada pela transparência e análise técnica rigorosa. Gerenciamos seu <strong>Consórcio de dinheiro</strong> focando em grupos com alta saúde financeira e taxas de contemplação acima da média regional. Para o público ferrazense, isso significa ter a segurança de uma consultoria de elite que trabalha para que o seu planejamento de capital se transforme em ativos de alto valor.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Inovação em Ferraz</h3>
+                    <p>O crescimento urbano em regiões como o Parque São Francisco demanda planejamento para obras. Além do <strong>Consórcio de motos</strong>, fundamental para o deslocamento urbano, oferecemos o <strong>Consórcio para construção</strong>. Ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria ou modernizar pontos comerciais, essa modalidade permite investir na estrutura física do seu patrimônio com as menores taxas administrativas do mercado nacional.</p>
+
+                    <h3>Consórcio de motos: Eficiência logística para o comércio e serviços</h3>
+                    <p>O setor de serviços e logística leve é um dos pilares de Ferraz de Vasconcelos. Para empresas que operam com entregas rápidas e circulação constante, o <strong>Consórcio de motos</strong> é vital para a renovação de frotas. Ao integrar este planejamento com o <strong>Consórcio de veículos / Pesados</strong>, sua operação ganha fôlego financeiro. Eliminamos os juros compostos que corroem os lucros, garantindo que o seu negócio cresça de forma saudável e sustentável em todo o Alto Tietê.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Ferraz</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em Ferraz de Vasconcelos com a Liberty Revisional é a rota mais segura para o seu sucesso patrimonial. Da Vila Romanópolis aos distritos industriais, sua conquista merece o suporte de especialistas que conhecem a fundo a região. Procure nossa equipe e garanta sua <strong>Carta de Crédito</strong> com quem domina a engenharia financeira do consórcio estratégico no estado paulista.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Vila Santa Margarida, Jardim Castelo, Parque São Francisco, Vila Romanópolis, Centro e toda Ferraz de Vasconcelos - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Ferraz (SP)</h3>
+                    <p>Assessoria financeira de alto nível no Alto Tietê. Transformamos estratégias de consórcio em patrimônio sólido para o público de Ferraz de Vasconcelos e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Ferraz</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Vila Sta. Margarida</li>
+                        <li>Consórcio no Jardim Castelo</li>
+                        <li>Consórcio no Parque São Francisco</li>
+                        <li>Consórcio na Vila Romanópolis</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Ferraz</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Ferraz de Vasconcelos e Alto Tietê | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

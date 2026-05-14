@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos na Vila Prudente | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio na Vila Prudente",
+      "description": "Consultoria premium em consórcio de motos e investimentos na Vila Prudente, SP. Planejamento estratégico para Avenida Paes de Barros, Anhaia Mello e proximidades do Metrô.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/vila-prudente",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vila Prudente",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Vila Prudente",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos na Vila Prudente</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade inteligente no coração da <span class="destaque">Zona Leste</span>.</h2>
+                <p class="hero-description">A Liberty Revisional transforma sua forma de circular por São Paulo. Conquiste sua moto de alta performance ou inicie sua frota na Vila Prudente com planejamento financeiro de elite e total isenção de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular na Vila Prudente</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Vila Prudente">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Avenida Anhaia Mello">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Imobiliário Vila Prudente">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Vila Prudente SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>DOMINE O FLUXO COM O CONSÓRCIO DE MOTOS NA VILA PRUDENTE</h3>
+                    <p>A Vila Prudente é o ponto de conexão vital entre a Zona Leste, o Ipiranga e o ABC. O intenso movimento na <strong>Avenida Professor Luiz Ignácio Anhaia Mello</strong> e o acesso estratégico pela <strong>Avenida Paes de Barros</strong> exigem soluções que driblem o trânsito pesado. Com o nosso <strong>Consórcio de Motos</strong>, você planeja a compra da sua Big Trail, esportiva ou scooter com poder de negociação à vista, livrando-se das parcelas intermináveis dos financiamentos que travam seu crescimento patrimonial.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Vila Prudente SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO ESTRATÉGICO NO EIXO DO MONOTRILHO</h3>
+                    <p>Para o morador da Vila Prudente que busca independência financeira e agilidade urbana:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para aquisição de motocicletas premium em condomínios da <strong>Quinta da Paineira</strong> e <strong>Jardim Vila Prudente</strong>.</li>
+                        <li>Cartas de crédito para profissionais liberais que circulam entre o <strong>Central Plaza Shopping</strong> e o Centro.</li>
+                        <li>Estratégias de lances para quem utiliza o hub do <strong>Metrô Vila Prudente</strong> e busca sua primeira moto zero km.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Vila Prudente">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir na Vila Prudente</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas V. Prudente</h4><p>Agilidade máxima para vencer o trânsito da Anhaia Mello com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular na V. Prudente</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis V. Prudente</h4><p>Apartamentos modernos e casas na região do metrô com taxas reduzidas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular na V. Prudente</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis V. Prudente</h4><p>Troque de carro de forma planejada para circular com status pela Paes de Barros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular na V. Prudente</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados V. Prudente</h4><p>Crédito para frotas comerciais no eixo industrial da Zona Leste.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular na V. Prudente</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços V. Prudente</h4><p>Reformas e consultorias especializadas via carta de crédito estratégica.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular na V. Prudente</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Vila Prudente</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende o potencial da Zona Leste.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+da+Vila+Prudente+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor na V. Prudente</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO VILA PRUDENTE) -->
+    <section class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: VILA PRUDENTE (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>A Liberty Revisional consolida sua posição como autoridade em crédito na Zona Leste, apresentando o <strong>Consórcio de motos</strong> na Vila Prudente como a ferramenta de mobilidade mais inteligente da capital. Em uma região marcada pela expansão imobiliária vertical e pelo gargalo de trânsito na Avenida Anhaia Mello, a agilidade sobre duas rodas deixa de ser luxo para se tornar estratégia de produtividade. Nossa assessoria blinda o investidor local, transformando o planejamento em patrimônio livre de juros compostos.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica no eixo Anhaia Mello e Paes de Barros</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a solução sob medida para quem precisa cruzar a Vila Prudente rumo à Mooca ou Ipiranga. Através da nossa <strong>Carta de Crédito</strong>, o morador local programa a troca de sua motocicleta com lances que aceleram a entrega do bem. Evite a desvalorização do seu capital em financiamentos bancários e utilize a inteligência financeira para circular pelas principais avenidas da região com um veículo novo e quitado.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão inteligente na Vila Prudente</h3>
+                    <p>Escolher entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> na Vila Prudente exige uma análise do seu trajeto diário. Para quem utiliza as integrações do Metrô Linha 2-Verde, a moto é o complemento perfeito para o "último quilômetro". Na Liberty Revisional, gerenciamos ambos os ativos, garantindo que sua <strong>Carta de crédito</strong> seja contemplada em grupos saudáveis, focando na liquidez que o mercado automotivo da Zona Leste exige.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Valorização no Jardim Vila Prudente</h3>
+                    <p>A verticalização acelerada próxima ao monotrilho atrai investidores de visão. Muitos utilizam o <strong>Consórcio de motos</strong> para garantir mobilidade econômica enquanto estruturam a compra do primeiro imóvel através do <strong>Consórcio Imobiliário</strong>. Com uma <strong>Carta de crédito imobiliário</strong>, você adquire apartamentos de alto padrão na região da Quinta da Paineira ou constrói seu <strong>Consórcio imóvel</strong> sem comprometer sua renda com as taxas abusivas do SFH.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios da Vila Prudente</h3>
+                    <p>O reconhecimento como um dos <strong>Melhores consórcios</strong> da Vila Prudente advém da nossa transparência na gestão de cotas. Não somos apenas vendedores de papel; somos estrategistas de <strong>Consórcio de dinheiro</strong>. Analisamos cada grupo para oferecer ao cliente da Zona Leste as maiores probabilidades de contemplação por lance, garantindo que seu planejamento de mobilidade saia do papel no tempo exato da sua necessidade.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Renovação na Quinta da Paineira</h3>
+                    <p>Bairros tradicionais como a Quinta da Paineira passam por constantes reformas e modernizações. Além do <strong>Consórcio de motos</strong>, fundamental para o deslocamento urbano, oferecemos o <strong>Consórcio para construção</strong>. É a modalidade ideal para quem já possui terreno na região e deseja edificar sua <strong>Consórcio casa</strong> com custo administrativo baixíssimo, valorizando o patrimônio familiar de forma sustentável.</p>
+
+                    <h3>Consórcio de motos: Frotas e logística no Central Plaza e arredores</h3>
+                    <p>A Vila Prudente é um hub comercial estratégico. Para empresas que operam logística leve ou delivery, o <strong>Consórcio de motos</strong> é vital para manter a frota atualizada e competitiva. Aliado ao <strong>Consórcio de veículos / Pesados</strong>, permitimos que seu negócio cresça sem descapitalizar o caixa. A <strong>Carta de Crédito</strong> é a chave para uma operação enxuta e livre dos juros bancários que corroem as margens de lucro do comércio local.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira na Zona Leste</h3>
+                    <p>Em resumo, investir no <strong>Consórcio de motos</strong> na Vila Prudente com a assessoria da Liberty Revisional é um passo decisivo para sua liberdade. Das novas torres de apartamentos às avenidas históricas do bairro, sua conquista deve ser sólida. Fale com nossos especialistas, estruture sua <strong>Carta de Crédito</strong> e domine o território paulistano com a segurança que só o consórcio estratégico proporciona.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Vila Prudente, Quinta da Paineira, Jardim Vila Prudente, Paes de Barros, Anhaia Mello e toda Zona Leste - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty na Vila Prudente (SP)</h3>
+                    <p>Assessoria financeira de alta performance na Zona Leste. Especialistas em converter planejamento em ativos sólidos para o público da Vila Prudente e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento V. Prudente</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Paes de Barros</li>
+                        <li>Consórcio na Anhaia Mello</li>
+                        <li>Consórcio na Qta. da Paineira</li>
+                        <li>Consórcio no Jardim V. Prudente</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos V. Prudente</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico na Vila Prudente e Zona Leste | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

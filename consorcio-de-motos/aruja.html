@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Arujá | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Arujá",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Arujá, SP. Planejamento estratégico para Arujá 5, Jordanópolis, Centro e Polo Industrial.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/aruja",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/aruja#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arujá",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Arujá",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Arujá</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Status e agilidade na <span class="destaque">Cidade Natureza</span>.</h2>
+                <p class="hero-description">A Liberty Revisional eleva seu patamar de mobilidade no Alto Tietê. Conquiste sua motocicleta premium ou estruture sua frota comercial em Arujá com planejamento financeiro de elite e total isenção de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Arujá</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Arujá">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia Presidente Dutra">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Condomínios Arujá">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Arujá SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>DOMINE AS ESTRADAS COM O CONSÓRCIO DE MOTOS EM ARUJÁ</h3>
+                    <p>Arujá é o refúgio de alto padrão do Alto Tietê, onde o estilo de vida exige veículos que acompanhem essa sofisticação. A localização privilegiada às margens da <strong>Rodovia Presidente Dutra</strong> e o acesso rápido ao <strong>Rodoanel Trecho Leste</strong> tornam a motocicleta o veículo ideal para transitar entre a capital e o interior com exclusividade. Com o nosso <strong>Consórcio de Motos</strong>, você planeja a compra de modelos de alta cilindrada ou esportivas com as melhores taxas do país, eliminando o custo abusivo do crédito bancário convencional.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Arujá SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DO ARUJÁ 5 AO POLO INDUSTRIAL</h3>
+                    <p>Para o investidor de Arujá que busca blindar seu capital com inteligência financeira aplicada:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas premium em condomínios como <strong>Arujá 5</strong> e <strong>Jordanópolis</strong>.</li>
+                        <li>Cartas de crédito para expansão de logística e frotas de entrega no <strong>Polo Industrial de Arujá</strong>.</li>
+                        <li>Estratégias de lances para moradores do <strong>Mirante</strong>, <strong>Center Ville</strong> e região do Centro que buscam upgrade de categoria.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Arujá">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Arujá</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Arujá</h4><p>Agilidade e status para circular entre Arujá e São Paulo com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Arujá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Arujá</h4><p>Casas em condomínios de alto luxo com as menores taxas do mercado.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Arujá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Arujá</h4><p>Veículos executivos e SUVs para transitar com status pela Dutra.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Arujá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Arujá</h4><p>Logística pesada para empresas do polo industrial arujaense.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Arujá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Arujá</h4><p>Crédito para reformas de alto padrão e modernização empresarial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Arujá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Cidade Natureza</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende o mercado de luxo de Arujá.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Arujá+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Arujá</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO ARUJAENSE) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: ARUJÁ (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como referência em consultoria patrimonial no Alto Tietê, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Arujá como a rota definitiva para quem busca status aliado à inteligência financeira. Em uma cidade que equilibra a tranquilidade da "Cidade Natureza" com a força de um polo industrial estratégico, possuir um veículo ágil para circular entre a Dutra e a Mogi-Dutra é uma vantagem competitiva. Nossa consultoria blinda o investidor de Arujá contra juros bancários, entregando planos que valorizam cada centavo investido.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica na Rodovia Presidente Dutra e Mário Covas</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a solução ideal para o executivo ou empresário que transita diariamente entre Arujá e a Grande São Paulo. Através de uma <strong>Carta de Crédito</strong> estruturada, você planeja a aquisição da sua motocicleta premium com poder de barganha à vista na contemplação. Esqueça as parcelas que dobram de valor com as taxas abusivas dos bancos; no consórcio, sua mobilidade é tratada como um investimento de alta liquidez e baixo custo administrativo.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão na Cidade Natureza</h3>
+                    <p>Escolher entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em Arujá depende do seu objetivo de fluxo diário. Para driblar o trânsito nos horários de pico nos acessos da Rodovia Presidente Dutra, a motocicleta é insuperável. Na Liberty Revisional, oferecemos assessoria para ambos os planos, inserindo sua <strong>Carta de crédito</strong> em grupos selecionados por saúde financeira e histórico de contemplações, acelerando seu acesso ao bem sem comprometer sua reserva de capital.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Status nos Condomínios de Arujá</h3>
+                    <p>O mercado imobiliário de Arujá, focado em condomínios de alto luxo como o Arujá 5 e Hills, exige um planejamento financeiro sofisticado. Muitos de nossos clientes utilizam o <strong>Consórcio de motos</strong> para garantir mobilidade pessoal enquanto estruturam a residência dos sonhos através do <strong>Consórcio Imobiliário</strong>. Garantir sua <strong>Carta de crédito imobiliário</strong> é o passaporte para construir ou comprar no mirante de Arujá livre de dívidas bancárias, focando na construção de patrimônio real.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Arujá</h3>
+                    <p>Ser listado entre os <strong>Melhores consórcios</strong> da região de Arujá é reflexo da nossa transparência e expertise em <strong>Consórcio de dinheiro</strong>. Não vendemos apenas planos; gerenciamos o seu investimento para que a contemplação ocorra via lances estratégicos (fixos ou livres), reduzindo drasticamente o tempo de espera. O investidor arujaense valoriza a eficiência, e é exatamente isso que entregamos em cada simulação de crédito para motocicletas ou imóveis.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Projetos no Mirante e Center Ville</h3>
+                    <p>Bairros tradicionais e em expansão como o Mirante e Center Ville demandam planejamento para obras e reformas de alto padrão. Além do <strong>Consórcio de motos</strong>, fundamental para a agilidade entre as colinas da cidade, oferecemos o <strong>Consórcio para construção</strong>. Esta é a modalidade ideal para quem deseja erguer sua <strong>Consórcio casa</strong> com as menores taxas do mercado, valorizando seu terreno e garantindo uma edificação de qualidade sem pagar juros bancários compostos.</p>
+
+                    <h3>Consórcio de motos: Logística e expansão no Polo Industrial de Arujá</h3>
+                    <p>O Polo Industrial de Arujá é vital para a economia do estado. Para empresas que operam logística leve ou serviços especializados, o <strong>Consórcio de motos</strong> de frota é a chave para o crescimento escalável. Somado ao <strong>Consórcio de veículos / Pesados</strong>, permitimos que seu negócio renove a frota periodicamente via <strong>Carta de Crédito</strong>, mantendo o fluxo de caixa saudável e a operação competitiva em todo o eixo da Rodovia Ayrton Senna e Dutra.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Arujá</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em Arujá com a Liberty Revisional é um compromisso com o seu futuro patrimonial. Do Centro aos condomínios mais exclusivos, sua conquista merece o suporte de especialistas que dominam a engenharia financeira do consórcio de elite. Fale com nossos consultores, estruture sua próxima <strong>Carta de Crédito</strong> e domine o território arujaense com a segurança de um planejamento vencedor.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Arujá 5, Jordanópolis, Mirante, Center Ville, Polo Industrial, Centro e todo o Alto Tietê - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Arujá (SP)</h3>
+                    <p>Assessoria financeira de alta performance na Cidade Natureza. Especialistas em converter planejamento em ativos sólidos para o público de Arujá e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Arujá</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Arujá 5</li>
+                        <li>Consórcio no Mirante</li>
+                        <li>Consórcio no Jordanópolis</li>
+                        <li>Consórcio no Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Arujá</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Arujá e Alto Tietê | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

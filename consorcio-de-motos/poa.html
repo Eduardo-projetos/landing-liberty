@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Poá | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Poá",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Poá, SP. Planejamento estratégico para Vila Júlia, Calmon Viana e eixo da Rodovia SP-66.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/poa",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/poa#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Poá",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Poá",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Poá</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e economia na <span class="destaque">Estância Hidromineral</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa sua liberdade no Alto Tietê. Conquiste sua motocicleta ou estruture sua frota comercial em Poá com planejamento estratégico e total isenção de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Poá</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Poá">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia SP-66">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Calmon Viana">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Poá SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA SOBRE DUAS RODAS COM O CONSÓRCIO DE MOTOS EM POÁ</h3>
+                    <p>Poá é um ponto estratégico de conexão no Alto Tietê, integrando moradores e empresas de Suzano e Itaquaquecetuba. O fluxo constante na <strong>Rodovia Henrique Eroles (SP-66)</strong> e na <strong>Avenida Brasil</strong> exige agilidade para quem valoriza o tempo. Com o nosso <strong>Consórcio de Motos</strong>, você adquire poder de compra para modelos esportivos ou utilitários, fugindo das taxas abusivas dos financiamentos e garantindo a posse de um bem com alta liquidez no mercado regional.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Poá SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DA VILA JÚLIA AO CALMON VIANA</h3>
+                    <p>Para o investidor de Poá que busca rentabilidade e mobilidade eficiente:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas de alta cilindrada em bairros nobres como <strong>Vila Júlia</strong>.</li>
+                        <li>Planos de expansão para frotas de entrega e logística próximas à <strong>Estação Calmon Viana</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores do <strong>Jardim Ivonete</strong> e <strong>Jardim Débora</strong>.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Poá">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Poá</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Poá</h4><p>Agilidade para circular entre o Centro e a Fonte Áurea com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Poá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Poá</h4><p>Casas e sobrados planejados na região da Vila Júlia via consórcio.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Poá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Poá</h4><p>Veículos novos para transitar com status pelo Alto Tietê sem pagar juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Poá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Poá</h4><p>Crédito para renovação de frota logística no eixo da SP-66.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Poá</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Poá</h4><p>Modernização de consultórios e reformas residenciais inteligentes.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Poá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Estância Hidromineral</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem domina o mercado de Poá.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Poá+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Poá</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO DE POÁ) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: POÁ (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como autoridade em planejamento financeiro no Alto Tietê, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Poá como a rota mais segura para a autonomia patrimonial. Em uma cidade estância que serve de elo entre os principais polos industriais da região, possuir um veículo ágil é sinônimo de produtividade e economia. Nossa consultoria blinda o investidor poaense, oferecendo um modelo de aquisição que ignora as taxas Selic abusivas e foca na entrega real de bens através de grupos saudáveis.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica nas vias de Poá e Rodovia SP-66</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a solução definitiva para o profissional que transita diariamente pela Rodovia Henrique Eroles. Utilizar sua <strong>Carta de Crédito</strong> para adquirir uma motocicleta nova permite escapar dos gargalos urbanos que conectam Poá a Suzano com extrema eficiência. Diferente do financiamento, onde os juros corroem o capital, no consórcio você preserva o valor do seu dinheiro e garante um poder de barganha imbatível no momento da contemplação.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão na Estância Hidromineral</h3>
+                    <p>Decidir entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em Poá exige uma visão sobre o custo-benefício do deslocamento. Para quem busca economia de combustível e rapidez para chegar à estação de trem ou centros comerciais, a moto é a escolha lógica. Na Liberty Revisional, estruturamos ambos os planos, garantindo que sua <strong>Carta de crédito</strong> seja administrada com foco em lances estratégicos, acelerando o seu acesso ao bem sem comprometer sua renda mensal.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Valorização na Vila Júlia e Calmon Viana</h3>
+                    <p>As regiões da Vila Júlia e Calmon Viana mantêm uma valorização constante pela infraestrutura e conectividade. Muitos de nossos clientes combinam o <strong>Consórcio de motos</strong> como solução de mobilidade com o <strong>Consórcio Imobiliário</strong> para consolidar patrimônio real. Com a <strong>Carta de crédito imobiliário</strong>, você investe em casas ou terrenos em Poá sem se tornar refém das taxas bancárias, construindo seu futuro de forma planejada e segura.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Poá</h3>
+                    <p>Ser reconhecido entre os <strong>Melhores consórcios</strong> de Poá reflete nosso rigor técnico na seleção de grupos. Gerenciamos seu <strong>Consórcio de dinheiro</strong> focando em grupos com alta saúde financeira e histórico de contemplações por lance fixo e livre. Para o público de Poá, isso significa ter uma assessoria que entende as nuances do mercado local e trabalha para que a entrega da sua moto ou imóvel ocorra no menor tempo possível.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Desenvolvimento em Calmon Viana</h3>
+                    <p>Calmon Viana e arredores possuem grande potencial para novas construções e reformas. Além do <strong>Consórcio de motos</strong>, fundamental para o deslocamento ágil, oferecemos o <strong>Consórcio para construção</strong>. É a modalidade ideal para quem deseja edificar sua <strong>Consórcio casa</strong> própria com custo administrativo reduzido, permitindo que o morador de Poá valorize seu terreno de forma sustentável.</p>
+
+                    <h3>Consórcio de motos: Expansão comercial e logística no Alto Tietê</h3>
+                    <p>A localização de Poá é vital para o setor de serviços e logística leve. O <strong>Consórcio de motos</strong> para frotas é a ferramenta que impulsiona empresas locais. Ao integrar este planejamento com o <strong>Consórcio de veículos / Pesados</strong>, seu negócio ganha fôlego financeiro ao eliminar os juros compostos. A <strong>Carta de Crédito</strong> é a chave para uma operação competitiva nas rotas que conectam o Alto Tietê à capital paulista.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Poá</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em Poá com a Liberty Revisional é garantir um crescimento patrimonial sólido. Da Praça de Eventos às divisas com as cidades vizinhas, seu sucesso deve ser pautado pela inteligência financeira. Fale com nossos especialistas, estruture sua próxima <strong>Carta de Crédito</strong> e domine o território do Alto Tietê com a solidez que só o consórcio de elite pode proporcionar.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Poá, Vila Júlia, Calmon Viana, Jardim Ivonete, Centro e todo o Alto Tietê - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Poá (SP)</h3>
+                    <p>Assessoria financeira de alta performance na Estância Hidromineral. Especialistas em converter planejamento em ativos sólidos para o público de Poá e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Poá</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio em Vila Júlia</li>
+                        <li>Consórcio em Calmon Viana</li>
+                        <li>Consórcio no Centro</li>
+                        <li>Consórcio no Jd. Ivonete</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Poá</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Poá e Alto Tietê | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

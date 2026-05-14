@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em São Miguel Paulista | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em São Miguel Paulista",
+      "description": "Consultoria premium em consórcio de motos e investimentos em São Miguel Paulista, SP. Planejamento estratégico para Marechal Tito, Pires do Rio e região da Vila Jacuí.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/sao-miguel-paulista",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/sao-miguel-paulista#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Miguel Paulista",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "São Miguel Paulista",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em São Miguel Paulista</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">A força comercial do <span class="destaque">Extremo Leste</span> ao seu alcance.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa seu poder de compra em São Miguel Paulista. Conquiste sua moto de alta performance ou estruture sua frota comercial com planejamento de elite e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em São Miguel</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos São Miguel Paulista">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Avenida Marechal Tito">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento Vila Jacuí">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty São Miguel Paulista SP">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>DOMINE AS RUAS COM O CONSÓRCIO DE MOTOS EM SÃO MIGUEL PAULISTA</h3>
+                    <p>São Miguel Paulista é o centro vibrante do extremo leste paulistano, onde a circulação ágil é a chave para bons negócios. O fluxo intenso na <strong>Avenida Marechal Tito</strong> e as conexões rápidas pela <strong>Avenida Pires do Rio</strong> pedem um veículo que não fique preso em congestionamentos. Com o nosso <strong>Consórcio de Motos</strong>, o morador de São Miguel adquire modelos esportivos ou utilitários com total poder de compra, eliminando as taxas abusivas dos financiamentos e focando no crescimento real do seu patrimônio.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos São Miguel Paulista SP">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>PLANEJAMENTO DA VILA JACUÍ AO JARDIM HELENA</h3>
+                    <p>Para o investidor de São Miguel que busca eficiência financeira e mobilidade estratégica:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas de alta cilindrada em regiões como <strong>Vila Jacuí</strong> e arredores da <strong>Unicsul</strong>.</li>
+                        <li>Cartas de crédito para frotas comerciais e entregas no eixo da <strong>Jacu-Pêssego</strong>.</li>
+                        <li>Estratégias de lances para moradores do <strong>Jardim Helena</strong> e <strong>Vila Mara</strong> que buscam sua moto zero km.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em São Miguel Paulista">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em São Miguel</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas S. Miguel</h4><p>Agilidade imbatível para vencer o trânsito da Marechal Tito com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em S. Miguel</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis S. Miguel</h4><p>Casas e sobrados na Vila Jacuí e Jardim Helena com taxas reduzidas.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em S. Miguel</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis S. Miguel</h4><p>Veículos novos para circular com status e segurança por toda a Zona Leste.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em S. Miguel</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados S. Miguel</h4><p>Logística e transporte pesado para empresas do polo industrial local.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em S. Miguel</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços S. Miguel</h4><p>Crédito estratégico para modernização de infraestrutura comercial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em S. Miguel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista em São Miguel Paulista</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a força do Extremo Leste.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Miguel+Paulista+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em S. Miguel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO DE SÃO MIGUEL) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SÃO MIGUEL PAULISTA (SP)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como referência em consultoria de crédito no Extremo Leste, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em São Miguel Paulista como a solução de mobilidade mais sólida da região. Em um bairro pulsante, onde a Avenida Marechal Tito dita o ritmo do comércio, possuir agilidade para circular é um diferencial estratégico para profissionais e investidores. Nossa consultoria blinda o morador local contra os juros abusivos, transformando o planejamento financeiro em um ativo de alta liquidez e durabilidade.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade estratégica na Marechal Tito e Pires do Rio</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a escolha inteligente de quem precisa vencer o trânsito pesado de São Miguel Paulista com eficiência. Utilizando nossa <strong>Carta de Crédito</strong>, você programa a troca da sua motocicleta com lances calculados, garantindo que o bem chegue às suas mãos sem o peso das taxas de financiamento. É a ferramenta perfeita para quem circula entre o Centro de São Miguel e os bairros adjacentes, garantindo economia de combustível e ganho de tempo diário.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros? Decisão no coração de São Miguel</h3>
+                    <p>Decidir entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em São Miguel Paulista depende do seu perfil de uso urbano. Para lojistas e autônomos da região, a motocicleta oferece um custo-benefício insuperável e rapidez nas entregas. Na Liberty Revisional, estruturamos seu <strong>Consórcio</strong> com foco em grupos de alta performance, assegurando que sua <strong>Carta de crédito</strong> seja um passaporte para a liberdade financeira, livre das armadilhas dos juros bancários tradicionais.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Planejamento na Vila Jacuí</h3>
+                    <p>A Vila Jacuí vive uma expansão constante impulsionada pelo polo educacional e residencial. Muitos investidores utilizam o <strong>Consórcio de motos</strong> para garantir sua mobilidade pessoal enquanto estruturam a compra da casa própria através do <strong>Consórcio Imobiliário</strong>. Com uma <strong>Carta de crédito imobiliário</strong>, você investe em sobrados ou apartamentos na região nobre de São Miguel Paulista sem comprometer sua renda futura com as parcelas crescentes dos bancos.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de São Miguel</h3>
+                    <p>Nossa posição como um dos <strong>Melhores consórcios</strong> de São Miguel Paulista é fruto de uma análise técnica de grupos e saúde financeira das cotas. Não apenas vendemos planos; gerenciamos o seu <strong>Consórcio de dinheiro</strong> para maximizar as chances de contemplação rápida. Para o público do Extremo Leste, isso representa a segurança de investir com uma assessoria que conhece a fundo o mercado automotivo e imobiliário local.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Obras no Jardim Helena</h3>
+                    <p>Regiões como Jardim Helena e Vila Mara possuem grande demanda por reformas e novas edificações. Além do <strong>Consórcio de motos</strong>, fundamental para a agilidade do morador, oferecemos o <strong>Consórcio para construção</strong>. É a modalidade ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria com custo administrativo reduzido, valorizando o patrimônio da família de forma sustentável e planejada.</p>
+
+                    <h3>Consórcio de motos: Frotas comerciais e a Logística da Jacu-Pêssego</h3>
+                    <p>A proximidade com a Jacu-Pêssego torna São Miguel Paulista um hub logístico natural. O <strong>Consórcio de motos</strong> para frotas comerciais é o segredo das empresas locais que mantêm a competitividade. Ao integrar este planejamento com o <strong>Consórcio de veículos / Pesados</strong>, sua operação ganha eficiência financeira, eliminando os juros compostos e garantindo que sua frota seja renovada periodicamente via <strong>Carta de Crédito</strong> estrategicamente contemplada.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira no Extremo Leste</h3>
+                    <p>Em resumo, o <strong>Consórcio de motos</strong> em São Miguel Paulista com a Liberty Revisional é o caminho mais seguro para o sucesso patrimonial. Do Calçadão de São Miguel às avenidas que conectam o bairro a toda São Paulo, sua conquista merece o suporte de especialistas. Fale com nossa equipe e garanta sua <strong>Carta de Crédito</strong> com quem domina a engenharia financeira do consórcio estratégico na Zona Leste.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para São Miguel Paulista, Vila Jacuí, Jardim Helena, Vila Mara, Marechal Tito e toda Zona Leste - SP.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em São Miguel (SP)</h3>
+                    <p>Assessoria financeira de alta performance no Extremo Leste. Especialistas em converter planejamento em ativos sólidos para o público de São Miguel Paulista.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento S. Miguel</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Marechal Tito</li>
+                        <li>Consórcio na Vila Jacuí</li>
+                        <li>Consórcio na Pires do Rio</li>
+                        <li>Consórcio no Jardim Helena</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos S. Miguel</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em São Miguel Paulista e Extremo Leste | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
