@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em São Gonçalo | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em São Gonçalo",
+      "description": "Consultoria premium em consórcio de motos e investimentos em São Gonçalo, RJ. Planejamento estratégico para Alcântara, Neves, Mutuá e região da Rodovia Niterói-Manilha (BR-101).",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/sao-goncalo",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/sao-goncalo#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Gonçalo",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      },
+      "areaServed": "São Gonçalo",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em São Gonçalo</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade estratégica no <span class="destaque">Leste Fluminense</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa sua autonomia em um dos maiores polos do Rio. Conquiste sua moto para o dia a dia ou frota comercial em São Gonçalo com as melhores cartas de crédito e total isenção de juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em São Gonçalo</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos São Gonçalo">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia Niterói-Manilha">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Alcântara São Gonçalo">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty São Gonçalo RJ">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>ACELERE SUA ROTINA COM O CONSÓRCIO DE MOTOS EM SÃO GONÇALO</h3>
+                    <p>São Gonçalo é o gigante demográfico do Leste Fluminense, onde o deslocamento eficiente define a produtividade. O fluxo intenso da <strong>Rodovia Niterói-Manilha (BR-101)</strong> e as conexões vitais pela <strong>Avenida Dezoito do Forte</strong> exigem veículos que vençam o trânsito com agilidade. Com o nosso <strong>Consórcio de Motos</strong>, o gonçalense garante poder de compra à vista para modelos novos ou seminovos, eliminando os juros compostos que drenam a renda familiar nas instituições tradicionais.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos São Gonçalo RJ">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA DO ALCÂNTARA AO MUTUÁ</h3>
+                    <p>Para o investidor de São Gonçalo que busca crescimento patrimonial sólido:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas utilitárias e premium em bairros como <strong>Alcântara</strong>, <strong>Mutuá</strong> e <strong>Centro</strong>.</li>
+                        <li>Planos de frotas logísticas para empresas situadas no eixo industrial de <strong>Neves</strong> e <strong>Gradim</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores de <strong>Santa Catarina</strong> e <strong>Colubandê</strong> que buscam upgrade de transporte com economia real.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em São Gonçalo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em São Gonçalo</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas S. Gonçalo</h4><p>Economia e rapidez para transitar entre o Alcântara e o Partage Shopping.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em S. Gonçalo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis S. Gonçalo</h4><p>Casas e apartamentos na região de Maria Paula e bairros residenciais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em S. Gonçalo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis S. Gonçalo</h4><p>Veículos novos para circular pela BR-101 com conforto e sem pagar juros bancários.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em S. Gonçalo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados S. Gonçalo</h4><p>Logística pesada para empresas do polo comercial de São Gonçalo via crédito.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em S. Gonçalo</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços S. Gonçalo</h4><p>Crédito para reformas comerciais no Centro e modernização de negócios locais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em S. Gonçalo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Domine o asfalto gonçalense com inteligência</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende o mercado de São Gonçalo.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+São+Gonçalo+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em S. Gonçalo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO GONÇALENSE) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: SÃO GONÇALO (RJ)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência em consultoria financeira no Leste Fluminense, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em São Gonçalo como a solução definitiva para o caos urbano. Em uma cidade com alto adensamento, onde o deslocamento entre Neves e Alcântara pode ser moroso, a motocicleta surge como ferramenta de produtividade. Nossa estratégia blinda o investidor gonçalense, oferecendo um planejamento que prioriza a posse do bem sem o dreno financeiro causado pelos juros bancários.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade na BR-101 e Avenida Dezoito do Forte</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a via preferencial para quem utiliza a Rodovia Niterói-Manilha diariamente. Ao planejar sua <strong>Carta de Crédito</strong> em São Gonçalo, você adquire modelos utilitários ou Big Trails com poder de compra à vista. Diferente do financiamento bancário, o consórcio em São Gonçalo permite que você utilize lances estratégicos para antecipar sua contemplação, garantindo que sua mobilidade não seja limitada pelas altas taxas administrativas do mercado comum.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão estratégica no Alcântara</h3>
+                    <p>Escolher entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em São Gonçalo depende do seu objetivo de tempo. No coração comercial do Alcântara, a facilidade de estacionamento e a rapidez no corredor urbano tornam a moto imbatível. Na Liberty Revisional, ajudamos você a decidir o melhor grupo para sua <strong>Carta de crédito</strong>, focando em grupos com alta saúde financeira e histórico de contemplações frequentes na região metropolitana.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Patrimônio em Maria Paula e Mutuá</h3>
+                    <p>O crescimento residencial em bairros como Maria Paula e Mutuá exige uma visão macro de investimento. Muitos gonçalenses optam pelo <strong>Consórcio de motos</strong> para resolver a mobilidade imediata enquanto pavimentam o caminho para a casa própria através do <strong>Consórcio Imobiliário</strong>. Estruturar sua <strong>Carta de crédito imobiliário</strong> via Liberty Revisional é garantir que seu patrimônio em São Gonçalo cresça sobre uma base sólida e planejada, livre de parcelas abusivas.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de São Gonçalo</h3>
+                    <p>Nossa reputação como um dos <strong>Melhores consórcios</strong> de São Gonçalo advém do nosso compromisso técnico. Não somos apenas vendedores de cotas; somos gestores de <strong>Consórcio de dinheiro</strong>. Para o público gonçalense, isso significa ter uma assessoria que analisa os melhores lances embutidos e fixos, garantindo que o valor final pago pelo bem seja drasticamente inferior a qualquer modalidade de crédito direto ao consumidor (CDC).</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Desenvolvimento em Santa Catarina</h3>
+                    <p>O bairro de Santa Catarina e adjacências vivem um ciclo de renovação urbana. Além do <strong>Consórcio de motos</strong>, fundamental para circular pelo Centro, oferecemos o <strong>Consórcio para construção</strong>. Esta é a ferramenta ideal para quem deseja construir sua <strong>Consórcio casa</strong> própria ou investir em imóveis comerciais na região. Através do consórcio estratégico, o morador de São Gonçalo transforma o aluguel em investimento real, com taxas que respeitam o planejamento familiar.</p>
+
+                    <h3>Consórcio de motos: Expansão logística e frotas no Gradim</h3>
+                    <p>Para o empresário gonçalense, a logística de entrega é um diferencial competitivo. O <strong>Consórcio de motos</strong> para frotas é o motor que move o comércio do Alcântara e as indústrias do Gradim. Somado ao <strong>Consórcio de veículos / Pesados</strong>, permitimos que seu negócio renove a frota periodicamente via <strong>Carta de Crédito</strong>, mantendo o capital de giro preservado para o core business da empresa e eliminando os juros bancários.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em São Gonçalo</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em São Gonçalo com a Liberty Revisional é um passo em direção à liberdade. Do Shopping São Gonçalo às divisas com Niterói e Itaboraí, sua conquista deve ser pautada pela inteligência financeira. Fale com nossos especialistas hoje mesmo, estruture sua próxima <strong>Carta de Crédito</strong> e domine o território gonçalense com a segurança de um planejamento de elite.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Alcântara, Mutuá, Maria Paula, Neves, Centro, Colubandê e toda São Gonçalo - RJ.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em São Gonçalo (RJ)</h3>
+                    <p>Assessoria financeira de alta performance no Leste Fluminense. Especialistas em converter planejamento em ativos sólidos para o público de São Gonçalo e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento S. Gonçalo</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Alcântara</li>
+                        <li>Consórcio no Mutuá</li>
+                        <li>Consórcio em Maria Paula</li>
+                        <li>Consórcio no Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos S. Gonçalo</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em São Gonçalo e Leste Fluminense | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

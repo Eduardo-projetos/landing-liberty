@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Camaçari | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Camaçari",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Camaçari, BA. Planejamento estratégico para Gleba A, Vila de Abrantes, Guarajuba e região do Polo Petroquímico.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/camacari",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/camacari#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Camaçari",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Camaçari",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Camaçari</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Potência e agilidade na <span class="destaque">Cidade Industrial</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa sua mobilidade no maior polo da Bahia. Conquiste sua motocicleta premium para o dia a dia ou otimize sua frota em Camaçari com planejamento técnico e zero juros.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Camaçari</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Camaçari">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Via Parafuso Camaçari">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento no Polo de Camaçari">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Camaçari BA">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>OTIMIZE SEU TEMPO COM O CONSÓRCIO DE MOTOS EM CAMAÇARI</h3>
+                    <p>Camaçari é o coração industrial da Bahia, onde a eficiência logística dita o ritmo da economia. O fluxo constante na <strong>Via Parafuso (BA-535)</strong> e na <strong>BA-093</strong> exige soluções de transporte que vençam os engarrafamentos nos horários de troca de turno. Com o nosso <strong>Consórcio de Motos</strong>, o trabalhador e o empresário de Camaçari garantem poder de compra à vista para modelos novos, eliminando os juros bancários abusivos e investindo em mobilidade estratégica na Cidade Industrial.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Camaçari BA">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>DA GLEBA A À ORLA DE GUARAJUBA</h3>
+                    <p>Para o investidor de Camaçari que busca segurança patrimonial e lazer planejado:</p>
+                    <ul class="check-list">
+                        <li>Consultoria técnica para motocicletas premium em áreas residenciais como <strong>Gleba A</strong>, <strong>Gleba C</strong> e <strong>Jardim Limoeiro</strong>.</li>
+                        <li>Planos de frotas para serviços logísticos próximos ao <strong>Polo Petroquímico</strong> e <strong>Boulevard Shopping</strong>.</li>
+                        <li>Estratégias de lances para moradores de <strong>Vila de Abrantes</strong>, <strong>Arembepe</strong> e <strong>Guarajuba</strong> que buscam lazer e mobilidade na Estrada do Coco.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Camaçari">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Camaçari</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Camaçari</h4><p>Agilidade para circular entre o Open Center e o Polo com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Camaçari</h4><p>Terrenos e casas na região de Abrantes e Orla via planejamento estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Camaçari</h4><p>Veículos para circular pela BA-099 com status e zero juros bancários.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Camaçari</h4><p>Logística pesada para o escoamento industrial do Polo Petroquímico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Camaçari</h4><p>Crédito estruturado para modernização de infraestrutura comercial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Camaçari</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Cidade Industrial</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a pujança econômica de Camaçari.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Camaçari+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Camaçari</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CAMAÇARIENSE) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CAMAÇARI (BA)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência técnica em planejamento de ativos na Região Metropolitana de Salvador, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Camaçari como a solução definitiva para o dinamismo industrial. Em uma cidade que abriga o maior polo petroquímico integrado do país, possuir agilidade para transitar entre a Via Parafuso e os distritos fabris é uma vantagem competitiva fundamental. Nossa consultoria blinda o capital do investidor camaçariense, entregando planos que eliminam os juros bancários e focam na valorização real do bem.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade na Via Parafuso e Polo Petroquímico</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a via expressa para quem precisa de fluidez nos principais corredores de Camaçari. Ao planejar sua <strong>Carta de Crédito</strong> com nossa assessoria, você garante poder de compra para adquirir motocicletas de alta cilindrada ou modelos executivos com faturamento direto da fábrica. Diferente do financiamento, o consórcio em Camaçari permite antecipar a posse do veículo através de lances estratégicos, garantindo que sua rotina entre o Centro e o Polo Industrial seja pautada pela economia máxima e zero juros.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão estratégica em Camaçari</h3>
+                    <p>A escolha entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em Camaçari deve considerar a necessidade de agilidade na BA-093. Para o profissional que busca reduzir custos operacionais e tempo de deslocamento até as indústrias, a moto oferece uma versatilidade imbatível. Na Liberty Revisional, ajudamos você a alocar seu <strong>Consórcio de dinheiro</strong> em grupos de alta saúde financeira, garantindo que sua <strong>Carta de crédito</strong> seja gerida com foco na máxima rentabilidade e total isenção de taxas bancárias abusivas.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Planejamento em Guarajuba e Abrantes</h3>
+                    <p>O crescimento residencial em Vila de Abrantes e o mercado de lazer em Guarajuba exigem um planejamento de longo prazo. Muitos clientes de Camaçari utilizam o <strong>Consórcio de motos</strong> para garantir mobilidade econômica imediata enquanto estruturam a compra da casa própria ou terreno através do <strong>Consórcio Imobiliário</strong>. Garantir sua <strong>Carta de crédito imobiliário</strong> via Liberty Revisional é o caminho mais seguro para construir patrimônio sólido na Região Metropolitana sem comprometer o fluxo de caixa familiar.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Camaçari</h3>
+                    <p>Nossa posição como um dos <strong>Melhores consórcios</strong> atuantes em Camaçari é pautada pelo rigor técnico na análise de cotas e lances estratégicos. Não somos meros corretores; somos gestores patrimoniais. Para o público camaçariense, ter nossa assessoria significa contar com uma análise minuciosa que reduz o custo final do bem, protegendo seu investimento contra a inflação e garantindo contemplações planejadas via cálculos matemáticos precisos para o polo industrial.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Projetos em Gleba E e Limoeiro</h3>
+                    <p>Bairros como Gleba E e Jardim Limoeiro vivem um ciclo de expansão residencial e comercial constante. Além do <strong>Consórcio de motos</strong>, fundamental para a dinâmica da cidade, oferecemos o <strong>Consórcio para construção</strong> em Camaçari. Esta é a ferramenta ideal para quem deseja edificar sua <strong>Consórcio casa</strong> própria com as menores taxas administrativas do mercado nacional, transformando o sonho da obra em um patrimônio real e valorizado perante o mercado baiano.</p>
+
+                    <h3>Consórcio de motos: Logística industrial e frotas no Polo de Camaçari</h3>
+                    <p>O polo industrial de Camaçari exige uma logística de apoio ultraveloz para prestação de serviços técnicos. O <strong>Consórcio de motos</strong> para frotas comerciais é o segredo das empresas que mantêm a competitividade na região. Ao integrar esse planejamento com o <strong>Consórcio de veículos / Pesados</strong>, sua empresa renova a frota periodicamente via <strong>Carta de Crédito</strong>, mantendo o capital de giro preservado e eliminando o dreno financeiro causado pelos juros bancários compostos.</p>
+
+                    <h3>Consórcio de motos: Sua independência financeira em Camaçari</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em Camaçari com a Liberty Revisional é garantir um futuro sólido. Do Open Center às praias da Estrada do Coco, sua conquista deve ser pautada pela inteligência financeira. Fale com nossos consultores hoje mesmo, estruture sua próxima <strong>Carta de Crédito</strong> e domine o território da Cidade Industrial com a segurança de um planejamento financeiro de elite.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Gleba A, Vila de Abrantes, Guarajuba, Gleba C, Jardim Limoeiro, Polo Petroquímico e toda Camaçari - BA.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Camaçari (BA)</h3>
+                    <p>Assessoria financeira de alta performance na Cidade Industrial. Especialistas em converter planejamento em ativos sólidos para o público camaçariense e região metropolitana.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Camaçari</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio na Gleba A</li>
+                        <li>Consórcio em Abrantes</li>
+                        <li>Consórcio em Guarajuba</li>
+                        <li>Consórcio no Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Camaçari</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Camaçari e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

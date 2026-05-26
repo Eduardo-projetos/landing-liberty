@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Contagem | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Contagem",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Contagem, MG. Planejamento estratégico para Eldorado, Industrial, Cabral e região da Fernão Dias e Via Expressa.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/contagem",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/contagem#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Contagem",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Contagem</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e força industrial no <span class="destaque">Coração das Alterosas</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa seu poder de compra no maior polo industrial de Minas. Conquiste sua motocicleta para o dia a dia ou frota logística em Contagem com planejamento de elite e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Contagem</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Contagem">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Rodovia Fernão Dias">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento no Eldorado Contagem">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Contagem MG">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>PRODUTIVIDADE E AGILIDADE COM O CONSÓRCIO DE MOTOS EM CONTAGEM</h3>
+                    <p>Contagem é o motor econômico da Região Metropolitana, onde o tempo de deslocamento impacta diretamente no faturamento. O fluxo pesado da <strong>Rodovia Fernão Dias (BR-381)</strong> e a saturação da <strong>Via Expressa</strong> tornam a motocicleta o veículo indispensável para vencer o trânsito. Com o nosso <strong>Consórcio de Motos</strong>, o contagense adquire poder de compra à vista para modelos novos ou seminovos, eliminando as taxas abusivas dos financiamentos e focando na valorização real do seu patrimônio rodoviário.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Contagem MG">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>DO ELDORADO AO POLO LOGÍSTICO DA CEASA</h3>
+                    <p>Para o investidor de Contagem que prioriza inteligência financeira e eficiência logística:</p>
+                    <ul class="check-list">
+                        <li>Consultoria técnica para motocicletas premium em bairros como <strong>Eldorado</strong>, <strong>Cabral</strong> e <strong>Riacho das Pedras</strong>.</li>
+                        <li>Planos de frotas para operações comerciais e logística urbana no entorno da <strong>Ceasa</strong> e <strong>Cidade Industrial</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores de <strong>Nova Contagem</strong> e <strong>Alvorada</strong> que buscam upgrade de transporte com economia real.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Contagem">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Contagem</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Contagem</h4><p>Agilidade para circular entre o Itaú Power e o Eldorado com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Contagem</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Contagem</h4><p>Apartamentos no Cabral e casas no Riacho via planejamento de elite.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Contagem</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Contagem</h4><p>Veículos para circular pela Via Expressa com conforto e zero juros bancários.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Contagem</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Contagem</h4><p>Logística pesada para o polo industrial e distribuidoras da Ceasa.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Contagem</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Contagem</h4><p>Crédito estruturado para modernização de galpões e reformas comerciais.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Contagem</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista na Manchester Mineira</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a dinâmica industrial de Contagem.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Contagem+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Contagem</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CONTAGENSE) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CONTAGEM (MG)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Como autoridade técnica em gestão de ativos na Região Metropolitana de Belo Horizonte, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Contagem como a ferramenta de mobilidade mais eficaz para o eixo industrial. Em uma cidade marcada pela intensa circulação de cargas e gargalos na Fernão Dias e Via Expressa, possuir agilidade é um diferencial competitivo. Nossa consultoria protege o patrimônio do investidor contagense, entregando planos que eliminam os juros bancários e focam na entrega estratégica do bem.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade na Fernão Dias e Via Expressa de Contagem</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a via expressa para quem precisa de fluidez no maior entroncamento rodoviário de Minas. Ao planejar sua <strong>Carta de Crédito</strong> com foco no mercado de Contagem, você adquire modelos de alta cilindrada ou scooters executivas com faturamento à vista na contemplação. Diferente do financiamento bancário, o consórcio permite que você antecipe a posse do veículo através de lances calculados, garantindo que sua rotina entre a Cidade Industrial e o Eldorado seja pautada pela economia.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Eficiência no trânsito de Contagem</h3>
+                    <p>A decisão entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em Contagem deve levar em conta a saturação das avenidas João César de Oliveira e Cardeal Eugênio Pacelli. Para o profissional que busca reduzir custos operacionais e tempo de deslocamento, a moto é a solução imbatível. Na Liberty Revisional, ajudamos você a alocar seu <strong>Consórcio de dinheiro</strong> em grupos de elite, garantindo que sua <strong>Carta de crédito</strong> seja gerida com foco na máxima rentabilidade e zero taxas abusivas.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Planejamento no Eldorado e Cabral</h3>
+                    <p>Áreas de alta valorização como o Eldorado e o crescente bairro Cabral exigem um planejamento patrimonial de longo prazo. Muitos contagenses utilizam o <strong>Consórcio de motos</strong> para resolver a mobilidade imediata enquanto estruturam a compra do imóvel próprio através do <strong>Consórcio Imobiliário</strong>. Garantir sua <strong>Carta de crédito imobiliário</strong> via Liberty Revisional é o caminho mais seguro para construir ou comprar sua casa em Contagem sem comprometer o fluxo de caixa com juros compostos.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Contagem</h3>
+                    <p>Nossa reputação como um dos <strong>Melhores consórcios</strong> atuantes em Contagem é fruto de um rigor técnico absoluto na análise de lances fixos e embutidos. Não somos corretores comuns; atuamos como consultores de investimento. Para o público de Contagem, isso representa a segurança de uma assessoria que entende profundamente a dinâmica do mercado local e trabalha para que a contemplação ocorra de forma estratégica, reduzindo o custo final do seu bem significativamente.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Desenvolvimento no Nova Contagem</h3>
+                    <p>Regiões como Nova Contagem e o entorno da Vargem das Flores vivem um ciclo de expansão residencial constante. Além do <strong>Consórcio de motos</strong>, fundamental para a circulação local, oferecemos o <strong>Consórcio para construção</strong>. Esta é a ferramenta ideal para quem deseja erguer sua <strong>Consórcio casa</strong> própria com as menores taxas administrativas do mercado nacional, transformando o sonho da obra em um patrimônio real e valorizado perante o mercado mineiro.</p>
+
+                    <h3>Consórcio de motos: Frota logística e polo industrial de Contagem</h3>
+                    <p>O polo industrial de Contagem e a região da Ceasa exigem uma logística de apoio ultraveloz para prestação de serviços. O <strong>Consórcio de motos</strong> para frotas comerciais é o segredo das empresas que mantêm a competitividade no Leste Mineiro. Ao integrar este plano com o <strong>Consórcio de veículos / Pesados</strong>, sua empresa renova a frota periodicamente via <strong>Carta de Crédito</strong>, mantendo o capital de giro preservado e eliminando o dreno financeiro causado pelos juros bancários compostos.</p>
+
+                    <h3>Consórcio de motos: Sua autonomia financeira em Contagem</h3>
+                    <p>Em suma, investir no <strong>Consórcio de motos</strong> em Contagem com a Liberty Revisional é garantir um futuro patrimonial sólido. Da Praça da Cemig às divisas com Belo Horizonte e Betim, sua conquista deve ser guiada por especialistas. Fale com nossos consultores hoje mesmo, estruture sua próxima <strong>Carta de Crédito</strong> e domine o território contagense com a solidez de um planejamento financeiro de elite.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Eldorado, Industrial, Cabral, Riacho das Pedras, Nova Contagem, Ceasa e toda Contagem - MG.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Contagem (MG)</h3>
+                    <p>Assessoria financeira de alta performance no polo industrial mineiro. Especialistas em converter planejamento em ativos sólidos para o público de Contagem e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Contagem</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Eldorado</li>
+                        <li>Consórcio na Cidade Industrial</li>
+                        <li>Consórcio no Cabral</li>
+                        <li>Consórcio no Centro</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Contagem</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Contagem e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Curitiba | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio em Curitiba",
+      "description": "Consultoria premium em consórcio de motos e investimentos em Curitiba, PR. Planejamento estratégico para Batel, Água Verde, CIC e região da Linha Verde.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/curitiba",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/curitiba#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Curitiba",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos em Curitiba</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade inteligente na <span class="destaque">Capital Ecológica</span>.</h2>
+                <p class="hero-description">A Liberty Revisional transforma sua forma de circular por Curitiba. Conquiste sua motocicleta de alta cilindrada ou otimize sua logística urbana na capital paranaense com as melhores taxas de administração e zero juros bancários.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular em Curitiba</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Curitiba">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos no Jardim Botânico Curitiba">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento no Batel Curitiba">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Curitiba PR">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>EFICIÊNCIA E ECONOMIA COM O CONSÓRCIO DE MOTOS EM CURITIBA</h3>
+                    <p>Curitiba é referência em planejamento urbano, mas o crescimento da frota exige alternativas ágeis para o dia a dia. Enfrentar o trânsito da <strong>Avenida das Torres</strong> ou da <strong>Linha Verde (BR-476)</strong> requer um veículo versátil. Com o nosso <strong>Consórcio de Motos</strong>, o curitibano rompe com as amarras do financiamento e acessa modelos premium ou utilitários com poder de compra à vista. É a estratégia ideal para quem busca performance sem comprometer o orçamento com juros compostos.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Curitiba PR">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>DO BATEL À CIDADE INDUSTRIAL (CIC)</h3>
+                    <p>Para o investidor curitibano que preza por inteligência financeira e segurança:</p>
+                    <ul class="check-list">
+                        <li>Consultoria para motocicletas de alta cilindrada em bairros nobres como <strong>Batel</strong>, <strong>Champagnat</strong> e <strong>Ecoville</strong>.</li>
+                        <li>Planos para frotas de entrega e serviços técnicos operando na <strong>Cidade Industrial de Curitiba (CIC)</strong> e <strong>Boqueirão</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores do <strong>Água Verde</strong> e <strong>Portão</strong> que buscam upgrade patrimonial com planejamento de elite.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento em Curitiba">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir em Curitiba</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Curitiba</h4><p>Agilidade para transitar entre o Shopping Mueller e o Parque Barigui com economia.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular em Curitiba</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Curitiba</h4><p>Apartamentos e sobrados no Água Verde ou Santa Felicidade via consórcio estratégico.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular em Curitiba</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Curitiba</h4><p>Veículos novos para rodar pela Rua XV de Novembro com conforto e sem pagar juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular em Curitiba</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Curitiba</h4><p>Logística pesada para empresas do CIC e transporte rodoviário paranaense.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular em Curitiba</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Curitiba</h4><p>Crédito estruturado para reformas em consultórios e modernização comercial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular em Curitiba</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Domine as ruas da capital com inteligência financeira</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem entende a dinâmica econômica de Curitiba.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+de+Curitiba+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor em Curitiba</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO CURITIBANO) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: CURITIBA (PR)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Referência técnica em crédito estruturado na capital paranaense, a Liberty Revisional apresenta o <strong>Consórcio de motos</strong> em Curitiba como a alternativa definitiva para quem busca mobilidade de alta performance. Em uma metrópole onde o tempo é o ativo mais escasso, transitar entre o Centro Cívico e a Cidade Industrial exige agilidade. Nossa consultoria protege o capital do investidor curitibano, entregando planos que anulam os juros bancários e garantem a valorização real do patrimônio através de grupos selecionados e saudáveis.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade na Linha Verde e Avenida das Torres</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a rota inteligente para quem utiliza os principais eixos de conexão de Curitiba. Ao planejar sua <strong>Carta de Crédito</strong> conosco, você adquire motocicletas Big Trail, Naked ou esportivas com as melhores condições do mercado sulista. Diferente do financiamento tradicional, o consórcio em Curitiba permite o uso de lances estratégicos (fixos ou embutidos) para antecipar a posse do bem, garantindo que sua rotina pela Avenida Visconde de Guarapuava ou Sete de Setembro seja livre de atrasos.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão estratégica no Batel</h3>
+                    <p>A escolha entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> em Curitiba deve considerar o custo de estacionamento e a fluidez no trânsito central. Para o público do Batel e Bigorrilho, a moto representa não apenas um estilo de vida, mas um ganho real de produtividade. Na Liberty Revisional, transformamos seu <strong>Consórcio de dinheiro</strong> em um ativo sólido, gerenciando sua <strong>Carta de crédito</strong> com foco em grupos de alta liquidez e contemplações recorrentes na região metropolitana.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Planejamento no Água Verde e Portão</h3>
+                    <p>Bairros residenciais consolidados como o Água Verde e áreas de expansão como o Portão exigem uma visão financeira 360º. Muitos clientes de Curitiba utilizam o <strong>Consórcio de motos</strong> como degrau inicial de mobilidade enquanto estruturam a compra do imóvel próprio através do <strong>Consórcio Imobiliário</strong>. Garantir sua <strong>Carta de crédito imobiliário</strong> via Liberty Revisional é o método mais eficaz para construir patrimônio na capital sem o peso das parcelas bancárias intermináveis.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios de Curitiba</h3>
+                    <p>Nossa posição como um dos <strong>Melhores consórcios</strong> atuantes em Curitiba é fruto de uma análise matemática rigorosa. Não entregamos apenas cotas; entregamos estratégias de alocação. Para o curitibano, ter nossa assessoria significa contar com um estudo técnico que reduz o custo efetivo total da aquisição, blindando seu investimento contra a inflação e garantindo que cada real aplicado gere o máximo de retorno patrimonial no cenário econômico atual.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Projetos em Santa Felicidade</h3>
+                    <p>A região de Santa Felicidade e o eixo norte de Curitiba passam por uma constante renovação arquitetônica. Além do <strong>Consórcio de motos</strong>, fundamental para a dinâmica da cidade, oferecemos o <strong>Consórcio para construção</strong>. Esta é a solução ideal para quem deseja edificar sua <strong>Consórcio casa</strong> em condomínios fechados ou terrenos urbanos, aproveitando as taxas administrativas reduzidas que apenas o consórcio estratégico pode oferecer ao investidor paranaense.</p>
+
+                    <h3>Consórcio de motos: Logística e frotas na Cidade Industrial (CIC)</h3>
+                    <p>O polo industrial de Curitiba (CIC) e o Boqueirão exigem uma logística de apoio rápida e eficiente. O <strong>Consórcio de motos</strong> para frotas é o segredo das empresas locais que mantêm a competitividade elevada. Ao integrar esse planejamento com o <strong>Consórcio de veículos / Pesados</strong>, sua empresa renova ativos periodicamente via <strong>Carta de Crédito</strong>, preservando o fluxo de caixa para investimentos operacionais e fugindo dos juros bancários compostos.</p>
+
+                    <h3>Consórcio de motos: Sua conquista na capital paranaense</h3>
+                    <p>Em resumo, investir no <strong>Consórcio de motos</strong> em Curitiba com a Liberty Revisional é garantir um futuro financeiro próspero. Do Jardim Botânico à Ópera de Arame, sua jornada deve ser pautada pela inteligência financeira. Fale com nossos especialistas hoje, desenhe sua próxima <strong>Carta de Crédito</strong> e domine o território curitibano com a solidez de um planejamento financeiro de elite.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Batel, Água Verde, Portão, Centro Cívico, CIC, Santa Felicidade, Boqueirão e toda Curitiba - PR.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty em Curitiba (PR)</h3>
+                    <p>Assessoria financeira de alta performance na capital paranaense. Especialistas em converter planejamento em ativos sólidos para o público curitibano e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Curitiba</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio no Batel</li>
+                        <li>Consórcio no Água Verde</li>
+                        <li>Consórcio no CIC</li>
+                        <li>Consórcio no Champagnat</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Curitiba</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico em Curitiba e Região Metropolitana | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>

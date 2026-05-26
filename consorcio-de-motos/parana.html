@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XBTHWLV8M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7XBTHWLV8M');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consórcio de Motos em Paraná | Liberty Revisional</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Liberty Revisional - Consórcio no Paraná",
+      "description": "Consultoria premium em consórcio de motos e planejamento financeiro no Paraná. Atendimento em Curitiba, Londrina, Maringá e regiões das rodovias BR-277 e BR-116.",
+      "url": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/parana",
+      "mainEntityOfPage": "https://consorciolibertyrevisional.com.br/consorcio-de-motos/parana#tese-autoridade",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Paraná"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* MANTENDO TODA A ESTILIZAÇÃO ORIGINAL DO HUB - PADRÃO RIGOROSO */
+        .secao-localidades-hub { padding: 80px 0; background-color: #fff; }
+        .header-clicavel-cidades { cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; }
+        .localidades-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out; }
+        .localidades-wrapper.open { max-height: 2000px; }
+        .localidades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 0; }
+        .card-local { background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 30px 20px; text-align: center; transition: all 0.4s ease; text-decoration: none; display: flex; flex-direction: column; align-items: center; }
+        .card-local:hover { border-color: #000; transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        .icon-seta-local { font-size: 1.5rem; margin-top: 10px; transition: 0.4s; }
+        .icon-seta-local.rotate { transform: rotate(180deg); }
+
+        .footer-oficial { background-color: #000; color: #fff; padding: 60px 0 20px 0; font-family: 'Inter', sans-serif; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .footer-col h3::before { content: ""; display: inline-block; width: 4px; height: 20px; background-color: #fff; }
+        .footer-col p { font-size: 0.95rem; line-height: 1.6; color: #ccc; }
+        .footer-list { list-style: none; padding: 0; }
+        .footer-list li { margin-bottom: 12px; font-size: 0.95rem; color: #ccc; }
+        .footer-contatos { display: flex; flex-direction: column; gap: 15px; }
+        .contato-item { font-weight: 700; font-size: 1rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .social-links { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+        .social-item { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-divider { border-top: 1px solid #333; padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-address { font-size: 0.85rem; color: #888; }
+        .footer-safe { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } .footer-divider { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="Liberty Revisional Logo">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Consórcios</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+gostaria+de+fazer+uma+simulação+de+consórcio+de+motos." class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-main-title">Consórcio de Motos no Paraná</h1>
+                <div class="hero-visual-divider">
+                    <span class="divider-line"></span>
+                    <div class="divider-icon"><i class="fas fa-motorcycle"></i></div>
+                    <span class="divider-line"></span>
+                </div>
+                <h2 class="hero-sub-title">Mobilidade e força na <span class="destaque">Terra dos Pinheirais</span>.</h2>
+                <p class="hero-description">A Liberty Revisional potencializa sua liberdade em solo paranaense. Conquiste sua moto premium ou otimize sua frota corporativa no Paraná com planejamento estratégico, zero juros e as melhores cartas de crédito do Sul do país.</p>
+                <div class="hero-cta-area">
+                    <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+fazer+uma+simulação+de+motos." class="btn-primary">Simular no Paraná</a>
+                </div>
+            </div>
+            
+            <div class="hero-carousel-side">
+                <div class="carousel-wrapper">
+                    <div class="carousel-side-preview left"></div>
+                    <div class="hero-slider">
+                        <img src="../assets/slide1.jpg" class="slide active" alt="Consórcio de Motos Paraná">
+                        <img src="../assets/slide2.jpg" class="slide" alt="Motos na Serra do Mar PR">
+                        <img src="../assets/slide3.jpg" class="slide" alt="Investimento em Curitiba Paraná">
+                        <img src="../assets/slide4.jpg" class="slide" alt="Liberty Paraná PR">
+                    </div>
+                    <div class="carousel-side-preview right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO EXTRA 1 -->
+    <section class="conteudo-extra">
+        <div class="container">
+            <div class="bloco-texto-img hidden-left">
+                <div class="texto-sessao">
+                    <h3>ESTRATÉGIA E AGILIDADE COM O CONSÓRCIO DE MOTOS NO PARANÁ</h3>
+                    <p>O Paraná é um dos motores econômicos do Brasil, onde a integração entre a capital e o interior exige soluções de transporte inteligentes. Cruzar a <strong>Rodovia BR-277</strong> em direção ao Porto de Paranaguá ou vencer o fluxo da <strong>BR-116 (Régis Bittencourt)</strong> demanda agilidade e baixo custo operacional. Com o nosso <strong>Consórcio de Motos</strong>, o paranaense planeja a aquisição de motocicletas de alta performance ou frotas comerciais com poder de compra à vista, eliminando definitivamente as taxas abusivas dos financiamentos tradicionais.</p>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo1.jpg" alt="Consórcio de Motos Paraná PR">
+                </div>
+            </div>
+
+            <div class="bloco-texto-img hidden-right">
+                <div class="texto-sessao">
+                    <h3>DO BATEL AO EIXO DO AGRONEGÓCIO</h3>
+                    <p>Para o investidor do Paraná que busca proteção de capital e crescimento real:</p>
+                    <ul class="check-list">
+                        <li>Consultoria especializada para motocicletas de lazer e turismo em áreas nobres como <strong>Batel</strong>, <strong>Ecoville</strong> e <strong>Jardim Social</strong> em Curitiba.</li>
+                        <li>Planos estruturados para logística urbana e entregas rápidas próximos ao <strong>Parque Barigui</strong> e centros comerciais de <strong>Londrina</strong> e <strong>Maringá</strong>.</li>
+                        <li>Cartas de crédito estratégicas para moradores de <strong>Cascavel</strong> e <strong>Ponta Grossa</strong> que valorizam o planejamento financeiro de elite.</li>
+                    </ul>
+                </div>
+                <div class="imagem-sessao small-img">
+                    <img src="../assets/conteudo2.jpg" alt="Investimento no Paraná">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h3 class="section-title">Onde investir no Paraná</h3>
+            <div class="produtos-grid">
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-motorcycle"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Motocicletas Paraná</h4><p>Rapidez para circular entre o Jardim Botânico e as principais avenidas da capital.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+consórcio+de+motos." class="btn-card">Simular no Paraná</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.homify.com/v1553690764/p/photo/image/2981088/Casa_B_facahda_01-PS.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-home"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Imóveis Paraná</h4><p>Casas e terrenos em Santa Felicidade ou áreas de expansão em todo o estado.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+consórcio+de+imóveis." class="btn-card">Simular no Paraná</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://mediapool.bmwgroup.com/cache/P9/202303/P90498945/P90498945-driver-training-m3-03-2023-600px.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-car"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Automóveis Paraná</h4><p>Veículos premium para rodar pelas estradas paranaenses com segurança e sem juros.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+consórcio+de+carros." class="btn-card">Simular no Paraná</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-right">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&w=500&q=60');"></div>
+                    <div class="icon-float"><i class="fas fa-truck"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Pesados Paraná</h4><p>Soluções para o agronegócio e logística de carga em todo o interior paranaense.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+consórcio+de+pesados." class="btn-card">Simular no Paraná</a>
+                    </div>
+                </div>
+                <div class="produto-card hidden-left">
+                    <div class="card-img" style="background-image: url('https://www.produttivo.com.br/blog/wp-content/uploads/2023/01/Prestacao-de-servicos-o-que-e-quais-sao-os-tipos-e-como-e-feita-900x600.jpg');"></div>
+                    <div class="icon-float"><i class="fas fa-tools"></i></div>
+                    <div class="card-content">
+                        <div class="card-info"><h4>Serviços Paraná</h4><p>Crédito para modernização de clínicas, escritórios e infraestrutura comercial.</p></div>
+                        <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+tenho+interesse+em+consórcio+de+serviços." class="btn-card">Simular no Paraná</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER CTA FINAL -->
+    <section class="banner-cta thinner">
+        <div class="container">
+            <h2>Acelere sua conquista em solo paranaense</h2>
+            <p>Fale agora com a Liberty Revisional e garanta sua moto com quem domina o mercado financeiro do Paraná.</p>
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5511947316137?text=Olá!+Vi+o+site+do+Paraná+e+gostaria+de+falar+com+um+consultor+sobre+motos." class="btn-white">Falar com Consultor no Paraná</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO ACCORDION (TESE DE AUTORIDADE COM MARTELO E CONTEXTO PARANAENSE) -->
+    <section id="tese-autoridade" class="seo-authority-section">
+        <div class="container">
+            <div class="accordion-container">
+                <div class="accordion-header" onclick="toggleSEO()">
+                    <h2><i class="fas fa-database"></i> TESE DE AUTORIDADE: PARANÁ (PR)</h2>
+                    <i class="fas fa-chevron-down accordion-icon" id="setaSEO"></i>
+                </div>
+                <div class="accordion-content" id="contentSEO">
+                    <p>Autoridade máxima em gestão de ativos e crédito estruturado no Sul do Brasil, a Liberty Revisional consolida o <strong>Consórcio de motos</strong> no Paraná como o instrumento financeiro mais inteligente para a mobilidade regional. Em um estado marcado pela forte conexão entre o agronegócio e o polo industrial, a agilidade de deslocamento é um ativo precioso. Nossa consultoria protege o patrimônio do investidor paranaense, entregando grupos de alta performance que substituem os juros bancários por um planejamento matemático de elite.</p>
+                    
+                    <h3>Consórcio de motos: Agilidade na BR-277 e BR-116</h3>
+                    <p>O <strong>Consórcio de motos</strong> é a rota de fuga para o trânsito pesado que liga Curitiba à Região Metropolitana e ao Litoral. Ao estruturar sua <strong>Carta de Crédito</strong> com nossa assessoria no Paraná, você garante o poder de compra necessário para adquirir modelos Trail, Custom ou de alta cilindrada. Diferente do CDC bancário, o consórcio no Paraná permite o uso de lances livres ou fixos para acelerar a contemplação, garantindo que sua mobilidade nas rodovias paranaenses seja pautada pela economia e eficiência.</p>
+
+                    <h3>Consórcio de motos ou Consórcio de carros: Decisão estratégica em Curitiba</h3>
+                    <p>A dúvida entre o <strong>Consórcio de motos</strong> e o <strong>Consórcio de carros</strong> no Paraná passa pela análise do custo de manutenção e facilidade no centro de Curitiba ou Londrina. Para o profissional que busca otimizar o tempo de deslocamento entre o Batel e o Centro Cívico, a moto é insuperável. Na Liberty Revisional, transformamos seu <strong>Consórcio de dinheiro</strong> em um investimento rentável, selecionando grupos com saúde financeira robusta para sua <strong>Carta de crédito</strong>.</p>
+
+                    <h3>Consórcio de motos e Consórcio Imobiliário: Planejamento no Ecoville e Água Verde</h3>
+                    <p>Bairros de alto padrão como Ecoville e Água Verde demandam estratégias de longo prazo. Muitos clientes paranaenses utilizam o <strong>Consórcio de motos</strong> como primeiro passo para mobilidade, enquanto constroem o sonho da residência própria através do <strong>Consórcio Imobiliário</strong>. Estruturar sua <strong>Carta de crédito imobiliário</strong> via Liberty Revisional é o caminho mais seguro para edificar patrimônio no Paraná sem comprometer a liquidez mensal da sua família.</p>
+
+                    <h3>Consórcio de motos: Por que somos um dos Melhores consórcios do Paraná</h3>
+                    <p>O reconhecimento como um dos <strong>Melhores consórcios</strong> do Paraná vem do nosso rigor analítico. Não operamos apenas como vendedores; atuamos como estrategistas patrimoniais. Para o paranaense, ter a Liberty ao lado significa contar com uma análise técnica que abate o custo efetivo total do bem, protegendo o investimento contra as oscilações do mercado e garantindo contemplações planejadas para a realidade do mercado sulista.</p>
+
+                    <h3>Consórcio de motos e Consórcio para construção: Projetos em Londrina e Maringá</h3>
+                    <p>Cidades como Londrina e Maringá são exemplos de pujança imobiliária. Além do <strong>Consórcio de motos</strong>, essencial para o dia a dia nessas metrópoles, oferecemos o <strong>Consórcio para construção</strong>. Esta modalidade permite ao investidor paranaense erguer sua <strong>Consórcio casa</strong> própria ou galpão comercial com taxas administrativas reduzidas, transformando o planejamento em realidade física e valorizada perante o mercado do interior do estado.</p>
+
+                    <h3>Consórcio de motos: Logística e renovação de frota no Oeste Paranaense</h3>
+                    <p>O polo logístico de Cascavel e Foz do Iguaçu demanda agilidade extrema. O <strong>Consórcio de motos</strong> para frotas é a solução para empresas que não aceitam pagar juros sobre juros. Ao integrar esse plano com o <strong>Consórcio de veículos / Pesados</strong>, sua empresa paranaense renova o maquinário e a frota de apoio via <strong>Carta de Crédito</strong>, mantendo o fluxo de caixa saudável para reinvestir na operação principal.</p>
+
+                    <h3>Consórcio de motos: Sua independência patrimonial no Paraná</h3>
+                    <p>Em resumo, investir no <strong>Consórcio de motos</strong> no Paraná com a Liberty Revisional é garantir um futuro sólido. Das Serras ao Planalto, sua conquista deve ser fruto de inteligência financeira. Fale com nossos especialistas agora, desenhe sua próxima <strong>Carta de Crédito</strong> e domine o território paranaense com a solidez de quem entende de planejamento de alta performance.</p>
+
+                    <div class="resumo-tecnico">Resumo: Assessoria premium em <strong>Consórcio de motos</strong>, <strong>Carta de Crédito</strong> e <strong>Consórcio Imobiliário</strong> para Curitiba, Londrina, Maringá, Cascavel, Ponta Grossa, São José dos Pinhais e todo o Paraná - PR.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ATUALIZADO -->
+    <footer class="footer-oficial">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Liberty no Paraná (PR)</h3>
+                    <p>Assessoria financeira de alta performance no Sul do Brasil. Especialistas em converter planejamento em ativos sólidos para o público paranaense e região.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento Paraná</h3>
+                    <ul class="footer-list">
+                        <li>Consórcio em Curitiba</li>
+                        <li>Consórcio em Londrina</li>
+                        <li>Consórcio em Maringá</li>
+                        <li>Consórcio em Cascavel</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatos Paraná</h3>
+                    <div class="footer-contatos">
+                        <a href="tel:11947316137" class="contato-item">(11) 94731-6137</a>
+                        <div class="social-links">
+                        <a href="#" class="social-item"><i class="fab fa-instagram"></i> @libertyrevisional</a>
+                        
+                        <a href="../consorcio-de-motos/" class="social-item" style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #333; font-weight: 700;">
+                            <i class="fas fa-chevron-right" style="font-size: 0.8rem; width: 18px; text-align: center;"></i> Consórcio de Motos
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-address">
+                    Atendimento Estratégico no Paraná e Região Sul | Liberty Revisional - Especialistas em Consórcios
+                </div>
+                <div class="footer-safe"><i class="fas fa-lock"></i> Site Seguro</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function menuShow() { document.querySelector('.nav-menu').classList.toggle('open'); }
+        function toggleSEO() { document.getElementById('contentSEO').classList.toggle('open'); document.getElementById('setaSEO').classList.toggle('rotate'); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('show'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.hidden-left, .hidden-right, .produto-card').forEach((el) => observer.observe(el));
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
+    </script>
+</body>
+</html>
